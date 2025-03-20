@@ -22,9 +22,10 @@
                 "id": "guidewire-cert",
                 "place": "@link{places.guidewire}",
                 "date": "2021/04",
-                "href": "https://drive.google.com/file/d/1Yy_qyDMwHAgJMYpotqaCauYeEgO9hbsn/view?usp=sharing",
+                "href": "images/places/cert-gw.png",
                 "locales": {
                     "en": {
+                        "buttonLabel": "View Certification",
                         "title": "Certified PolicyCenter 10.0 Specialist",
                         "description": "Guidewire Policy Center Certification is a professional certification and training program designed to recognize professionals with a deep understanding of Guidewire PolicyCenter, a core insurance platform. The certification is offered through the Guidewire PartnerConnect program, which offers training and resources to help partners learn and successfully use Guidewire products. To earn the Guidewire Policy Center Certification, individuals must pass a series of exams that evaluate their knowledge and understanding of the Guidewire software."
                     }
@@ -34,9 +35,10 @@
                 "id": "safe-cert",
                 "place": "@link{places.safe}",
                 "date": "2019/10",
-                "href": "https://drive.google.com/file/d/1mkKYL94gAopROye8gIaKvl0vNbotatmC/view?usp=sharing",
+                "href": "images/places/cert-safe.png",
                 "locales": {
                     "en": {
+                        "buttonLabel": "View Certification",
                         "title": "Certified SAFe 4 Scrum Master",
                         "description": "SAFe Scrum Master (SSM) certification recognizes expertise in Scrum, Lean, and Agile methodologies. It demonstrates that the holder has the knowledge, skills, and experience required to manage Agile projects in a large-scale enterprise through an understanding of SAFe principles and practices, as well as the ability to apply them to real-world scenarios. The certification requires passing a SAFe SSM exam, which assesses your knowledge and understanding of the SAFe framework."
                     }
@@ -46,9 +48,9 @@
                 "id": "institutes-cert",
                 "place": "@link{places.institutes}",
                 "date": "2019/10",
-                "href": "https://drive.google.com/file/d/1mkKYL94gAopROye8gIaKvl0vNbotatmC/view?usp=sharing",
                 "locales": {
                     "en": {
+                        "buttonLabel": "View Certification",
                         "title": "Insurance for IT",
                         "description": "SAFe Scrum Master (SSM) certification recognizes expertise in Scrum, Lean, and Agile methodologies. It demonstrates that the holder has the knowledge, skills, and experience required to manage Agile projects in a large-scale enterprise through an understanding of SAFe principles and practices, as well as the ability to apply them to real-world scenarios. The certification requires passing a SAFe SSM exam, which assesses your knowledge and understanding of the SAFe framework."
                     }
@@ -79,24 +81,26 @@
                 }
             },
             {
-                "id": "securityplus-cert",
+                "id": "securityplus",
                 "place": "@link{places.securityplus}",
                 "date": "2017/03",
-                "href": "https://drive.google.com/file/d/1mkKYL94gAopROye8gIaKvl0vNbotatmC/view?usp=sharing",
+                "href": "images/places/cert-securityplus.png",
                 "locales": {
                     "en": {
+                        "buttonLabel": "View Certification",
                         "title": "Certified Security+",
                         "description": "CompTIA Security+ certification confirms the baseline skills required to perform core security functions, and provides a global benchmark for best practices in IT network and operational security. The certifications requires hands-on practical experience in risk assessment and management, incident response, forensics, enterprise networks, hybrid/cloud operations, and security controls."
                     }
                 }
             },
             {
-                "id": "networkplus-cert",
+                "id": "networkplus",
                 "place": "@link{places.networkplus}",
                 "date": "2016/12",
-                "href": "https://drive.google.com/file/d/1mkKYL94gAopROye8gIaKvl0vNbotatmC/view?usp=sharing",
+                "href": "images/places/cert-networkplus.png",
                 "locales": {
                     "en": {
+                        "buttonLabel": "View Certification",
                         "title": "Certified Network+",
                         "description": "CompTIA Network+ certification confirms an individual possesses the skills in networking required to troubleshoot, configure and manage both wired and wireless networks found in companies around the world. The certification requires a professional-level understanding of emerging technologies including cloud and virtualization technologies."
                     }
@@ -106,12 +110,13 @@
                 ]
             },
             {
-                "id": "itfundamentals-cert",
+                "id": "itfundamentals",
                 "place": "@link{places.itfundamentals}",
                 "date": "2016/07",
-                "href": "https://drive.google.com/file/d/1mkKYL94gAopROye8gIaKvl0vNbotatmC/view?usp=sharing",
+                "href": "images/places/cert-itfundamentals.png",
                 "locales": {
                     "en": {
+                        "buttonLabel": "View Certification",
                         "title": "Certified IT Fundamentals",
                         "description": "CompTIA IT Fundamentals certification confirms foundational IT knowledge and skills. To earn this certification, individuals must demonstrate an understanding computer hardware and software, basic networking concepts, troubleshooting techniques, cybersecurity awareness, and familiarity with IT terminology."
                     }
@@ -136,6 +141,7 @@
                 "href": "https://drive.google.com/file/d/1riIw-J_k_e4mXaFR1m8t9mg2uVwfJ5ZT/view?usp=sharing",
                 "locales": {
                     "en": {
+                        "buttonLabel": "View Fieldwork Project",
                         "title": "Boren Award Recipient - UW College Year in India",
                         "description": "The National Security Education Program (NSEP) fosters a pipeline of foreign language and cultural expertise critical to the U.S. federal government workforce. NSEP was established by the David L. Boren National Security Education Act of 1991 (U.S. Code 50, 90 et seq.). In exchange for funding support, NSEP award recipients agree to work in qualifying national security positions for a minimum of one year.<br><br>The University of Wisconsin's College Year in India program has a history spanning over 50 years, and emphasizes academic rigor and fieldwork. Students participate in immersive language coursework and in-depth research of an approved topic relating the student's major field of study. Students must also complete a 3-month intensive summer language immersion course prior to the start of the program year."
                     }
@@ -145,9 +151,10 @@
                 "id": "phikappa",
                 "place": "@link{places.pkp}",
                 "date": "2009/05",
-                "href": "https://phikappaphi.advising.wisc.edu/chapter-members/2009-members/",
+                "href": "images/places/cert-pkp.png",
                 "locales": {
                     "en": {
+                        "buttonLabel": "View Accolade",
                         "title": "Honor Society Inductee",
                         "description": "Since its founding in 1897, the Honor Society of Phi Kappa Phi has initiated many notable members, including public servants and leaders, Pulitzer and Nobel Prize winners, NASA astronauts and more. It is a global network composed of the best and brightest from all academic disciplines—a community of scholars and professionals building an enduring legacy for future generations. Membership in Phi Kappa Phi is earned through nomination by a local school chapter. Juniors must have completed at least 72 semester hours/108 quarter hours and rank in the top 7.5% of their class."
                     }
@@ -160,6 +167,7 @@
                 "href": "https://ugradsymposium.wisc.edu/wp-content/uploads/sites/454/2018/01/2009_ABSTRACTS.pdf",
                 "locales": {
                     "en": {
+                        "buttonLabel": "View Abstract",
                         "title": "Research Presenter",
                         "description": "The University of Wisconsin 11th Annual Undergraduate Symposium is a celebration of undergraduate students' accomplishments across the many schools and colleges at UW Madison. The Symposium includes presentations, posters, and displays by groups and individuals representing the arts and humanities, biological sciences, physical sciences, and social sciences. These original works showcase the vast range of talent and creativity within the university's undergraduate population."
                     }
@@ -169,9 +177,10 @@
                 "id": "lubar",
                 "place": "@link{places.lubar}",
                 "date": "2008/08",
-                "href": "https://lubar.wisc.edu/archive/FormerFellows.html",
+                "href": "https://lubar.wisc.edu/index.html",
                 "locales": {
                     "en": {
+                        "buttonLabel": "View Website",
                         "title": "Undergraduate Fellow",
                         "description": "The Lubar Institute was founded to create better understanding of the Abrahamic traditions and their interrelationships by encouraging ongoing discussion of these traditions among scholars, members of those traditions, and the general public. The Institute's projects aim to broaden conversations across academic disciplines and faith traditions, between believers and non-believers, and, in upholding the Wisconsin Idea, to bring together campus and community by inviting engagement with the general public."                    
                     }

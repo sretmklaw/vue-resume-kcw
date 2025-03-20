@@ -28,33 +28,25 @@
                 <!-- Description -->
                 <p v-html="item['locales']['description']" class="thread-item-description text-3 text-normal mb-1 mb-md-2"/>
 
-                <!-- Link -->
-                <a v-if="item['href']" class="text-2" target="_blank" :href="item['href']">
-                    <span>{{ props.linkLabel }}</span>
-                    <i class="fa-solid fa-arrow-up-right-dots ms-1"/>
-                </a>
-
-                <div class="gallery-item" @click="_onItemClicked(item)" :project="selectedProject">
+                <!-- Item -->
+                <div v-if="item['place']['certUrl']" class="gallery-item" @click="showModal(item['id'])">
                     <!-- Logo -->
                     <div class="gallery-thumb-wrapper">
-                        <ImageView :src="item['place']['logoUrl']"
+                        <ImageView :src="item['place']['certUrl']"
                                 :alt="item['place']['locales']['name']"
-                                class="gallery-thumb"/>
+                                class="gallery-thumb"
+                                data-toggle="modal" 
+                                data-target="GalleryModal"/>
 
                         <div class="gallery-thumb-overlay">
                             <div class="gallery-thumb-overlay-content eq-h6">
-                                <i class="fas fa-eye fa-2x"></i>
+                                <div><i class="fas fa-eye fa-2x"></i></div>
+                                <div>{{ item['locales']['buttonLabel'] }}<i class="fa-solid fa-arrow-up-right-dots ms-1"/></div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Project Info -->
-                    <div class="gallery-description-wrapper">
-                        <button class="gallery-title">{{ item['locales']['title'] }}</button>
-                        <p class="gallery-category text-muted">{{ item['locales']['title'] }}</p>
-                    </div>
-
-                    <GalleryModal ref="modal" :project="selectedProject" />
+                    
+                    <GalleryModal ref="modal" :modalId="item['id']" />
                 </div>
             </div>
 
@@ -112,6 +104,7 @@ import {computed, ref} from "vue"
 import {useUtils} from "../../../composables/utils.js"
 import {useLanguage} from "../../../composables/language.js"
 import Tags from "../../widgets/Tags.vue"
+import ImageView from "../../widgets/ImageView.vue"
 import GalleryModal from "../gallery/GalleryModal.vue"
 
 /**
@@ -126,6 +119,7 @@ const props = defineProps({
 const language = useLanguage()
 const utils = useUtils()
 const selectedProject = ref(null)
+const modal = ref(null)
 
 /**
  * @type {ComputedRef<Array>}
@@ -172,22 +166,8 @@ const _getTagsForItem = (item) => {
 
 const emit = defineEmits(['open'])
 
-/**
- * @param {Object} item
- * @private
- */
- const _onItemClicked = (item) => {
-    selectedProject.value = project
-    modal.value.display()
-}
-
-/**
- * @param {Object} project
- * @private
- */
-const _onProjectOpened = (project) => {
-    selectedProject.value = project
-    modal.value.display()
+function showModal(id) {
+    document.querySelector('div[modalid='+id+']').display;
 }
 </script>
 
@@ -195,6 +175,7 @@ const _onProjectOpened = (project) => {
 @import "/src/scss/_theming.scss";
 
 ul.thread {
+    --cert-size:150px;
     --image-size:100px;
     --image-border-size:7px;
     --vertical-spacing:80px;
@@ -354,19 +335,18 @@ ul.thread {
     }
 
     .gallery-item {
-        display: inline-flex;
         flex-direction: column;
         position: relative;
-        margin-top: calc(var(--logo-size)/2.5);
     }
 
     .gallery-thumb-wrapper {
         position: relative;
-        margin: 0 auto;
         cursor: pointer;
-        height: var(--logo-size);
-        width: var(--logo-size);
+        height: var(--cert-size);
+        width: calc(var(--cert-size)*1.5);
         overflow: hidden;
+        margin: 1rem 0;
+        border-style: outset;
     }
 
     .gallery-thumb {
@@ -391,6 +371,7 @@ ul.thread {
 
         &-content {
             color: $white;
+            text-align: center;
         }
     }
 
@@ -401,11 +382,11 @@ ul.thread {
         background-color: transparent;
         color: $dark;
 
-        margin: calc(var(--logo-size)/12) 0 0;
-        font-size: calc(var(--logo-size)/8.2);
+        margin: calc(var(--cert-size)/12) 0 0;
+        font-size: calc(var(--cert-size)/8.2);
         @include media-breakpoint-down(lg) {
-            margin: calc(var(--logo-size)/12) 0 0;
-            font-size: calc(var(--logo-size)/6.4);
+            margin: calc(var(--cert-size)/12) 0 0;
+            font-size: calc(var(--cert-size)/6.4);
         }
     }
 
@@ -413,9 +394,9 @@ ul.thread {
         margin: 0;
         padding: 0;
 
-        font-size: calc(var(--logo-size)/10.5);
+        font-size: calc(var(--cert-size)/10.5);
         @include media-breakpoint-down(lg) {
-            font-size: calc(var(--logo-size)/7.8);
+            font-size: calc(var(--cert-size)/7.8);
         }
     }
 
