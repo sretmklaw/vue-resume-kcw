@@ -1,0 +1,53 @@
+{
+    "categories": [
+        {
+            "id": "home",
+            "faIcon": "fa-solid fa-home"
+        },
+
+        {
+            "id": "background",
+            "faIcon": "fa-solid fa-clock"
+        },
+
+        {
+            "id": "more",
+            "faIcon": "fa-solid fa-plus"
+        }
+    ],
+
+    "sections": [
+        {
+            "id": "about",
+            "categoryId": "home",
+            "component": "CoverSection",
+            "jsonPath": "data/sections/cover.json",
+            "faIcon": "fa-solid fa-address-card",
+            "cover": true
+        },
+
+        {
+            "id": "timeline",
+            "categoryId": "background",
+            "component": "ThreadsSection",
+            "jsonPath": "data/sections/timeline.json",
+            "faIcon": "fa-solid fa-award"
+        },
+
+        {
+            "id": "skills",
+            "categoryId": "background",
+            "component": "InfoSection",
+            "jsonPath": "data/sections/skills.json",
+            "faIcon": "fa-solid fa-tools"
+        },
+        
+        {
+            "id": "contact",
+            "categoryId": "more",
+            "component": "ContactSection",
+            "jsonPath": "data/sections/contact.json",
+            "faIcon": "fa-solid fa-pen-to-square"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "locales": {
+        "en": {
+            "title": "<span class='text-primary'>Professional</span> Experience",
+            "description": "A glimpse into my extensive experience throughout career journey."
+        }
+    },
+
+    "items": [
+        {
+            "id": "experience_item_1",
+            "place": "@link{places.dod}",
+            "period": ["2011/08", "2017/03"],
+            "locales": {
+                "en": {
+                    "title": "Multi-Disciplined Civilian Analyst",
+                    "description": "<ul><li>Developed and improved strategies for identifying, organizing, and processing critical information</li><li>Reviewed and approved official threat advisories and intelligence reports as team Quality Checker</li><li>Rapidly gained proficiency using a specialized suite of tools to perform research and analysis </li><li>Enhanced team synergy and productivity by mentoring peers and proposing time-saving strategies</li><li>Strong communication and interpersonal skills facilitated timely responses to customer requirements</li><li>Participated in professional training courses and conferences, including senior executive shadowing </li><li>Prepared and presented briefings to large groups of colleagues and customers</li><li>Participated in hiring assessment validation to improve processes for vetting new personnel</li></ul>",
+                    "tags": ["SQL", "Python", "Quality Assurance", "Briefing Preparation", "Cross-Functional Collaboration"]
+                }
+            }
+        },
+        {
+            "id": "experience_item_2",
+            "place": "@link{places.sentry}",
+            "period": ["2014/06", "2017/04"],
+            "locales": {
+                "en": {
+                    "title": "ProObject Technical Expert",
+                    "description": "<ul><li>Supported cross-functional team as Subject Matter Expert conducting technical research</li><li>Gained familiarity with government contract acquisitions and recruitment process</li><li>Utilized and expanded proficiency with Microsoft Office Suite (Word, PowerPoint, Excel)</li></ul>",
+                    "tags": ["MS Word", "MS Excel", "Contract Acquisition", "Cross-Functional Collaboration"]
+                }
+            }
+        }
+    ]
+}

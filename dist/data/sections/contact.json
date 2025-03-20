@@ -1,0 +1,15 @@
+{
+    "locales": {
+        "en": {
+            "title": "<span class='text-primary'>Contact</span> Me",
+            "description": "Please don't hesitate to get in touch!",
+            "subtitle": "Or...",
+            "subtitleDescription": "If you prefer, you can contact me using the following:"
+        }
+    },
+
+    "items": [
+        "@link{profile.contact.email}",
+        "@link{profile.contact.linkedin}"
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "name": "Kendric Walters",
+    "profilePictureUrl": "images/pictures/avatar.png",
+
+    "locales": {
+        "en": {
+            "credits": "Portions pertaining to U.S. Dept. of Defense approved for public release by Prepublication Review Services (Case No. RES-2017-01392)",
+            "role": "Design, Analysis, Customer Service"
+        }
+    },
+
+    "contact": {
+        "address": {
+            "id": "address",
+            "value": "Wisconsin, USA",
+            "valueShort": "Wisconsin, USA",
+            "faIcon": "fa-solid fa-city",
+            "href": null
+        },
+
+        "email": {
+            "id": "email",
+            "value": "sretmklaw@gmail.com",
+            "valueShort": "sretmklaw@gmail.com",
+            "faIcon": "fa-solid fa-envelope",
+            "href": "mailto:sretmklaw@gmail.com"
+        },
+
+        "linkedin": {
+            "id": "linkedin",
+            "value": "Kendric Walters",
+            "valueShort": "Maria Walters",
+            "faIcon": "fa-brands fa-linkedin",
+            "href": "https://www.linkedin.com/in/kendric-walters-39a078b2"
+        }
+    }
+}

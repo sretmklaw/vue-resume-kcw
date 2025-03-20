@@ -1,0 +1,194 @@
+{
+    "locales": {
+        "en": {
+            "title": "Career <span class='text-primary'>Timeline</span>",
+            "description": "Here are a few of the ways in which my work has been recognized throughout my career:"
+        }
+    },
+
+    "subcategories": [
+        {
+            "id": "certifications",
+            "faIcon": "fa-solid fa-award",
+            "locales": {
+                "en": {"title": "Certifications", "buttonLabel": "View Certification"}
+            }
+        }
+    ],
+
+    "items": {
+        "certifications": [
+            {
+                "id": "guidewire-cert",
+                "place": "@link{places.guidewire}",
+                "date": "2021/04",
+                "href": "https://drive.google.com/file/d/1Yy_qyDMwHAgJMYpotqaCauYeEgO9hbsn/view?usp=sharing",
+                "locales": {
+                    "en": {
+                        "title": "Certified PolicyCenter 10.0 Specialist",
+                        "description": "Guidewire Policy Center Certification is a professional certification and training program designed to recognize professionals with a deep understanding of Guidewire PolicyCenter, a core insurance platform. The certification is offered through the Guidewire PartnerConnect program, which offers training and resources to help partners learn and successfully use Guidewire products. To earn the Guidewire Policy Center Certification, individuals must pass a series of exams that evaluate their knowledge and understanding of the Guidewire software."
+                    }
+                }
+            },
+            {
+                "id": "safe-cert",
+                "place": "@link{places.safe}",
+                "date": "2019/10",
+                "href": "https://drive.google.com/file/d/1mkKYL94gAopROye8gIaKvl0vNbotatmC/view?usp=sharing",
+                "locales": {
+                    "en": {
+                        "title": "Certified SAFe 4 Scrum Master",
+                        "description": "SAFe Scrum Master (SSM) certification recognizes expertise in Scrum, Lean, and Agile methodologies. It demonstrates that the holder has the knowledge, skills, and experience required to manage Agile projects in a large-scale enterprise through an understanding of SAFe principles and practices, as well as the ability to apply them to real-world scenarios. The certification requires passing a SAFe SSM exam, which assesses your knowledge and understanding of the SAFe framework."
+                    }
+                }
+            },
+            {
+                "id": "institutes-cert",
+                "place": "@link{places.institutes}",
+                "date": "2019/10",
+                "href": "https://drive.google.com/file/d/1mkKYL94gAopROye8gIaKvl0vNbotatmC/view?usp=sharing",
+                "locales": {
+                    "en": {
+                        "title": "Insurance for IT",
+                        "description": "SAFe Scrum Master (SSM) certification recognizes expertise in Scrum, Lean, and Agile methodologies. It demonstrates that the holder has the knowledge, skills, and experience required to manage Agile projects in a large-scale enterprise through an understanding of SAFe principles and practices, as well as the ability to apply them to real-world scenarios. The certification requires passing a SAFe SSM exam, which assesses your knowledge and understanding of the SAFe framework."
+                    }
+                }
+            },
+            {
+                "id": "sentry",
+                "place": "@link{places.sentry}",
+                "period": ["2017/05", "Present"],
+                "locales": {
+                    "en": {
+                        "title": "Software Engineer",
+                        "description": "<ul><li>Supported cross-functional team as Subject Matter Expert conducting technical research</li><li>Gained familiarity with government contract acquisitions and recruitment process</li><li>Utilized and expanded proficiency with Microsoft Office Suite (Word, PowerPoint, Excel)</li></ul>",
+                        "tags": ["MS Word", "MS Excel", "Contract Acquisition", "Cross-Functional Collaboration"]
+                    }
+                }
+            },
+            {
+                "id": "umgc",
+                "place": "@link{places.umgc}",
+                "period": ["2015/08", "2017/04"],
+                "locales": {
+                    "en": {
+                        "title": "Bachelor of Sciences in Software Development & Security",
+                        "description": "<ul><li>Developed and improved strategies for identifying, organizing, and processing critical information</li><li>Reviewed and approved official threat advisories and intelligence reports as team Quality Checker</li><li>Rapidly gained proficiency using a specialized suite of tools to perform research and analysis </li><li>Enhanced team synergy and productivity by mentoring peers and proposing time-saving strategies</li><li>Strong communication and interpersonal skills facilitated timely responses to customer requirements</li><li>Participated in professional training courses and conferences, including senior executive shadowing </li><li>Prepared and presented briefings to large groups of colleagues and customers</li><li>Participated in hiring assessment validation to improve processes for vetting new personnel</li></ul>",
+                        "tags": ["SQL", "Python", "Quality Assurance", "Briefing Preparation", "Cross-Functional Collaboration"]
+                    }
+                }
+            },
+            {
+                "id": "securityplus-cert",
+                "place": "@link{places.securityplus}",
+                "date": "2017/03",
+                "href": "https://drive.google.com/file/d/1mkKYL94gAopROye8gIaKvl0vNbotatmC/view?usp=sharing",
+                "locales": {
+                    "en": {
+                        "title": "Certified Security+",
+                        "description": "CompTIA Security+ certification confirms the baseline skills required to perform core security functions, and provides a global benchmark for best practices in IT network and operational security. The certifications requires hands-on practical experience in risk assessment and management, incident response, forensics, enterprise networks, hybrid/cloud operations, and security controls."
+                    }
+                }
+            },
+            {
+                "id": "networkplus-cert",
+                "place": "@link{places.networkplus}",
+                "date": "2016/12",
+                "href": "https://drive.google.com/file/d/1mkKYL94gAopROye8gIaKvl0vNbotatmC/view?usp=sharing",
+                "locales": {
+                    "en": {
+                        "title": "Certified Network+",
+                        "description": "CompTIA Network+ certification confirms an individual possesses the skills in networking required to troubleshoot, configure and manage both wired and wireless networks found in companies around the world. The certification requires a professional-level understanding of emerging technologies including cloud and virtualization technologies."
+                    }
+                },
+                "links": [
+                    {"faIcon": "fa-brands fa-windows", "href": "https://support.microsoft.com/en-us/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1", "id": "Microsoft Documentation"}
+                ]
+            },
+            {
+                "id": "itfundamentals-cert",
+                "place": "@link{places.itfundamentals}",
+                "date": "2016/07",
+                "href": "https://drive.google.com/file/d/1mkKYL94gAopROye8gIaKvl0vNbotatmC/view?usp=sharing",
+                "locales": {
+                    "en": {
+                        "title": "Certified IT Fundamentals",
+                        "description": "CompTIA IT Fundamentals certification confirms foundational IT knowledge and skills. To earn this certification, individuals must demonstrate an understanding computer hardware and software, basic networking concepts, troubleshooting techniques, cybersecurity awareness, and familiarity with IT terminology."
+                    }
+                }
+            },
+            {
+                "id": "dod",
+                "place": "@link{places.dod}",
+                "period": ["2011/08", "2017/03"],
+                "locales": {
+                    "en": {
+                        "title": "Multi-Disciplined Civilian Analyst",
+                        "description": "<ul><li>Developed and improved strategies for identifying, organizing, and processing critical information</li><li>Reviewed and approved official threat advisories and intelligence reports as team Quality Checker</li><li>Rapidly gained proficiency using a specialized suite of tools to perform research and analysis </li><li>Enhanced team synergy and productivity by mentoring peers and proposing time-saving strategies</li><li>Strong communication and interpersonal skills facilitated timely responses to customer requirements</li><li>Participated in professional training courses and conferences, including senior executive shadowing </li><li>Prepared and presented briefings to large groups of colleagues and customers</li><li>Participated in hiring assessment validation to improve processes for vetting new personnel</li></ul>",
+                        "tags": ["SQL", "Python", "Quality Assurance", "Briefing Preparation", "Cross-Functional Collaboration"]
+                    }
+                }
+            },
+            {
+                "id": "nsep",
+                "place": "@link{places.nsep}",
+                "date": "2009/08",
+                "href": "https://drive.google.com/file/d/1riIw-J_k_e4mXaFR1m8t9mg2uVwfJ5ZT/view?usp=sharing",
+                "locales": {
+                    "en": {
+                        "title": "Boren Award Recipient - UW College Year in India",
+                        "description": "The National Security Education Program (NSEP) fosters a pipeline of foreign language and cultural expertise critical to the U.S. federal government workforce. NSEP was established by the David L. Boren National Security Education Act of 1991 (U.S. Code 50, 90 et seq.). In exchange for funding support, NSEP award recipients agree to work in qualifying national security positions for a minimum of one year.<br><br>The University of Wisconsin's College Year in India program has a history spanning over 50 years, and emphasizes academic rigor and fieldwork. Students participate in immersive language coursework and in-depth research of an approved topic relating the student's major field of study. Students must also complete a 3-month intensive summer language immersion course prior to the start of the program year."
+                    }
+                }
+            },
+            {
+                "id": "phikappa",
+                "place": "@link{places.pkp}",
+                "date": "2009/05",
+                "href": "https://phikappaphi.advising.wisc.edu/chapter-members/2009-members/",
+                "locales": {
+                    "en": {
+                        "title": "Honor Society Inductee",
+                        "description": "Since its founding in 1897, the Honor Society of Phi Kappa Phi has initiated many notable members, including public servants and leaders, Pulitzer and Nobel Prize winners, NASA astronauts and more. It is a global network composed of the best and brightest from all academic disciplines—a community of scholars and professionals building an enduring legacy for future generations. Membership in Phi Kappa Phi is earned through nomination by a local school chapter. Juniors must have completed at least 72 semester hours/108 quarter hours and rank in the top 7.5% of their class."
+                    }
+                }
+            },
+            {
+                "id": "symposium",
+                "place": "@link{places.symposium}",
+                "date": "2009/04",
+                "href": "https://ugradsymposium.wisc.edu/wp-content/uploads/sites/454/2018/01/2009_ABSTRACTS.pdf",
+                "locales": {
+                    "en": {
+                        "title": "Research Presenter",
+                        "description": "The University of Wisconsin 11th Annual Undergraduate Symposium is a celebration of undergraduate students' accomplishments across the many schools and colleges at UW Madison. The Symposium includes presentations, posters, and displays by groups and individuals representing the arts and humanities, biological sciences, physical sciences, and social sciences. These original works showcase the vast range of talent and creativity within the university's undergraduate population."
+                    }
+                }
+            },
+            {
+                "id": "lubar",
+                "place": "@link{places.lubar}",
+                "date": "2008/08",
+                "href": "https://lubar.wisc.edu/archive/FormerFellows.html",
+                "locales": {
+                    "en": {
+                        "title": "Undergraduate Fellow",
+                        "description": "The Lubar Institute was founded to create better understanding of the Abrahamic traditions and their interrelationships by encouraging ongoing discussion of these traditions among scholars, members of those traditions, and the general public. The Institute's projects aim to broaden conversations across academic disciplines and faith traditions, between believers and non-believers, and, in upholding the Wisconsin Idea, to bring together campus and community by inviting engagement with the general public."                    
+                    }
+                }
+            },
+            {
+                "id": "uwmadison",
+                "place": "@link{places.uwmadison}",
+                "period": ["2007/08", "2010/04"],
+                "locales": {
+                    "en": {
+                        "title": "Bachelor of Arts in Languages & Cultures of Asia",
+                        "description": "<ul><li>Developed and improved strategies for identifying, organizing, and processing critical information</li><li>Reviewed and approved official threat advisories and intelligence reports as team Quality Checker</li><li>Rapidly gained proficiency using a specialized suite of tools to perform research and analysis </li><li>Enhanced team synergy and productivity by mentoring peers and proposing time-saving strategies</li><li>Strong communication and interpersonal skills facilitated timely responses to customer requirements</li><li>Participated in professional training courses and conferences, including senior executive shadowing </li><li>Prepared and presented briefings to large groups of colleagues and customers</li><li>Participated in hiring assessment validation to improve processes for vetting new personnel</li></ul>",
+                        "tags": ["SQL", "Python", "Quality Assurance", "Briefing Preparation", "Cross-Functional Collaboration"]
+                    }
+                }
+            }
+        ]
+    }
+}

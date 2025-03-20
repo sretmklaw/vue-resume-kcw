@@ -1,0 +1,248 @@
+{
+    "locales": {
+        "en": {
+            "title": "<span class='text-primary'>Skill</span> Set",
+            "description": "Exploring the diverse range of skills I've acquired and developed:"
+        }
+    },
+
+    "subcategories": [
+        {
+            "id": "abilities",
+            "type": "grid",
+            "progress": null,
+            "faIcon": "fa-solid fa-square",
+            "locales": {
+                "en": {"title": null}
+            }
+        },
+
+        {
+            "id": "tools",
+            "type": "grid",
+            "progress": "number",
+            "faIcon": "fa-solid fa-screwdriver-wrench",
+            "locales": {
+                "en": {"title": "Tools"}
+            }
+        },
+
+        {
+            "id": "languages",
+            "type": "list",
+            "progress": {"0": "beginner", "20": "rookie", "40": "intermediate", "60": "advanced", "80": "fluent", "100": "native"},
+            "faIcon": "fa fa-language",
+            "locales": {
+                "en": {"title": "Languages"}
+            }
+        },
+
+        {
+            "id": "extra",
+            "type": "grid",
+            "progress": null,
+            "faIcon": "fa fa-marker",
+            "locales": {
+                "en": {"title": "Testimonials"}
+            }
+        }
+    ],
+
+    "items": {
+        "abilities": [
+            {
+                "imageIconUrl": null,
+                "faIcon": "fa-solid fa-magnifying-glass",
+                "value": null,
+                "locales": {
+                    "en": {
+                        "title": "Data Analysis",
+                        "description": "Effectively sift through large amounts of noise and refine the results to ensure the most important information is presented to users in a clear and concise manner."
+                    }
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fa-solid fa-trowel-bricks",
+                "value": null,
+                "locales": {
+                    "en": {
+                        "title": "Design Principles",
+                        "description": "Craft intuitive, efficient, and scalable frameworks based on accepted best practices and standards to optimize user experience."
+                    }
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fa-solid fa-headset",
+                "value": null,
+                "locales": {
+                    "en": {
+                        "title": "Customer Service",
+                        "description": "Provide effective, timely, and friendly support to users with professionalism and courtesy."
+                    }
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-vector-square",
+                "value": null,
+                "locales": {
+                    "en": {
+                        "title": "Wireframing",
+                        "description": "Create detailed wireframes to visualize and plan user interfaces, effectively laying the foundation for intuitive design."
+                    }
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-check-double",
+                "value": null,
+                "locales": {
+                    "en": {
+                        "title": "Usability Testing",
+                        "description": "Enhance user experiences through comprehensive usability testing, including a range of edge cases."
+                    }
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-laptop-code",
+                "value": null,
+                "locales": {
+                    "en": {
+                        "title": "Prototyping",
+                        "description": "Translate concepts into interactive prototypes for testing and refinement."
+                    }
+                }
+            }
+        ],
+
+        "tools": [
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fa-solid fa-file-word",
+                "value": 95,
+                "locales": {
+                    "en": {"title": "MS Word", "description": "Experience: 10+ years"}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fa-solid fa-file-excel",
+                "value": 90,
+                "locales": {
+                    "en": {"title": "MS Excel", "description": "Experience: 10+ years"}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fa-solid fa-database",
+                "value": 65,
+                "locales": {
+                    "en": {"title": "SQL", "description": "Experience: 3 years"}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fab fa-html5",
+                "value": 60,
+                "locales": {
+                    "en": {"title": "HTML 5", "description": "Experience: 1 year"}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fab fa-css3-alt",
+                "value": 55,
+                "locales": {
+                    "en": {"title": "CSS 3", "description": "Experience: 1 year"}
+                }
+            },
+
+            {
+                "imageIconUrl": null,
+                "faIcon": "fab fa-figma",
+                "value": 55,
+                "locales": {
+                    "en": {"title": "Figma", "description": "Experience: 1 year"}
+                }
+            }
+        ],
+
+        "languages": [
+            {
+                "imageIconUrl": "images/flags/en.png",
+                "faIcon": null,
+                "value": 100,
+                "locales": {
+                    "en": {"title": "English", "description": "Native speaker with excellent communication and writing skills."}
+                }
+            },
+
+            {
+                "imageIconUrl": "images/flags/it.png",
+                "faIcon": null,
+                "value": 90,
+                "locales": {
+                    "en": {"title": "Italian", "description": "Fluent in both spoken and written Italian."}
+                }
+            },
+
+            {
+                "imageIconUrl": "images/flags/fr.png",
+                "faIcon": null,
+                "value": 90,
+                "locales": {
+                    "en": {"title": "French", "description": "Fluent in both spoken and written French."}
+                }
+            }
+        ],
+
+        "extra": [
+            {
+                "imageIconUrl": null,
+                "faIcon": "fa-solid fa-comments",
+                "value": null,
+                "locales": {
+                    "en": {"description": "A valued team member who stands out for her ability, commitment to high-quality work, and dedication to expanding her knowledge via formal and informal training. Her eagerness to collaborate with her team members across the enterprise furthered successful working relationships and helped enable the successful [creation] of a new team..."}
+                }
+            },
+            {
+                "imageIconUrl": null,
+                "faIcon": "fa-solid fa-comments",
+                "value": null,
+                "locales": {
+                    "en": {"description": "A key player in her team's recent successes… [She] greatly improved organization of the project while ensuring prosecution of the highest priority [data] for its customers. She worked closely with her management, devising and articulating strategies for responding effectively to ever-changing priorities and customer needs. These contributions have saved time and maximized use of limited resources..."}
+                }
+            },
+            {
+                "imageIconUrl": null,
+                "faIcon": "fa-solid fa-comments",
+                "value": null,
+                "locales": {
+                    "en": {"description": "Demonstrated a capability to engage and collaborate with multiple offices, as well as commitment and initiative... a dedicated inquisitive [team member] with a bright future..."}
+                }
+            },
+            {
+                "imageIconUrl": null,
+                "faIcon": "fa-solid fa-comments",
+                "value": null,
+                "locales": {
+                    "en": {"description": "Her critical thinking skills and initiative allowed her to expand her scope of operations beyond what is normally expected..."}
+                }
+            }
+        ]
+
+    }
+}

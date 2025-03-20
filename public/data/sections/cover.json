@@ -1,0 +1,20 @@
+{
+    "locales": {
+        "en": {
+            "welcome": "Let's <span class='text-primary'>Make New Ways</span> Together",
+            "welcomeShort": "Make <span class='text-primary'>New</span> Ways",
+            "bio": "With a passionate and outgoing approach, I combine extensive experience analyzing large data sets and transforming complex information streams into actionable insights for key stakeholders. I bring a unique data-driven perspective focused on continuous optimization to drive successful outcomes for cross-functional teams in high-pressure environments.<br><br>I live in the beautiful Northwoods of Wisconsin with my husband and daughter. In my spare time I enjoy exploring the local food scene and traveling internationally. Please feel free to review my credentials and portfolio. I look forward to hearing about your challenges, and working together to drive the success of your next project!"
+        }
+    },
+
+    "items": {
+        "socialCircles": [
+            "@link{profile.contact.linkedin}"
+        ],
+
+        "contactListItems": [
+            "@link{profile.contact.address}",
+            "@link{profile.contact.email}"
+        ]
+    }
+}

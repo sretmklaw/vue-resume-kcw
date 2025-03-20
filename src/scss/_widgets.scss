@@ -1,0 +1,12 @@
+.btn-xl {
+    @include generate-dynamic-styles-with-hash((
+        xxxl:   (padding: 1rem 1.5rem, font-size: 1rem),
+        lg:     (padding: 0.95rem 1.4rem, font-size: 0.95rem),
+        md:     (padding: 0.7rem 1.1rem, font-size: 0.8rem)
+    ));
+
+    font-weight: bold;
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+    border-radius: 4rem;
+}

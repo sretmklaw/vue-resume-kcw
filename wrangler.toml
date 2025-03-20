@@ -1,0 +1,11 @@
+# Top-level configuration
+name = "vue-resume-kcw"
+main = "src/main.js"
+compatibility_date = "2022-07-12"
+
+workers_dev = false
+route = { pattern = "kendricwalters.com/*", zone_name = "kendricwalters.com" }
+
+[env.staging]
+name = "vue-resume-kcw-staging"
+route = { pattern = "staging.kendricwalters.com/*", zone_name = "kendricwalters.com" }

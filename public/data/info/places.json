@@ -1,0 +1,113 @@
+{
+    "uwmadison": {
+        "logoUrl": "images/places/logo-uw.png",
+        "faIcon": "fa-solid fa-university",
+        "locales": {
+            "en": {"name": "University of Wisconsin"}
+        }
+    },
+
+    "lubar": {
+        "logoUrl": "images/places/logo-lubar.png",
+        "faIcon": "fa-solid fa-handshake-simple",
+        "locales": {
+            "en": {"name": "Lubar Institute"}
+        }
+    },
+
+    "symposium": {
+        "logoUrl": "images/places/logo-symposium.png",
+        "faIcon": "fa-solid fa-person-chalkboard",
+        "locales": {
+            "en": {"name": "Undergraduate Symposium"}
+        }
+    },
+
+    "pkp": {
+        "logoUrl": "images/places/logo-pkp.png",
+        "faIcon": "fa-solid fa-graduation-cap",
+        "locales": {
+            "en": {"name": "Phi Kappa Phi"}
+        }
+    },
+
+    "nsep": {
+        "logoUrl": "images/places/logo-nsep.png",
+        "faIcon": "fa-solid fa-shield-halved",
+        "locales": {
+            "en": {"name": "National Security Education Program"}
+        }
+    },
+
+    "dod": {
+        "logoUrl": "images/places/logo-dod.png",
+        "faIcon": "fa-solid fa-shield-halved",
+        "locales": {
+            "en": {"name": "U.S. Dept. of Defense"}
+        }
+    },
+
+    "itfundamentals": {
+        "logoUrl": "images/places/logo-comptia-itfundamentals.png",
+        "faIcon": "fa-solid fa-server",
+        "locales": {
+            "en": {"name": "CompTIA"}
+        }
+    },
+
+    "networkplus": {
+        "logoUrl": "images/places/logo-comptia-networkplus.png",
+        "faIcon": "fa-solid fa-server",
+        "locales": {
+            "en": {"name": "CompTIA"}
+        }
+    },
+
+    "securityplus": {
+        "logoUrl": "images/places/logo-comptia-securityplus.png",
+        "faIcon": "fa-solid fa-server",
+        "locales": {
+            "en": {"name": "CompTIA"}
+        }
+    },
+
+    "umgc": {
+        "logoUrl": "images/places/logo-umgc.png",
+        "faIcon": "fa-solid fa-university",
+        "locales": {
+            "en": {"name": "University of Maryland"}
+        }
+    },
+
+    "sentry": {
+        "logoUrl": "images/places/logo-sentry.png",
+        "faIcon": "fa-solid fa-building",
+        "locales": {
+            "en": {"name": "Sentry Insurance"}
+        }
+    },
+
+    "institutes": {
+        "logoUrl": "images/places/logo-institutes.png",
+        "faIcon": "fa-solid fa-certificate",
+        "locales": {
+            "en": {"name": "The Institutes"}
+        }
+    },
+
+    "safe": {
+        "logoUrl": "images/places/logo-safe.png",
+        "faIcon": "fa-solid fa-certificate",
+        "locales": {
+            "en": {"name": "Scaled Agile, Inc."}
+        }
+    },
+
+    "guidewire": {
+        "logoUrl": "images/places/logo-gw.png",
+        "faIcon": "fa-solid fa-certificate",
+        "locales": {
+            "en": {"name": "Guidewire"}
+        }
+    }
+}

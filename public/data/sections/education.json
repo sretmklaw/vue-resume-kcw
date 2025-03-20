@@ -1,0 +1,34 @@
+{
+    "locales": {
+        "en": {
+            "title": "<span class='text-primary'>Educational</span> Background",
+            "description": "My degrees and certifications."
+        }
+    },
+
+    "items": [
+        {
+            "id": "bachelor_uwmadison",
+            "place": "@link{places.uwmadison}",
+            "period": ["2007/07", "2010/09"],
+            "locales": {
+                "en": {
+                    "title": "Bachelor's in International Development with Economics & Statistics Focus",
+                    "description": "My educational background has fostered a strong foundation in research methodologies, project management, and thinking critically about big problems."
+                }
+            }
+        },
+
+        {
+            "id": "bachelor_umgc",
+            "place": "@link{places.umgc}",
+            "period": ["2007/07", "2010/09"],
+            "locales": {
+                "en": {
+                    "title": "Bachelor's in International Development with Economics & Statistics Focus",
+                    "description": "My educational background has fostered a strong foundation in research methodologies, project management, and thinking critically about big problems."
+                }
+            }
+        }
+    ]
+}
