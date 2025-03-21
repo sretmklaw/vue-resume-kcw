@@ -16,15 +16,6 @@
         }
     },
 
-    "symposium": {
-        "logoUrl": "images/places/logo-symposium.png",
-        "certUrl": "images/places/link-symposium.png",
-        "faIcon": "fa-solid fa-person-chalkboard",
-        "locales": {
-            "en": {"name": "Undergraduate Symposium"}
-        }
-    },
-
     "pkp": {
         "logoUrl": "images/places/logo-pkp.png",
         "certUrl": "images/places/cert-pkp.png",
@@ -94,14 +85,6 @@
         }
     },
 
-    "institutes": {
-        "logoUrl": "images/places/logo-institutes.png",
-        "faIcon": "fa-solid fa-certificate",
-        "locales": {
-            "en": {"name": "The Institutes"}
-        }
-    },
-
     "safe": {
         "logoUrl": "images/places/logo-safe.png",
         "certUrl": "images/places/cert-safe.png",
@@ -117,6 +100,15 @@
         "faIcon": "fa-solid fa-certificate",
         "locales": {
             "en": {"name": "Guidewire"}
+        }
+    },
+
+    "oldworldsaints": {
+        "logoUrl": "images/places/logo-oldworldsaints.png",
+        "certUrl": "images/places/link-oldworldsaints.png",
+        "faIcon": "fa-solid fa-globe",
+        "locales": {
+            "en": {"name": "OldWorldSaints.com"}
         }
     }
 }

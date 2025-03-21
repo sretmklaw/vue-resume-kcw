@@ -95,6 +95,8 @@ const _onWindowChangeEvent = () => {
     if(isNavigationModeAllAtOnce !== navigation.isAllAtOnceMode()) {
         _onNavigationModeChanged(activeSectionId)
     }
+    _handleScroll()
+    _positionCursor()
 }
 
 /**
@@ -156,6 +158,18 @@ const _navigateToSection = (sectionId) => {
 const _navigateToCategory = (categoryId) => {
     const targetSectionId = navigation.getLastVisitedSectionOn(categoryId)
     _navigateToSection(targetSectionId)
+}
+
+const _handleScroll = () => {
+    const threadFadeElements = document.getElementsByClassName('thread-fade-element');
+    layout.handleScroll(threadFadeElements);
+}
+
+const _positionCursor = () => {
+    const threadScrollContainer = document.getElementById("threadScrollContainer");
+    const scrollpath = document.getElementById("threadScrollpath");
+    const cursor = document.getElementById("threadCursor");
+    layout.positionCursor(threadScrollContainer, scrollpath, cursor);
 }
 
 defineExpose({

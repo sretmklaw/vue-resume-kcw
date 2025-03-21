@@ -19,6 +19,19 @@
     "items": {
         "certifications": [
             {
+                "id": "oldworldsaints",
+                "place": "@link{places.oldworldsaints}",
+                "date": "2021/04",
+                "href": "https://www.oldworldsaints.com",
+                "locales": {
+                    "en": {
+                        "buttonLabel": "View Website",
+                        "title": "Freelance WebApp Designer",
+                        "description": "In my free time, I work on various side projects combining my interest in software engineering and world history. During the COVID-19 pandemic, I designed, built, and deployed a Spring Boot Java web application as a concept plan for the former UW Madison Lubar Institute for the Study of the Abrahamic Religions. This site displays information about important figures and commemorations in various traditions through the ancient and medieval world, and showcases my coding approach and attention to detail."
+                    }
+                }
+            },
+            {
                 "id": "guidewire-cert",
                 "place": "@link{places.guidewire}",
                 "date": "2021/04",
@@ -27,7 +40,7 @@
                     "en": {
                         "buttonLabel": "View Certification",
                         "title": "Certified PolicyCenter 10.0 Specialist",
-                        "description": "Guidewire Policy Center Certification is a professional certification and training program designed to recognize professionals with a deep understanding of Guidewire PolicyCenter, a core insurance platform. The certification is offered through the Guidewire PartnerConnect program, which offers training and resources to help partners learn and successfully use Guidewire products. To earn the Guidewire Policy Center Certification, individuals must pass a series of exams that evaluate their knowledge and understanding of the Guidewire software."
+                        "description": "To deepen my expertise in the Guidewire suite of insurance software, I pursued and obtained a professional certification in Policy Center configuration. This designation recognizes professionals with a deep understanding of the insurance industry's leading software platform. This required long-term study in order to pass a series of exams evaluating my understanding of the key features of Guidewire software."
                     }
                 }
             },
@@ -40,19 +53,7 @@
                     "en": {
                         "buttonLabel": "View Certification",
                         "title": "Certified SAFe 4 Scrum Master",
-                        "description": "SAFe Scrum Master (SSM) certification recognizes expertise in Scrum, Lean, and Agile methodologies. It demonstrates that the holder has the knowledge, skills, and experience required to manage Agile projects in a large-scale enterprise through an understanding of SAFe principles and practices, as well as the ability to apply them to real-world scenarios. The certification requires passing a SAFe SSM exam, which assesses your knowledge and understanding of the SAFe framework."
-                    }
-                }
-            },
-            {
-                "id": "institutes-cert",
-                "place": "@link{places.institutes}",
-                "date": "2019/10",
-                "locales": {
-                    "en": {
-                        "buttonLabel": "View Certification",
-                        "title": "Insurance for IT",
-                        "description": "SAFe Scrum Master (SSM) certification recognizes expertise in Scrum, Lean, and Agile methodologies. It demonstrates that the holder has the knowledge, skills, and experience required to manage Agile projects in a large-scale enterprise through an understanding of SAFe principles and practices, as well as the ability to apply them to real-world scenarios. The certification requires passing a SAFe SSM exam, which assesses your knowledge and understanding of the SAFe framework."
+                        "description": "After being asked to step into a more hands-on role in planning and executing on prioritized work within the software development lifecycle, I pursued and obtained a SAFe Scrum Master certification from Scaled Agile, Inc. This designation recognizes expertise in Scrum, Lean, and Agile methodologies by demonstrating knowledge, skills, and experience required to manage Agile projects in a large-scale enterprise through an understanding of SAFe practices. This required enrolling in accredited courses offered by Scaled Agile and passing an exam to assess my ability to apply the principles of the SAFe framework."
                     }
                 }
             },
@@ -63,8 +64,8 @@
                 "locales": {
                     "en": {
                         "title": "Software Engineer",
-                        "description": "<ul><li>Supported cross-functional team as Subject Matter Expert conducting technical research</li><li>Gained familiarity with government contract acquisitions and recruitment process</li><li>Utilized and expanded proficiency with Microsoft Office Suite (Word, PowerPoint, Excel)</li></ul>",
-                        "tags": ["MS Word", "MS Excel", "Contract Acquisition", "Cross-Functional Collaboration"]
+                        "description": "<ul><li>Optimized business software systems in a Scaled Agile development ecosystem and tracked work in JIRA as team’s designated Scrum Master.</li><li>Within first year, delivered a bulk data change tool built within Guidewire PolicyCenter which executed with a 99.9% success rate on its inaugural run in production.</li><li>Streamlined build processes to run integrated Jenkins Pipelines and created dynamic environment pooling service to automate deployments to Amazon Web Services.</li><li>Worked in hybrid role with in-person and remote peers on a cross-functional team running queries to support requirements gathering and resolve identified defects.</li><li>Experience working with Amazon Bedrock Large Language Model integrated via API with Docker to harness machine learning for solving difficult business problems.</li></ul>",
+                        "tags": ["DevOps", "Java", "Gosu", "AWS", "SQL", "LLM"]
                     }
                 }
             },
@@ -75,8 +76,8 @@
                 "locales": {
                     "en": {
                         "title": "Bachelor of Sciences in Software Development & Security",
-                        "description": "<ul><li>Developed and improved strategies for identifying, organizing, and processing critical information</li><li>Reviewed and approved official threat advisories and intelligence reports as team Quality Checker</li><li>Rapidly gained proficiency using a specialized suite of tools to perform research and analysis </li><li>Enhanced team synergy and productivity by mentoring peers and proposing time-saving strategies</li><li>Strong communication and interpersonal skills facilitated timely responses to customer requirements</li><li>Participated in professional training courses and conferences, including senior executive shadowing </li><li>Prepared and presented briefings to large groups of colleagues and customers</li><li>Participated in hiring assessment validation to improve processes for vetting new personnel</li></ul>",
-                        "tags": ["SQL", "Python", "Quality Assurance", "Briefing Preparation", "Cross-Functional Collaboration"]
+                        "description": "<ul><li>Emphasis on vulnerability analysis with coursework in object-oriented, event-driven programming using various development environments and programming languages.</li><li>Experience optimizing relational databases to reduce data redundancy and ensure data integrity.</li><li>Capstone seminar focused on building secure web applications in the context of the software development lifecycle, from design through deployment. </li><li>Graduated summa cum laude (4.0 GPA).</li></ul>",
+                        "tags": ["Java", "OOP", "SQL", "Oracle", "RDBMS", "HTML/CSS"]
                     }
                 }
             },
@@ -129,8 +130,8 @@
                 "locales": {
                     "en": {
                         "title": "Multi-Disciplined Civilian Analyst",
-                        "description": "<ul><li>Developed and improved strategies for identifying, organizing, and processing critical information</li><li>Reviewed and approved official threat advisories and intelligence reports as team Quality Checker</li><li>Rapidly gained proficiency using a specialized suite of tools to perform research and analysis </li><li>Enhanced team synergy and productivity by mentoring peers and proposing time-saving strategies</li><li>Strong communication and interpersonal skills facilitated timely responses to customer requirements</li><li>Participated in professional training courses and conferences, including senior executive shadowing </li><li>Prepared and presented briefings to large groups of colleagues and customers</li><li>Participated in hiring assessment validation to improve processes for vetting new personnel</li></ul>",
-                        "tags": ["SQL", "Python", "Quality Assurance", "Briefing Preparation", "Cross-Functional Collaboration"]
+                        "description": "<ul><li>Held Top Secret clearance with periodic background investigation, polygraph, annual financial disclosure, and random drug testing.</li><li>Employed technical and linguistic expertise to identify and assess foreign threats, facilitating the discovery of potential weaknesses in newly-developed software.</li><li>Workplace-sponsored training sessions focused on information assurance, malware analysis, computer networking, digital communications, and governance.</li><li>Gained experience writing Python scripts and executing automation protocols in sandboxed virtual environments running on Red Hat Enterprise Linux.</li><li>Rapidly acquired proficiency in foreign languages and over a dozen specialized tools while mentoring junior team members in these hard-to-teach skill sets.</li></ul>",
+                        "tags": ["TS/SCI", "Python", "Pentest", "Linux", "VM", "APT"]
                     }
                 }
             },
@@ -161,19 +162,6 @@
                 }
             },
             {
-                "id": "symposium",
-                "place": "@link{places.symposium}",
-                "date": "2009/04",
-                "href": "https://ugradsymposium.wisc.edu/wp-content/uploads/sites/454/2018/01/2009_ABSTRACTS.pdf",
-                "locales": {
-                    "en": {
-                        "buttonLabel": "View Abstract",
-                        "title": "Research Presenter",
-                        "description": "The University of Wisconsin 11th Annual Undergraduate Symposium is a celebration of undergraduate students' accomplishments across the many schools and colleges at UW Madison. The Symposium includes presentations, posters, and displays by groups and individuals representing the arts and humanities, biological sciences, physical sciences, and social sciences. These original works showcase the vast range of talent and creativity within the university's undergraduate population."
-                    }
-                }
-            },
-            {
                 "id": "lubar",
                 "place": "@link{places.lubar}",
                 "date": "2008/08",
@@ -193,8 +181,8 @@
                 "locales": {
                     "en": {
                         "title": "Bachelor of Arts in Languages & Cultures of Asia",
-                        "description": "<ul><li>Developed and improved strategies for identifying, organizing, and processing critical information</li><li>Reviewed and approved official threat advisories and intelligence reports as team Quality Checker</li><li>Rapidly gained proficiency using a specialized suite of tools to perform research and analysis </li><li>Enhanced team synergy and productivity by mentoring peers and proposing time-saving strategies</li><li>Strong communication and interpersonal skills facilitated timely responses to customer requirements</li><li>Participated in professional training courses and conferences, including senior executive shadowing </li><li>Prepared and presented briefings to large groups of colleagues and customers</li><li>Participated in hiring assessment validation to improve processes for vetting new personnel</li></ul>",
-                        "tags": ["SQL", "Python", "Quality Assurance", "Briefing Preparation", "Cross-Functional Collaboration"]
+                        "description": "<ul><li>Emphasis on South Asian studies with coursework in communication, critical thinking, syllogistic and sentential logic, normative ethics, research strategies, and contemporary science issues.</li><li>Participated in 8-week summer intensive language programs equivalent to one full year of study in the target languages (Hindi, Sanskrit).</li><li>Senior thesis on conflict resolution in the context of a 9-month U.S. Government-funded study abroad program in Varanasi, India.</li><li>Graduated magna cum laude (3.8 GPA).</li></ul>",
+                        "tags": ["Critical Thinking", "Communication", "Logic", "Ethics", "Research"]
                     }
                 }
             }

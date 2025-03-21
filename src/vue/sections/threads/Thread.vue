@@ -1,8 +1,8 @@
 <template>
     <!-- Thread -->
-    <ul class="thread">
+    <ul class="thread scroll-container">
         <!-- Item -->
-        <li v-for="item in orderedItems" class="thread-item">
+        <li v-for="item in orderedItems" class="thread-item fade-element thread-fade-element">
 
             <!-- Logo Wrapper -->
             <div v-if="item['date']" class="timeline-item-logo-sm" :class="{'fa fa-stack thread-icon':!(item['place'] && item['place']['logoUrl'])}">
@@ -21,7 +21,10 @@
             <div v-if="item['date']" class="thread-item-content">
                 <!-- Title -->
                 <h6 class="thread-item-title text-5 fw-bold pt-1 mb-1"> {{ item['locales']['title'] }}</h6>
-
+                <h6 class="timeline-item-subtitle text-light-6 text-3">
+                    <i class="me-2 ms-2" :class="item['place']['faIcon'] ? item['place']['faIcon'] : 'fa-solid fa-building'"/>
+                    <span>{{item['place'] ? item['place']['locales']['name'] : ''}}</span>
+                </h6>
                 <!-- Tags -->
                 <Tags :items="_getTagsForItem(item)" class="mt-1 mb-2 mt-lg-2"/>
 
@@ -29,7 +32,7 @@
                 <p v-html="item['locales']['description']" class="thread-item-description text-3 text-normal mb-1 mb-md-2"/>
 
                 <!-- Item -->
-                <div v-if="item['place']['certUrl']" class="gallery-item" @click="showModal(item['id'])">
+                <a v-if="item['place']['certUrl']" class="gallery-item" :href="item['href']" target="_blank">
                     <!-- Logo -->
                     <div class="gallery-thumb-wrapper">
                         <ImageView :src="item['place']['certUrl']"
@@ -45,9 +48,7 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <GalleryModal ref="modal" :modalId="item['id']" />
-                </div>
+                </a>
             </div>
 
             <!-- Logo Wrapper -->
@@ -74,9 +75,6 @@
                             <i class="me-2 ms-2" :class="item['place']['faIcon'] ? item['place']['faIcon'] : 'fa-solid fa-building'"/>
                             <span>{{item['place'] ? item['place']['locales']['name'] : ''}}</span>
                         </h6>
-                    </div>
-
-                    <div class="flex-column-date">
                         <Tags :items="_formatItemDate(item)" class="mt-1 me-1"/>
                     </div>
                 </div>
@@ -88,14 +86,6 @@
                 </div>
             </div>
         </li>
-
-        <!-- Trailing Item -->
-        <li class="thread-item thread-item-end">
-            <!-- Circle -->
-            <span class="fa fa-stack thread-icon thread-icon-small">
-                <i class="fa fa-circle fa-stack-1x"/>
-            </span>
-        </li>
     </ul>
 </template>
 
@@ -105,7 +95,6 @@ import {useUtils} from "../../../composables/utils.js"
 import {useLanguage} from "../../../composables/language.js"
 import Tags from "../../widgets/Tags.vue"
 import ImageView from "../../widgets/ImageView.vue"
-import GalleryModal from "../gallery/GalleryModal.vue"
 
 /**
  * @property {Object[]} items
@@ -118,8 +107,6 @@ const props = defineProps({
 
 const language = useLanguage()
 const utils = useUtils()
-const selectedProject = ref(null)
-const modal = ref(null)
 
 /**
  * @type {ComputedRef<Array>}
@@ -140,10 +127,6 @@ const _getTagsForItem = (item) => {
         {
             faIcon: 'fa fa-calendar-check',
             label: utils.localizeDate(item['date'], language.getSelectedLanguage()['id'])
-        },
-        {
-            faIcon: place['faIcon'] ? place['faIcon'] : 'fa fa-building',
-            label: place['locales'] ? place['locales']['name'] : place
         }
     ]
 }
@@ -162,12 +145,6 @@ const _getTagsForItem = (item) => {
         faIcon: 'fa fa-calendar-check',
         label: from + ' <span class="me-1 ms-1">➔</span> ' + to
     }]
-}
-
-const emit = defineEmits(['open'])
-
-function showModal(id) {
-    document.querySelector('div[modalid='+id+']').display;
 }
 </script>
 
@@ -206,16 +183,6 @@ ul.thread {
     padding: 0;
     list-style: none;
 
-    &:before {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: calc(var(--image-size)/2 - var(--line-width)/2);
-        width: var(--line-width);
-        content: "";
-        background-color: $light-4;
-    }
-
     .thread-item {
         min-height: calc(5rem * var(--scale));
         margin-bottom: calc(2.5rem * var(--scale));
@@ -247,17 +214,6 @@ ul.thread {
         background-color: $light-3;
     }
 
-    .thread-icon-small {
-        left: calc(var(--image-size)/2 - var(--line-width)*3);
-
-        width: calc(var(--scale)* 1.5rem);
-        height: calc(var(--scale)* 1.5rem);
-
-        border: calc(var(--line-width)*1.6) solid $light-3;
-        font-size: calc(0.5rem * var(--scale));
-        color: transparent;
-    }
-    
     .timeline-item {
         position: relative;
         min-height: var(--image-size);
@@ -372,31 +328,6 @@ ul.thread {
         &-content {
             color: $white;
             text-align: center;
-        }
-    }
-
-    .gallery-title {
-        border: none;
-        padding: 0;
-        font-weight: bold;
-        background-color: transparent;
-        color: $dark;
-
-        margin: calc(var(--cert-size)/12) 0 0;
-        font-size: calc(var(--cert-size)/8.2);
-        @include media-breakpoint-down(lg) {
-            margin: calc(var(--cert-size)/12) 0 0;
-            font-size: calc(var(--cert-size)/6.4);
-        }
-    }
-
-    .gallery-category {
-        margin: 0;
-        padding: 0;
-
-        font-size: calc(var(--cert-size)/10.5);
-        @include media-breakpoint-down(lg) {
-            font-size: calc(var(--cert-size)/7.8);
         }
     }
 

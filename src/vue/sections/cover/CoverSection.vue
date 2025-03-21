@@ -1,17 +1,17 @@
 <template>
     <SectionTemplate :section-data="props.sectionData">
-        <!-- Title -->
-        <h1 class="cover-title display-1" v-html="coverTitle"/>
-
-        <!-- Info Items -->
-        <InlineList class="info-list" :items="props.sectionData.content['items']['contactListItems']"/>
-
-        <!-- Description -->
-        <p class="cover-description lead text-normal mb-4 mb-md-5"
-           v-html="props.sectionData.content['locales']['bio']"/>
-
-        <!-- Social Links -->
-        <SocialLinks :items="props.sectionData.content['items']['socialCircles']"/>
+        <!-- Cover Grid -->
+        <div class="row g-4 g-lg-5">
+            <div v-for="subcategory in props.sectionData['content']['subcategories']" class="col-12 thread-container">
+                <!-- Cover Scrollpath -->
+                <svg id="coverSvg">
+                    <path id="coverScrollpath" d="M 0 0 V 0" />
+                    <circle id="coverCursor" cx="0" cy="0" />
+                </svg>
+                <Thread id="coverScrollContainer" :items="props.sectionData['content']['items'][subcategory['id']]"
+                        :link-label="subcategory['locales']['buttonLabel']"/>
+            </div>
+        </div>
     </SectionTemplate>
 </template>
 
@@ -20,11 +20,7 @@ import SectionTemplate from "../_templates/SectionTemplate.vue"
 import {computed} from "vue"
 import {useData} from "../../../composables/data.js"
 import {useNavigation} from "../../../composables/navigation.js"
-import InlineList from "../../widgets/InlineList.vue"
-import SocialLinks from "../../widgets/SocialLinks.vue"
-
-const data = useData()
-const navigation = useNavigation()
+import Thread from "../threads/Thread.vue"
 
 /**
  * @property {Object} sectionData
@@ -32,6 +28,9 @@ const navigation = useNavigation()
 const props = defineProps({
     sectionData: Object
 })
+
+const data = useData()
+const navigation = useNavigation()
 
 /**
  * @type {ComputedRef<String>}
@@ -62,4 +61,48 @@ const coverTitle = computed(() => {
         md: (margin-bottom: 1.2rem)
     ))
 }
+
+.thread-container {
+    @include media-breakpoint-up(xxl) {
+        &:not(:last-child) {
+            padding-right:2.5rem;
+        }
+    }
+    --cert-size:150px;
+    --image-size:100px;
+    --image-border-size:7px;
+    --vertical-spacing:80px;
+    --content-padding-top:1rem;
+    --scale:1;
+    --line-width:calc(var(--scale)*4px);
+}
+
+#coverSvg {
+    margin: 20px 0px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(var(--image-size)/2 - var(--line-width)/2);
+    height: 100%;
+    overflow: visible;
+}
+
+#coverScrollpath {
+    position: fixed;
+    fill: none;
+    height: 100%;
+    stroke-width: var(--line-width);
+    stroke-linecap: round;
+    top: 0;
+    bottom: 0;
+    stroke: $light-4;
+}
+
+#coverCursor {
+    fill: $light-4;
+    stroke: $light-3;
+    stroke-width: calc(var(--line-width)*1.6);
+    r: calc(1rem * var(--scale));
+}
+
 </style>

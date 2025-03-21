@@ -18,8 +18,8 @@ $nav-sidebar-transition: none;
 $nav-tabs-height: 60px;
 
 /** Main Colors **/
-$primary: #5B9BD5;
-$dark: #276DC7;
+$primary: #008080;
+$dark: #C97F2A;
 $light: #fcfcfc;
 $white: white;
 
@@ -28,12 +28,12 @@ $background-color: #f0f3f6;
 
 /** Navigation Colors **/
 $nav-background-color: $dark;
-$nav-item-lighten-color: lighten($primary, 30%);
-$nav-item-lighten-strong-color: lighten($primary, 40%);
-$nav-item-grayed-out-color: #7CAFDD;
+$nav-item-lighten-color: white;
+$nav-item-lighten-strong-color: lighten($primary, 20%);
+$nav-item-grayed-out-color: #495057;
 
 /** Text Colors **/
-$headings-color: $dark;
+$headings-color: black;
 $text-normal: black;
 $text-normal-contrast: white;
 $text-muted: #757575;

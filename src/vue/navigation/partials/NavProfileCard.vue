@@ -81,7 +81,7 @@ const props = defineProps({
 
 .nav-profile-card-subtitle {
     font-family: $custom-subheadings-font-family;
-    color: $light-5;
+    color: black;
 }
 
 .nav-profile-card-shrink {
