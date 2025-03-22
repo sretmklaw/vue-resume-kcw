@@ -195,7 +195,7 @@ export function useLayout() {
     const handleScroll = (fadeElements) => {
         for (var i = 0; i < fadeElements.length; i++) {
             var fadeElement = fadeElements[i];
-            if (i != 1) {
+            if (i > 0) {
                 var elementTop, elementBottom = 0;
                 const viewportHeight = window.innerHeight;
                 if (fadeElement.getBoundingClientRect()) {
@@ -215,34 +215,33 @@ export function useLayout() {
     
     const positionCursor = (threadScrollContainer, scrollpath, cursor) => {
         if (threadScrollContainer && scrollpath && cursor) {
-
+            // Draw vertical scrollpath on screen
             const newVerticalHeight = threadScrollContainer.clientHeight;
             scrollpath.setAttribute("d", "M 0 0 V " + newVerticalHeight);
             scrollpath.setAttribute("stroke-dasharray", newVerticalHeight);
             scrollpath.setAttribute("stroke-dashoffset", newVerticalHeight);
-    
-            const length = scrollpath.getTotalLength();
-            scrollpath.style.strokeDasharray = length;
-            scrollpath.style.strokeDashoffset = length;
-            //FIXME
-            const scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) 
-                / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-            const draw = length * scrollpercent;
-            scrollpath.style.strokeDashoffset = length - draw;
-    
-            const scrollY = window.scrollY || window.pageYOffset;
-            const maxScrollY = document.documentElement.scrollHeight - window.innerHeight;
             const pathLen = scrollpath.getTotalLength();
-            const dist = pathLen * scrollY / maxScrollY;
-            const pos = scrollpath.getPointAtLength(dist);
-            if (dist + 1 <= pathLen) {
-                var posAhead = scrollpath.getPointAtLength(dist + 1);
-                var angle = Math.atan2(posAhead.y - pos.y, posAhead.x - pos.x);
-            } else {
-                var posBehind = scrollpath.getPointAtLength(dist - 1);
-                var angle = Math.atan2(pos.y - posBehind.y, pos.x - posBehind.x);
+            scrollpath.style.strokeDasharray = pathLen;
+            // Calculate distance along scrollpath and hide the overflow
+            const centerPosY = window.innerHeight / 2;
+            const elemTopY = threadScrollContainer.getBoundingClientRect().top*-1;
+            const cursorPosY = elemTopY + centerPosY;
+            const elemHeightY = threadScrollContainer.offsetHeight;
+            const scrollpercent = (cursorPosY / elemHeightY);
+            const dist = pathLen * scrollpercent;
+            scrollpath.style.strokeDashoffset = pathLen - dist;
+            if (dist) {
+                // Draw cursor at the current point along the scrollpath
+                const pos = scrollpath.getPointAtLength(dist);
+                if (dist + 1 <= pathLen) {
+                    var posAhead = scrollpath.getPointAtLength(dist + 1);
+                    var angle = Math.atan2(posAhead.y - pos.y, posAhead.x - pos.x);
+                } else {
+                    var posBehind = scrollpath.getPointAtLength(dist - 1);
+                    var angle = Math.atan2(pos.y - posBehind.y, pos.x - posBehind.x);
+                }
+                cursor.setAttribute("transform", "translate(" + pos.x + "," + pos.y + ") rotate(" + 180 * angle / Math.PI + ")");
             }
-            cursor.setAttribute("transform", "translate(" + pos.x + "," + pos.y + ") rotate(" + 180 * angle / Math.PI + ")");
         }
     }
 

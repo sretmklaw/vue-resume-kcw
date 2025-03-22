@@ -3,12 +3,7 @@
         <!-- Threads Grid -->
         <div class="row g-4 g-lg-5">
             <div v-for="subcategory in props.sectionData['content']['subcategories']" class="col-12 thread-container">
-                <!-- Threads Scrollpath -->
-                <svg id="threadSvg">
-                    <path id="threadScrollpath" d="M 0 0 V 0" />
-                    <circle id="threadCursor" cx="0" cy="0" />
-                </svg>
-                <Thread id="threadScrollContainer" :items="props.sectionData['content']['items'][subcategory['id']]"
+                <Thread :items="props.sectionData['content']['items'][subcategory['id']]"
                         :link-label="subcategory['locales']['buttonLabel']"/>
             </div>
         </div>
@@ -67,34 +62,6 @@ const props = defineProps({
         --content-padding-top:0.6rem;
         --margin-top:1.5rem;
     }
-}
-
-#threadSvg {
-    margin-left: calc((var(--image-size)/2 - var(--line-width)));
-    margin-top: calc(var(--bs-gutter-y) + var(--margin-top));
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    overflow: visible;
-}
-
-#threadScrollpath {
-    position: fixed;
-    fill: none;
-    height: 100%;
-    stroke-width: var(--line-width);
-    stroke-linecap: round;
-    top: 0;
-    bottom: 0;
-    stroke: $light-4;
-}
-
-#threadCursor {
-    fill: $light-4;
-    stroke: $light-3;
-    stroke-width: calc(var(--line-width)*1.6);
-    r: calc(1rem * var(--scale));
 }
 
 </style>
