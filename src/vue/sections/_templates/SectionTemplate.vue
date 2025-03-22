@@ -3,6 +3,11 @@
     <section v-show="isVisible" :id="props.sectionData['id']" :class="classList">
         <!-- Section Container -->
         <div class="section-container" v-if="props.sectionData.content">
+            <h1 class="section-title mb-1 mb-lg-2 fw-bold text-uppercase" v-html="sectionTitle"/>
+            <!-- Description -->
+            <p v-if="props.sectionData.content['locales']['description']" class="lead text-muted">
+                {{props.sectionData.content['locales']['description']}}
+            </p>
             <!-- Section Content -->
             <div class="section-content">
                 <slot/>

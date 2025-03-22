@@ -8,8 +8,14 @@
                     <path id="coverScrollpath" d="M 0 0 V 0" />
                     <circle id="coverCursor" cx="0" cy="0" />
                 </svg>
-                <Thread id="coverScrollContainer" :items="props.sectionData['content']['items'][subcategory['id']]"
-                        :link-label="subcategory['locales']['buttonLabel']"/>
+                <!-- Timeline 
+                <ul id="coverScrollContainer" class="thread scroll-container">
+                     Item 
+                    <li v-for="(item, index) in orderedItems" class="thread-item fade-element cover-fade-element" :class="{ 'visible' : index === 0 }">
+                        <Thread :items="props.sectionData['content']['items'][subcategory['id']]"
+                                :link-label="subcategory['locales']['buttonLabel']"/>
+                    </li>
+                </ul>-->
             </div>
         </div>
     </SectionTemplate>
@@ -78,11 +84,11 @@ const coverTitle = computed(() => {
 }
 
 #coverSvg {
-    margin: 20px 0px;
+    margin-left: calc((var(--image-size)/2 - var(--line-width)));
+    margin-top: calc(var(--bs-gutter-y) + var(--margin-top));
     position: absolute;
     top: 0;
     bottom: 0;
-    left: calc(var(--image-size)/2 - var(--line-width)/2);
     height: 100%;
     overflow: visible;
 }
@@ -98,7 +104,7 @@ const coverTitle = computed(() => {
     stroke: $light-4;
 }
 
-#coverCursor {
+#coverdCursor {
     fill: $light-4;
     stroke: $light-3;
     stroke-width: calc(var(--line-width)*1.6);

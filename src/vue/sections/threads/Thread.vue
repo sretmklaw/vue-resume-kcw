@@ -1,17 +1,16 @@
 <template>
-    <!-- Thread -->
+    <!-- Timeline -->
     <ul class="thread scroll-container">
+        
         <!-- Item -->
-        <li v-for="item in orderedItems" class="thread-item fade-element thread-fade-element">
+        <li v-for="(item, index) in orderedItems" class="thread-item fade-element thread-fade-element" :class="{ 'visible' : index === 0 }">
 
-            <!-- Logo Wrapper -->
+            <!-- Logo Wrapper for Large Icons -->
             <div v-if="item['date']" class="timeline-item-logo-sm" :class="{'fa fa-stack thread-icon':!(item['place'] && item['place']['logoUrl'])}">
-                <!-- If item has an image... -->
                 <img v-if="item['place'] && item['place']['logoUrl']"
                             :src="item['place']['logoUrl']"
                             :alt="item['place']['logoImg']"
                             class="timeline-item-img img-fluid rounded-circle"/>
-
                 <!-- Fallback, use font awesome icon... -->
                 <i v-else  class="timeline-item-fa-icon"
                             :class="item['place']['faIcon'] ? item['place']['faIcon'] : 'fa-solid fa-clock'"/>
@@ -51,14 +50,12 @@
                 </a>
             </div>
 
-            <!-- Logo Wrapper -->
+            <!-- Logo Wrapper for Small Icons -->
             <div v-if="item['period']" class="timeline-item-logo" :class="{'timeline-item-logo-bg-primary':!(item['place'] && item['place']['logoUrl'])}">
-                <!-- If item has an image... -->
                 <img v-if="item['place'] && item['place']['logoUrl']"
                             :src="item['place']['logoUrl']"
                             :alt="item['place']['logoImg']"
                             class="timeline-item-img img-fluid rounded-circle"/>
-
                 <!-- Fallback, use font awesome icon... -->
                 <i v-else  class="timeline-item-fa-icon"
                             :class="item['place']['faIcon'] ? item['place']['faIcon'] : 'fa-solid fa-clock'"/>
@@ -159,8 +156,6 @@ ul.thread {
     --content-padding-top:1rem;
     --scale:1;
     --line-width:calc(var(--scale)*4px);
-    @include media-breakpoint-down(md) {--scale:0.9;}
-    @include media-breakpoint-down(sm) {--scale:0.8;}
 
     position: relative;
     padding: 0;
@@ -168,20 +163,18 @@ ul.thread {
     margin-left: calc(var(--scale)*-5px);
 
     @include media-breakpoint-down(md) {
+        --scale:0.9;
         --image-size:75px;
         --vertical-spacing:60px;
     }
 
     @include media-breakpoint-down(sm) {
+        --scale:0.8;
         --image-size:50px;
         --image-border-size:5px;
         --vertical-spacing:40px;
         --content-padding-top:0.6rem;
     }
-
-    position: relative;
-    padding: 0;
-    list-style: none;
 
     .thread-item {
         min-height: calc(5rem * var(--scale));

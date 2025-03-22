@@ -31,26 +31,50 @@ const props = defineProps({
 @import "/src/scss/_theming.scss";
 
 .thread-container {
-    @include media-breakpoint-up(xxl) {
-        &:not(:last-child) {
-            padding-right:2.5rem;
-        }
-    }
+
     --cert-size:150px;
     --image-size:100px;
     --image-border-size:7px;
     --vertical-spacing:80px;
     --content-padding-top:1rem;
+    --margin-top:2rem;
     --scale:1;
     --line-width:calc(var(--scale)*4px);
+
+    @include media-breakpoint-up(xxxl) {
+        --margin-top:clamp(5rem, 5vw, 10rem);
+    }
+
+    @include media-breakpoint-up(xxl) {
+        &:not(:last-child) {
+            padding-right:2.5rem;
+        }
+        --margin-top:4rem;
+    }
+    
+    @include media-breakpoint-down(md) {
+        --scale:0.9;
+        --image-size:75px;
+        --vertical-spacing:60px;
+        --margin-top:1.5rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        --scale:0.8;
+        --image-size:50px;
+        --image-border-size:5px;
+        --vertical-spacing:40px;
+        --content-padding-top:0.6rem;
+        --margin-top:1.5rem;
+    }
 }
 
 #threadSvg {
-    margin: 20px 0px;
+    margin-left: calc((var(--image-size)/2 - var(--line-width)));
+    margin-top: calc(var(--bs-gutter-y) + var(--margin-top));
     position: absolute;
     top: 0;
     bottom: 0;
-    left: calc(var(--image-size)/2 - var(--line-width)/2);
     height: 100%;
     overflow: visible;
 }

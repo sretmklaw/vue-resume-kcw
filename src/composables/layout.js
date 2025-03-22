@@ -193,17 +193,22 @@ export function useLayout() {
     }
 
     const handleScroll = (fadeElements) => {
-        for (const fadeElement of fadeElements) {
-            var elementTop, elementBottom = 0;
-            const viewportHeight = window.innerHeight;
-            if (fadeElement.getBoundingClientRect()) {
-                elementTop = fadeElement.getBoundingClientRect().top;
-                elementBottom = fadeElement.getBoundingClientRect().bottom;
-            }
-            if (elementTop < viewportHeight/2 && elementBottom > 0) {
+        for (var i = 0; i < fadeElements.length; i++) {
+            var fadeElement = fadeElements[i];
+            if (i != 1) {
+                var elementTop, elementBottom = 0;
+                const viewportHeight = window.innerHeight;
+                if (fadeElement.getBoundingClientRect()) {
+                    elementTop = fadeElement.getBoundingClientRect().top;
+                    elementBottom = fadeElement.getBoundingClientRect().bottom;
+                }
+                if (elementTop < viewportHeight/2 && elementBottom > 0) {
+                    fadeElement.classList.add("visible");
+                } else if (elementBottom > viewportHeight/2) {
+                    fadeElement.classList.remove("visible");
+                }
+            } else {
                 fadeElement.classList.add("visible");
-            } else if (elementBottom > viewportHeight/2) {
-                fadeElement.classList.remove("visible");
             }
         }
     }

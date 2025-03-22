@@ -161,15 +161,21 @@ const _navigateToCategory = (categoryId) => {
 }
 
 const _handleScroll = () => {
+    const coverFadeElements = document.getElementsByClassName('cover-fade-element');
+    layout.handleScroll(coverFadeElements);
     const threadFadeElements = document.getElementsByClassName('thread-fade-element');
     layout.handleScroll(threadFadeElements);
 }
 
 const _positionCursor = () => {
-    const threadScrollContainer = document.getElementById("threadScrollContainer");
-    const scrollpath = document.getElementById("threadScrollpath");
-    const cursor = document.getElementById("threadCursor");
-    layout.positionCursor(threadScrollContainer, scrollpath, cursor);
+    const coverScrollContainer = document.getElementById("coverScrollContainer");
+    const coverScrollpath = document.getElementById("coverScrollpath");
+    const coverCursor = document.getElementById("coverCursor");
+    layout.positionCursor(coverScrollContainer, coverScrollpath, coverCursor);
+    const timelineScrollContainer = document.getElementById("threadScrollContainer");
+    const timelineScrollpath = document.getElementById("threadScrollpath");
+    const timelineCursor = document.getElementById("threadCursor");
+    layout.positionCursor(timelineScrollContainer, timelineScrollpath, timelineCursor);
 }
 
 defineExpose({
