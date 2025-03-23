@@ -1,9 +1,7 @@
 {
     "about": "About",
-    "aboutProject": "About Project",
     "address": "Address",
     "advanced": "Advanced",
-    "all": "All",
     "background": "Background",
     "beginner": "Beginner",
     "contact": "Contact",
@@ -22,7 +20,6 @@
     "name": "Name",
     "native": "Native",
     "phone": "Phone",
-    "portfolio": "Portfolio",
     "rookie": "Rookie",
     "sendMessage": "Send Message",
     "sendingMessage": "Sending",

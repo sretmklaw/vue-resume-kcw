@@ -1,0 +1,106 @@
+{
+    "title": "Interests",
+    "description": "Here are a few of my favorite things",
+
+    "subcategories": [
+        {
+            "id": "lego",
+            "title": "Lego Designs"
+        },
+        {
+            "id": "books",
+            "title": "Best Reads"
+        }
+    ],
+
+    "items": {
+
+        "lego": [
+            {
+                "id": "khajuraho",
+                "title": "Hindu Temple - Kandariya Mahadev",
+                "subtitle": "Khajuraho, India",
+                "logoUrl": "images/interests/lego-khajuraho.png",
+                "links": [
+                    {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/", "id": "Rebrickable.com"}
+                ],
+                "description": "Kandariya Mahadeva, meaning 'Great God of the Cave', is a Hindu temple at Khajuraho in Madhya Pradesh, India. Famous for its ornate statutary, it is considered one of the best intact examples of royal temples from the medieval period. The temple was listed as a UNESCO World Heritage site in 1986. 4237 total pieces.",
+                "tags": ["temple", "india", "hindu"]
+            },
+
+            {
+                "id": "ayasofya",
+                "title": "Turkish Mosque - Aya Sofya",
+                "subtitle": "Istanbul, Turkiye",
+                "logoUrl": "images/interests/lego-ayasofya.png",
+                "links": [
+                    {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/", "id": "Rebrickable.com"}
+                ],
+                "description": "Aya Sofya, originally known by the Greek name 'Hagia Sophia' or 'Holy Wisdom', was built as a cathedral under the Eastern Roman Emperor Justinian I in the 6th Century A.D. At the time of its completion, it was the world's largest interior space topped by the world's largest dome. After Istanbul's conquest by the Turkish Sultan Mehmed II in 1453, it was converted into a mosque. It was listed as a UNESCO World Heritage site in 1985. 2260 total pieces.",
+                "tags": ["mosque", "turkiye", "istanbul"]
+            },
+
+            {
+                "id": "kizhipogost",
+                "title": "Orthodox Church - Kizhi Pogost",
+                "subtitle": "Lake Ladoga, Russia",
+                "logoUrl": "images/interests/lego-kizhipogost.png",
+                "links": [
+                    {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/", "id": "Rebrickable.com"}
+                ],
+                "description": "Kizhi Pogost is a historical wooden church located on Lake Onega in northern Russia dating from the 17th century. With twenty-two domes, the Transfiguration Church is the largest wooden structure in the world build without structural nails. It was listed as a UNESCO World Heritage site in 1990. 3166 total pieces.",
+                "tags": ["church", "russia", "orthodox"]
+            }
+        ],
+
+        "books": [
+            {
+                "id": "arabiannights",
+                "title": "The Arabian Nights",
+                "subtitle": "Sir Richard Burton",
+                "logoUrl": "images/interests/book-burton.png",
+                "links": [
+                    {"faIcon": "fa-solid fa-book", "href": "https://books.google.com/books/about/The_Arabian_Nights.html?id=whnqswEACAAJ", "id": "Google Books"}
+                ],
+                "description": "The Arabian Nights is your magic carpet ride to exotic lands full of wonders and marvels. First collected nearly a thousand years ago, these folktales are presented as stories that crafty Scheherazade tells her husband, King Shahryar, over a thousand-and-one consecutive nights, to pique his interest for the next evening's entertainment and thereby save her life. Among them are some of the best-known legends of eastern storytelling, including the Sinbad the Sailor, Aladdin and His Magic Lamp, and Ali Baba and the Forty Thieves.",
+                "tags": ["fables", "ancient", "arabia"]
+            },
+
+            {
+                "id": "empireofsteppes",
+                "title": "The Empire of the Steppes",
+                "subtitle": "Rene Grousset",
+                "logoUrl": "images/interests/book-grousset.png",
+                "links": [
+                    {"faIcon": "fa-solid fa-book", "href": "https://books.google.com/books/about/The_Empire_of_the_Steppes.html?id=CHzGvqRbV_IC", "id": "Google Books"}
+                ],
+                "description": "While the early history of the steppe nomads is shrouded in obscurity, this obscurity lifts somewhat after their contact with cultures possessing written histories. But even when information about them becomes relatively more plentiful, linguistic ocmplexities make its interpretation extremely difficult. Thus, while the number of specialized studies devoted to them is impressive, general works embracing the many disciplines involved, or syntheses on a grand scale encompassing the sprawling history of these peoples, are exceedingly scarce. Among these very few, The Empire of the Steppes is outstanding. The aim of this first English-language edition has been to make available a major work useful to the general reader as well as to the specialist, above all an edition which retains the majestic sweep and grandeur, as well as the overriding intellectual grasp, of Grousset's original.",
+                "tags": ["history", "nomads", "mongolia"]
+            },
+
+            {
+                "id": "benares",
+                "title": "Benares: The Sacred Landscape of Varanasi",
+                "subtitle": "Neils Gutschow",
+                "logoUrl": "images/interests/book-gutschow.png",
+                "links": [
+                    {"faIcon": "fa-solid fa-book", "href": "https://books.google.com/books/about/Benares.html?id=sBttQgAACAAJ", "id": "Google Books"}
+                ],
+                "description": "The book gives a comprehensive view of the complex world of India's sacred place par excellence, also known as Benares. Beyond a scholarly presentation of pilgrimages and documentation of their routes the book opens a new view: visually compelling photographs focus on sacred objects.",
+                "tags": ["architecture", "hindu", "india"]
+            },
+
+            {
+                "id": "ilmilione",
+                "title": "The Travels of Marco Polo",
+                "subtitle": "Marco Polo",
+                "logoUrl": "images/interests/book-polo.png",
+                "links": [
+                    {"faIcon": "fa-solid fa-book", "href": "https://books.google.com/books/about/The_Travels_of_Marco_Polo.html?id=nHgUswEACAAJ", "id": "Google Books"}
+                ],
+                "description": "Marco Polo almost single-handedly introduced fourteenth-century Europe to the civilizations of Central Asia and China. Now this stunningly illustrated volume, edited by renowned historian Morris Rossabi, offers the complete text of Polo's travelogue in the respected Yule-Cordier translation, enhanced with more than 200 images - including illuminated manuscripts, paintings, photographs, and maps. Sidebars and dozens of informative footnotes combine to present Polo and his travels in a captivating new light.",
+                "tags": ["travelogue", "medieval", "asia"]
+            }
+        ]
+    }
+}

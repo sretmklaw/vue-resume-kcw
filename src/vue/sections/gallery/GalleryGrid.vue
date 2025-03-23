@@ -3,7 +3,7 @@
         <!-- Grid Column -->
         <div v-for="item in props.items"
              v-show="item.visible"
-             class="gallery-grid-col col-4 col-xl-3 text-center"
+             class="gallery-grid-col col-6 col-xl-4 text-center"
              :class="{'gallery-grid-col-appear': item.visible && !isAnimating}">
 
             <!-- Item -->
@@ -24,7 +24,7 @@
                 <!-- Project Info -->
                 <div class="gallery-description-wrapper">
                     <button class="gallery-title">{{ item.data['title'] }}</button>
-                    <p class="gallery-category text-muted">{{ item.subcategory['title'] }}</p>
+                    <p class="gallery-category text-muted">{{ item.data['subtitle'] }}</p>
                 </div>
             </div>
         </div>
@@ -83,18 +83,18 @@ watch(() => props.selectedCategoryId, () => {
 @import "/src/scss/_theming.scss";
 
 .gallery-grid {
-    --logo-size: min(clamp(140px, 20vh, 170px), clamp(80px, 10.5vw, 170px));
+    --logo-size: min(clamp(280px, 40vh, 340px), clamp(160px, 21vw, 340px));
     @include media-breakpoint-down(lg) {
-        --logo-size: min(clamp(80px, 20vh, 110px), clamp(75px, 17.5vw, 110px));
+        --logo-size: min(clamp(160px, 40vh, 220px), clamp(150px, 34vw, 220px));
     }
 
-    min-height: calc(var(--logo-size) * 3.8);
+    min-height: calc(var(--logo-size) * 2);
 
     .gallery-item {
         display: inline-flex;
         flex-direction: column;
         position: relative;
-        margin-top: calc(var(--logo-size)/2.5);
+        margin-top: calc(var(--logo-size)/10);
     }
 
     .gallery-thumb-wrapper {
@@ -139,10 +139,10 @@ watch(() => props.selectedCategoryId, () => {
         color: $dark;
 
         margin: calc(var(--logo-size)/12) 0 0;
-        font-size: calc(var(--logo-size)/8.2);
+        font-size: calc(var(--logo-size)/14);
         @include media-breakpoint-down(lg) {
             margin: calc(var(--logo-size)/12) 0 0;
-            font-size: calc(var(--logo-size)/6.4);
+            font-size: calc(var(--logo-size)/10);
         }
     }
 
@@ -150,9 +150,9 @@ watch(() => props.selectedCategoryId, () => {
         margin: 0;
         padding: 0;
 
-        font-size: calc(var(--logo-size)/10.5);
+        font-size: calc(var(--logo-size)/18);
         @include media-breakpoint-down(lg) {
-            font-size: calc(var(--logo-size)/7.8);
+            font-size: calc(var(--logo-size)/12);
         }
     }
 

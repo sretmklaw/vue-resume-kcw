@@ -43,6 +43,14 @@
         },
         
         {
+            "id": "interests",
+            "categoryId": "more",
+            "component": "GallerySection",
+            "jsonPath": "data/sections/interests.json",
+            "faIcon": "fa-solid fa-tools"
+        },
+        
+        {
             "id": "contact",
             "categoryId": "more",
             "component": "ContactSection",

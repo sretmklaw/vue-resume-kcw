@@ -1,6 +1,6 @@
 <template>
     <!-- Bootstrap Modal -->
-    <div class="modal modal-xl fade" :id="UNIQUE_ID" tabindex="-1" :aria-labelledby="`${UNIQUE_ID}-label`" aria-hidden="true">
+    <div class="modal modal-xl fade" :id="UNIQUE_ID" tabindex="-1" :aria-labelledby="`${UNIQUE_ID}-label`">
         <div class="modal-dialog modal-dialog-centered">
             <!-- Modal Content -->
             <div class="modal-content">
@@ -38,7 +38,7 @@
                                 <!-- Title -->
                                 <h5 class="d-none d-lg-inline-block fw-bold">
                                     <i class="fa fa-file me-2"/>
-                                    <span class="ms-1">{{ data.getString('aboutProject') }}</span>
+                                    <span class="ms-1">{{ data.getString('about') }}</span>
                                 </h5>
 
                                 <!-- Content -->

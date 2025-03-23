@@ -43,10 +43,7 @@ const modal = ref(null)
  * @type {ComputedRef<Array>}
  */
 const tabItems = computed(() => {
-    const items = [{
-        id: 'all',
-        label: data.getString('all')
-    }]
+    const items = []
 
     const subcategories = props.sectionData['content']['subcategories']
     for(let i in subcategories) {
@@ -75,7 +72,7 @@ const filteredResults = computed(() => {
         const subcategoryItems = itemsByCategory[subcategoryId]
 
         for (const itemData of subcategoryItems) {
-            const isVisible = !selectedCategoryIdValue || selectedCategoryIdValue === 'all' || selectedCategoryIdValue === subcategoryId
+            const isVisible = !selectedCategoryIdValue || selectedCategoryIdValue === subcategoryId
 
             filteredItems.push({
                 data: itemData,
