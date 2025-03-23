@@ -20,21 +20,15 @@
 
         <!-- Footer -->
         <div class="nav-sidebar-footer" v-if="profileData">
-            <!-- Language Picker -->
-            <LanguagePicker :display-language-label="navigation.isSidebarExpanded()"
-                            class="language-picker"
-                            :class="navigation.isSidebarExpanded() ? '' : 'mb-3'"/>
-
             <!-- Credits -->
             <div class="nav-sidebar-footer-credits text-2 mt-2 pt-1 mb-2 mb-xxl-3">
-                <span v-html="profileData['locales']['credits']"/>
+                <span v-html="profileData['credits']"/>
             </div>
         </div>
     </nav>
 </template>
 
 <script setup>
-import LanguagePicker from "../../widgets/LanguagePicker.vue"
 import NavProfileCard from "../partials/NavProfileCard.vue"
 import {computed, onMounted} from "vue"
 import {useData} from "/src/composables/data.js"
@@ -226,10 +220,6 @@ li.nav-item {
     @media screen and (max-height: 620px) {
         ul.nav-links {
             margin-bottom: 0.5rem!important;
-        }
-
-        .language-picker {
-            display: none;
         }
 
         .nav-sidebar-footer {

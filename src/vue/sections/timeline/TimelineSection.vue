@@ -23,10 +23,10 @@
                     <div class="timeline-item-content-header">
                         <!-- Title + Institution Flex Column -->
                         <div class="flex-column-title">
-                            <h4 class="timeline-item-title fw-bold" v-html="item['locales']['title']"/>
+                            <h4 class="timeline-item-title fw-bold" v-html="item['title']"/>
                             <h6 class="timeline-item-subtitle text-light-6 text-3">
                                 <i class="fa-solid fa-building me-2 ms-2"/>
-                                <span>{{item['place'] ? item['place']['locales']['name'] : ''}}</span>
+                                <span>{{item['place'] ? item['place']['name'] : ''}}</span>
                             </h6>
                         </div>
 
@@ -37,8 +37,8 @@
 
                     <!-- Item Body -->
                     <div class="timeline-item-content-body mt-3">
-                        <p class="text-3 text-normal mb-2 mb-md-3 mb-lg-4" v-html="item['locales']['description']"/>
-                        <Tags :item-class="'bg-primary'" :items="item['locales']['tags']"/>
+                        <p class="text-3 text-normal mb-2 mb-md-3 mb-lg-4" v-html="item['description']"/>
+                        <Tags :item-class="'bg-primary'" :items="item['tags']"/>
                     </div>
                 </div>
             </li>
@@ -55,13 +55,11 @@
 import SectionTemplate from "../_templates/SectionTemplate.vue"
 import {computed} from "vue"
 import {useData} from "../../../composables/data.js"
-import {useLanguage} from "../../../composables/language.js"
 import {useUtils} from "../../../composables/utils.js"
 import ImageView from "../../widgets/ImageView.vue"
 import Tags from "../../widgets/Tags.vue"
 
 const data = useData()
-const language = useLanguage()
 const utils = useUtils()
 
 /**
@@ -85,8 +83,8 @@ const orderedItems = computed(() => {
  */
 const _formatItemDate = (item) => {
     const period = item['period']
-    const from = utils.localizeDate(period[0], language.getSelectedLanguage()['id'])
-    const to = utils.localizeDate(period[1], language.getSelectedLanguage()['id'])
+    const from = utils.izeDate(period[0])
+    const to = utils.localizeDate(period[1])
 
     return [{
         faIcon: 'fa fa-calendar-check',

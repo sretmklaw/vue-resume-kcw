@@ -1,10 +1,5 @@
 <template>
     <div class="nav-header">
-        <!-- Language Picker -->
-        <div class="language-picker-container">
-            <LanguagePicker />
-        </div>
-
         <!-- Main Content -->
         <div class="nav-header-container">
             <!-- Profile Card -->
@@ -24,18 +19,15 @@
 
 <script setup>
 import {computed, onMounted, onUnmounted, watch} from "vue"
-import LanguagePicker from "../../widgets/LanguagePicker.vue"
 import NavProfileCard from "../partials/NavProfileCard.vue"
 import {useData} from "../../../composables/data.js"
 import {useLayout} from "../../../composables/layout.js"
 import {useNavigation} from "../../../composables/navigation.js"
-import {useUtils} from "../../../composables/utils.js"
 import NavPills from "./NavPills.vue"
 
 const data = useData()
 const layout = useLayout()
 const navigation = useNavigation()
-const utils = useUtils()
 
 const emit = defineEmits(['linkClicked'])
 
@@ -109,15 +101,6 @@ const _onLinkClicked = (section) => {
 
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
-
-.language-picker-container {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    width: 100%;
-    padding: 0.5rem;
-    z-index: 99;
-}
 
 .nav-pills {
     display: flex;

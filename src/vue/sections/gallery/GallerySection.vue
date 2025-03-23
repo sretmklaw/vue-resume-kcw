@@ -54,7 +54,7 @@ const tabItems = computed(() => {
 
         items.push({
             id: subcategory['id'],
-            label: subcategory['locales']['title']
+            label: subcategory['title']
         })
     }
 

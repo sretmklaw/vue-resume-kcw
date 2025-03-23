@@ -1,10 +1,8 @@
 import {reactive} from "vue"
 import {useUtils} from "./utils.js"
-import {useLanguage} from "./language.js"
 import {useConstants} from "./constants.js"
 
 const constants = useConstants()
-const language = useLanguage()
 const utils = useUtils()
 
 /**
@@ -20,25 +18,12 @@ let _jsonData = reactive({
     strings: null
 })
 
-/**
- * @type {Object}
- * @private
- */
 let _progressData = reactive({
     loadedFiles: 0,
     totalFiles: 5
 })
 
-/**
- * @type {{language:String, entries:Object}}
- * @private
- */
-let _localizedData = reactive({language: null, entries:null})
-
-/**
- * @type {Object}
- * @private
- */
+let _localizedData = reactive({id:null, entries:null})
 let _localizationsCache = {}
 
 export function useData() {
@@ -75,8 +60,8 @@ export function useData() {
         Object.values(_jsonData).forEach(_evaluateObject)
 
         _localizationsCache = {}
-        _localizedData.language = null
         _localizedData.entries = null
+
     }
 
     /**
@@ -124,7 +109,7 @@ export function useData() {
      */
     const getString = (string) => {
         _updateLocalization()
-        return _localizedData.entries.strings['locales'][string]
+        return _localizedData.entries.strings[string]
     }
 
     /**
@@ -269,39 +254,27 @@ export function useData() {
         return resolvedObject
     }
 
-    /**
-     * @private
-     */
     const _updateLocalization = () => {
-        const currentLanguageId = language.getSelectedLanguage()['id']
-        if(!_localizationsCache[currentLanguageId]) {
-            _localizationsCache[currentLanguageId] = _cacheLocalization(_jsonData, currentLanguageId)
+        if(!_localizationsCache[0]) {
+            _localizationsCache[0] = _cacheLocalization(_jsonData, 0)
         }
-
-        _localizedData.language = currentLanguageId
-        _localizedData.entries = _localizationsCache[currentLanguageId]
+        _localizedData.entries = _localizationsCache[0]
     }
 
-    /**
-     * @param {Object} object
-     * @param {String} languageId
-     * @private
-     */
-    const _cacheLocalization = (object, languageId) => {
+    const _cacheLocalization = (object, id) => {
         const localizedFields = {}
-
         if(typeof object === 'string' || typeof object === 'number' || typeof object === 'boolean')
             return object
 
         for(const [key, value] of Object.entries(object)) {
             if(Array.isArray(value)) {
-                localizedFields[key] = value.map(valueItem => _cacheLocalization(valueItem, languageId))
+                localizedFields[key] = value.map(valueItem => _cacheLocalization(valueItem, id))
             }
             else if(key.includes('locales')) {
-                localizedFields[key] = _getLocalizedEntries(value, languageId)
+                localizedFields[key] = _getLocalizedEntries(value, id)
             }
             else if(value !== null && value !== undefined) {
-                localizedFields[key] = _cacheLocalization(value, languageId)
+                localizedFields[key] = _cacheLocalization(value, id)
             }
             else {
                 localizedFields[key] = value
@@ -316,18 +289,16 @@ export function useData() {
      * @param {String} languageId
      * @private
      */
-    const _getLocalizedEntries = (localesHash, languageId) => {
+    const _getLocalizedEntries = (localesHash, id) => {
         const localizedEntries = {}
-        const defaultLanguageId = language.getDefaultLanguage()['id']
 
-        for(let string in localesHash[defaultLanguageId]) {
-            let translation = localesHash[languageId]?.[string]
+        for(let string in localesHash[id]) {
+            let translation = localesHash[id]?.[string]
             if(!translation)
-                translation = localesHash[defaultLanguageId][string]
+                translation = localesHash[id][string]
 
             localizedEntries[string] = translation
         }
-
         return localizedEntries
     }
 

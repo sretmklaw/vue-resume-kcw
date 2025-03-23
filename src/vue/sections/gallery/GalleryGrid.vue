@@ -11,7 +11,7 @@
                 <!-- Logo -->
                 <div class="gallery-thumb-wrapper">
                     <ImageView :src="item.data['logoUrl']"
-                               :alt="item.data['locales']['name']"
+                               :alt="item.data['name']"
                                class="gallery-thumb"/>
 
                     <div class="gallery-thumb-overlay">
@@ -24,7 +24,7 @@
                 <!-- Project Info -->
                 <div class="gallery-description-wrapper">
                     <button class="gallery-title">{{ item.data['title'] }}</button>
-                    <p class="gallery-category text-muted">{{ item.subcategory['locales']['title'] }}</p>
+                    <p class="gallery-category text-muted">{{ item.subcategory['title'] }}</p>
                 </div>
             </div>
         </div>

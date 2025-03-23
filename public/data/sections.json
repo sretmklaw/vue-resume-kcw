@@ -27,10 +27,10 @@
         },
 
         {
-            "id": "timeline",
+            "id": "experience",
             "categoryId": "background",
             "component": "ThreadsSection",
-            "jsonPath": "data/sections/timeline.json",
+            "jsonPath": "data/sections/experience.json",
             "faIcon": "fa-solid fa-award"
         },
 

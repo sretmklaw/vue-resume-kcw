@@ -27,7 +27,7 @@
         },
 
         {
-            "id": "timeline",
+            "id": "experience",
             "categoryId": "background",
             "component": "ThreadsSection",
             "jsonPath": "data/sections/timeline.json",

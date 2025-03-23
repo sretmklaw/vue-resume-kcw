@@ -27,7 +27,6 @@
 
 <script setup>
 import {useData} from "../../composables/data.js"
-import {useLanguage} from "../../composables/language.js"
 import {useNavigation} from "../../composables/navigation.js"
 import {useRoute, useRouter} from "vue-router"
 import {onMounted, onUnmounted, watch} from "vue"
@@ -42,7 +41,6 @@ import NavToggleButton from "/src/vue/navigation/partials/NavToggleButton.vue"
 const data = useData()
 const navigation = useNavigation()
 const layout = useLayout()
-const language = useLanguage()
 const route = useRoute()
 const router = useRouter()
 const utils = useUtils()
@@ -54,7 +52,6 @@ onMounted(() => {
     window.addEventListener('resize', _onWindowChangeEvent)
     window.addEventListener('scroll', _onWindowChangeEvent)
     watch(() => route.name, () => { _onWindowChangeEvent() })
-    watch(() => language.getSelectedLanguage(), () => { _onLanguageChanged() })
     _onWindowChangeEvent()
 })
 
@@ -97,18 +94,6 @@ const _onWindowChangeEvent = () => {
     }
     _handleScroll()
     _positionCursor()
-}
-
-/**
- * Triggered whenever the user selects a new language.
- * @private
- */
-const _onLanguageChanged = () => {
-    const activeSectionId = navigation.getActiveSectionId()
-    if(navigation.isAllAtOnceMode()) {
-        layout.instantScrollTo(window.scrollY - 100, true)
-        layout.smoothScrollToElement(activeSectionId, true)
-    }
 }
 
 /**
@@ -161,21 +146,25 @@ const _navigateToCategory = (categoryId) => {
 }
 
 const _handleScroll = () => {
+    
     const coverFadeElements = document.getElementsByClassName('cover-fade-element');
     layout.handleScroll(coverFadeElements);
+
     const threadFadeElements = document.getElementsByClassName('thread-fade-element');
     layout.handleScroll(threadFadeElements);
 }
 
 const _positionCursor = () => {
+
     const coverScrollContainer = document.getElementById("coverScrollContainer");
     const coverScrollpath = document.getElementById("coverScrollpath");
     const coverCursor = document.getElementById("coverCursor");
     layout.positionCursor(coverScrollContainer, coverScrollpath, coverCursor);
-    const timelineScrollContainer = document.getElementById("threadScrollContainer");
-    const timelineScrollpath = document.getElementById("threadScrollpath");
-    const timelineCursor = document.getElementById("threadCursor");
-    layout.positionCursor(timelineScrollContainer, timelineScrollpath, timelineCursor);
+
+    const expScrollContainer = document.getElementById("threadScrollContainer");
+    const expScrollpath = document.getElementById("threadScrollpath");
+    const expCursor = document.getElementById("threadCursor");
+    layout.positionCursor(expScrollContainer, expScrollpath, expCursor);
 }
 
 defineExpose({

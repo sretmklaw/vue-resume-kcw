@@ -1,13 +1,8 @@
 {
     "name": "Kendric Walters",
     "profilePictureUrl": "images/pictures/avatar.png",
-
-    "locales": {
-        "en": {
-            "credits": "Portions pertaining to U.S. Dept. of Defense approved for public release by Prepublication Review Services (Case No. RES-2017-01392)",
-            "role": "Versatile IT Professional"
-        }
-    },
+    "credits": "Portions pertaining to U.S. Dept. of Defense approved for public release by Prepublication Review Services (Case No. RES-2017-01392)",
+    "role": "Versatile IT Professional",
 
     "contact": {
         "address": {

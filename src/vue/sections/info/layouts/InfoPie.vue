@@ -67,7 +67,7 @@ const chartData = computed(() => {
     }
 
     const totalPercentage = props.items.reduce((total, item) => {
-        const title = item['locales']['title']
+        const title = item['title']
         const value = item['value']
 
         chartData.labels.push(title)

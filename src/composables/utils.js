@@ -55,17 +55,13 @@ export function useUtils() {
 
     /**
      * @param {String} stringDate
-     * @param {String} languageId
      * @return {String}
      */
-    const localizeDate = (stringDate, languageId) => {
+    const localizeDate = (stringDate) => {
         const date = stringDate === 'now' ? new Date() : parseDate(stringDate)
         const options = { year: 'numeric', month: 'short'}
 
-        const localizedDate =  date.toLocaleString(
-            languageId || 'en',
-            options
-        )
+        const localizedDate =  date.toLocaleString('en',options)
 
         return localizedDate.charAt(0).toUpperCase() + localizedDate.slice(1)
     }

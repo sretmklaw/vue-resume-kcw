@@ -13,7 +13,7 @@
                      Item 
                     <li v-for="(item, index) in orderedItems" class="thread-item fade-element cover-fade-element" :class="{ 'visible' : index === 0 }">
                         <Thread :items="props.sectionData['content']['items'][subcategory['id']]"
-                                :link-label="subcategory['locales']['buttonLabel']"/>
+                                :link-label="subcategory['buttonLabel']"/>
                     </li>
                 </ul>-->
             </div>
@@ -43,10 +43,10 @@ const navigation = useNavigation()
  */
 const coverTitle = computed(() => {
     if(navigation.isAllAtOnceMode()) {
-        return props.sectionData.content['locales']['welcome']
+        return props.sectionData.content['welcome']
     }
     else {
-        return props.sectionData.content['locales']['welcomeShort']
+        return props.sectionData.content['welcomeShort']
     }
 })
 </script>

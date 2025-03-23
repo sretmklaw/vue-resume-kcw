@@ -5,8 +5,8 @@
         <div class="section-container" v-if="props.sectionData.content">
             <h1 class="section-title mb-1 mb-lg-2 fw-bold text-uppercase" v-html="sectionTitle"/>
             <!-- Description -->
-            <p v-if="props.sectionData.content['locales']['description']" class="lead text-muted">
-                {{props.sectionData.content['locales']['description']}}
+            <p v-if="props.sectionData.content['description']" class="lead text-muted">
+                {{props.sectionData.content['description']}}
             </p>
             <!-- Section Content -->
             <div class="section-content">
@@ -51,11 +51,7 @@ const classList = computed(() => {
     if(props.sectionData['cover']) {
         classList += ' section-cover'
     }
-
-    if(props.sectionData['id'].substring(0,3) === 'faq') {
-        classList += ' hide-text'
-    }
-
+    
     return classList
 })
 
@@ -64,7 +60,7 @@ const classList = computed(() => {
  */
 const sectionTitle = computed(() => {
     if(navigation.isAllAtOnceMode()) {
-        return props.sectionData.content['locales']['title']
+        return props.sectionData.content['title']
     }
     else {
         return data.getString(props.sectionData['id'])

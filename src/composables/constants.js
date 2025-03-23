@@ -21,11 +21,6 @@ export function useConstants() {
     }
 
     /** @const **/
-    const LOCAL_STORAGE_ITEMS = {
-        language: 'app.preferences.language'
-    }
-
-    /** @const **/
     const NAVIGATION_SIDEBAR_BREAKPOINT = "lg"
 
     /** @const **/
@@ -54,5 +49,5 @@ export function useConstants() {
         ERROR: "error"
     }
 
-    return {BASE_PATH, HTML_CLASSES, BOOTSTRAP_BREAKPOINTS, LOCAL_STORAGE_ITEMS, NAVIGATION_SIDEBAR_BREAKPOINT, RANDOM_COLOR_ARRAY, LoadStatus}
+    return {BASE_PATH, HTML_CLASSES, BOOTSTRAP_BREAKPOINTS, NAVIGATION_SIDEBAR_BREAKPOINT, RANDOM_COLOR_ARRAY, LoadStatus}
 }

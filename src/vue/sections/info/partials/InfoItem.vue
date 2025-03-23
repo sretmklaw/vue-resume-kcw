@@ -13,14 +13,14 @@
         <div class="info-item-content">
             <!-- Header (Highlighted Style) -->
             <div v-if="highlightedHeader" class="info-item-content-header-highlight mb-1">
-                <p class="info-item-title text-4 fw-bold text-normal mb-0">{{ item['locales']['title'] }}</p>
+                <p class="info-item-title text-4 fw-bold text-normal mb-0">{{ item['title'] }}</p>
                 <span class="info-item-progress-span text-1 text-muted fw-bold">{{ item['formattedPercentage'] ?? '' }}</span>
             </div>
 
             <!-- Header (Simplified Style) -->
             <div v-else class="info-item-content-header">
                 <p class="text-light-7 text-4 mb-0">
-                    <strong>{{item['locales']['title']}}</strong>
+                    <strong>{{item['title']}}</strong>
                     <span class="text-3" v-if="item['formattedPercentage']"> – {{item['formattedPercentage']}}</span>
                 </p>
             </div>
@@ -28,13 +28,13 @@
             <!-- Description With Progress Bar -->
             <ProgressBar v-if="props.descriptionWithProgressBar && item['formattedPercentage']"
                          :percentage="item['value']"
-                         :description="item['locales']['description']"
+                         :description="item['description']"
                          :color="_getProgressBarColor(item)"
                          class="mt-1"/>
 
             <!-- Description -->
             <div v-else class="info-item-description-wrapper">
-                <p class="item-description mb-0" :class="smallDescription ? 'text-1' : 'text-2'" v-html="item['locales']['description']"/>
+                <p class="item-description mb-0" :class="smallDescription ? 'text-1' : 'text-2'" v-html="item['description']"/>
             </div>
         </div>
     </div>

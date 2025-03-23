@@ -30,7 +30,7 @@
                             <div class="text-4">
                                 <i class="fa fa-tag me-1"/>
                                 {{ data.getString('tags') }}:
-                                <Tags :items="props.project['locales']['tags']" :item-class="'bg-primary'" class="d-inline ms-2"/>
+                                <Tags :items="props.project['tags']" :item-class="'bg-primary'" class="d-inline ms-2"/>
                             </div>
 
                             <!-- About SubSection -->
@@ -42,7 +42,7 @@
                                 </h5>
 
                                 <!-- Content -->
-                                <p v-html="props.project['locales']['description']" class="text-3 text-light-7"/>
+                                <p v-html="props.project['description']" class="text-3 text-light-7"/>
                             </div>
 
                             <!-- Links SubSection -->

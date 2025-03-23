@@ -4,7 +4,7 @@
         <div class="row g-4 g-lg-5">
             <div v-for="subcategory in props.sectionData['content']['subcategories']" class="col-12 thread-container">
                 <Thread :items="props.sectionData['content']['items'][subcategory['id']]"
-                        :link-label="subcategory['locales']['buttonLabel']"/>
+                        :link-label="subcategory['buttonLabel']"/>
             </div>
         </div>
     </SectionTemplate>

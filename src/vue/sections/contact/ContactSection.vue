@@ -5,8 +5,8 @@
 
         <!-- SubHeading -->
         <SubHeading v-if="contactFormEnabled"
-            :title="props.sectionData['content']['locales']['subtitle']"
-            :description="props.sectionData['content']['locales']['subtitleDescription']"
+            :title="props.sectionData['content']['subtitle']"
+            :description="props.sectionData['content']['subtitleDescription']"
             class="mt-4" />
 
         <!-- Contact Items -->

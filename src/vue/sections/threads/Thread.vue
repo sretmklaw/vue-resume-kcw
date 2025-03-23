@@ -25,23 +25,23 @@
             <!-- Content -->
             <div v-if="item['date']" class="thread-item-content">
                 <!-- Title -->
-                <h6 class="thread-item-title text-5 fw-bold pt-1 mb-1"> {{ item['locales']['title'] }}</h6>
+                <h6 class="thread-item-title text-5 fw-bold pt-1 mb-1"> {{ item['title'] }}</h6>
                 <h6 class="timeline-item-subtitle text-light-6 text-3">
                     <i class="me-2 ms-2" :class="item['place']['faIcon'] ? item['place']['faIcon'] : 'fa-solid fa-building'"/>
-                    <span>{{item['place'] ? item['place']['locales']['name'] : ''}}</span>
+                    <span>{{item['place'] ? item['place']['name'] : ''}}</span>
                 </h6>
                 <!-- Tags -->
                 <Tags :items="_getTagsForItem(item)" class="mt-1 mb-2 mt-lg-2"/>
 
                 <!-- Description -->
-                <p v-html="item['locales']['description']" class="thread-item-description text-3 text-normal mb-1 mb-md-2"/>
+                <p v-html="item['description']" class="thread-item-description text-3 text-normal mb-1 mb-md-2"/>
 
                 <!-- Item -->
                 <a v-if="item['place']['certUrl']" class="gallery-item" :href="item['href']" target="_blank">
                     <!-- Logo -->
                     <div class="gallery-thumb-wrapper">
                         <ImageView :src="item['place']['certUrl']"
-                                :alt="item['place']['locales']['name']"
+                                :alt="item['place']['name']"
                                 class="gallery-thumb"
                                 data-toggle="modal" 
                                 data-target="GalleryModal"/>
@@ -49,7 +49,7 @@
                         <div class="gallery-thumb-overlay">
                             <div class="gallery-thumb-overlay-content eq-h6">
                                 <div><i class="fas fa-eye fa-2x"></i></div>
-                                <div>{{ item['locales']['buttonLabel'] }}<i class="fa-solid fa-arrow-up-right-dots ms-1"/></div>
+                                <div>{{ item['buttonLabel'] }}<i class="fa-solid fa-arrow-up-right-dots ms-1"/></div>
                             </div>
                         </div>
                     </div>
@@ -73,10 +73,10 @@
                 <div class="timeline-item-content-header">
                     <!-- Title + Institution Flex Column -->
                     <div class="flex-column-title">
-                        <h4 class="timeline-item-title fw-bold" v-html="item['locales']['title']"/>
+                        <h4 class="timeline-item-title fw-bold" v-html="item['title']"/>
                         <h6 class="timeline-item-subtitle text-light-6 text-3">
                             <i class="me-2 ms-2" :class="item['place']['faIcon'] ? item['place']['faIcon'] : 'fa-solid fa-building'"/>
-                            <span>{{item['place'] ? item['place']['locales']['name'] : ''}}</span>
+                            <span>{{item['place'] ? item['place']['name'] : ''}}</span>
                         </h6>
                         <Tags :items="_formatItemDate(item)" class="mt-1 me-1"/>
                     </div>
@@ -84,8 +84,8 @@
 
                 <!-- Item Body -->
                 <div class="timeline-item-content-body mt-3">
-                    <p class="text-3 text-normal mb-2 mb-md-3 mb-lg-4" v-html="item['locales']['description']"/>
-                    <Tags :item-class="'bg-primary'" :items="item['locales']['tags']"/>
+                    <p class="text-3 text-normal mb-2 mb-md-3 mb-lg-4" v-html="item['description']"/>
+                    <Tags :item-class="'bg-primary'" :items="item['tags']"/>
                 </div>
             </div>
         </li>
@@ -95,7 +95,6 @@
 <script setup>
 import {computed, ref} from "vue"
 import {useUtils} from "../../../composables/utils.js"
-import {useLanguage} from "../../../composables/language.js"
 import Tags from "../../widgets/Tags.vue"
 import ImageView from "../../widgets/ImageView.vue"
 
@@ -108,7 +107,6 @@ const props = defineProps({
     linkLabel: String
 })
 
-const language = useLanguage()
 const utils = useUtils()
 
 /**
@@ -129,7 +127,7 @@ const _getTagsForItem = (item) => {
     return [
         {
             faIcon: 'fa fa-calendar-check',
-            label: utils.localizeDate(item['date'], language.getSelectedLanguage()['id'])
+            label: utils.localizeDate(item['date'])
         }
     ]
 }
@@ -141,8 +139,8 @@ const _getTagsForItem = (item) => {
  */
  const _formatItemDate = (item) => {
     const period = item['period']
-    const from = utils.localizeDate(period[0], language.getSelectedLanguage()['id'])
-    const to = (period[1] === "Present") ? "Present" : utils.localizeDate(period[1], language.getSelectedLanguage()['id'])
+    const from = utils.localizeDate(period[0])
+    const to = (period[1] === "Present") ? "Present" : utils.localizeDate(period[1])
 
     return [{
         faIcon: 'fa fa-calendar-check',
