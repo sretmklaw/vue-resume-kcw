@@ -59,10 +59,11 @@ const classList = computed(() => {
  * @type {ComputedRef<String>}
  */
 const sectionTitle = computed(() => {
-    if(navigation.isAllAtOnceMode()) {
+    if (props.sectionData.cover) {
         return props.sectionData.content['title']
-    }
-    else {
+    } if(navigation.isAllAtOnceMode()) {
+        return props.sectionData.content['title']
+    } else {
         return data.getString(props.sectionData['id'])
     }
 })

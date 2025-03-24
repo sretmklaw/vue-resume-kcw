@@ -10,7 +10,7 @@
                 </button>
 
                 <!-- Body -->
-                <div v-if="props.project" class="modal-body py-5 py-lg-4">
+                <div v-if="props.project" class="modal-body py-4 py-lg-4">
                     <!-- Content Row -->
                     <div class="row text-center text-lg-start p-2 p-md-4">
                         <!-- Image Column -->
@@ -18,7 +18,7 @@
                             <ImageView  :src="props.project['logoUrl']"
                                         :alt="props.project['title']"
                                         :spinner-enabled="true"
-                                        class="img-fluid logo my-auto my-lg-0 mb-3"/>
+                                        class="img-fluid my-auto my-lg-0 mb-3"/>
                         </div>
 
                         <!-- Texts Column -->

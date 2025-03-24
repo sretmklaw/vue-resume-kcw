@@ -213,10 +213,10 @@ export function useLayout() {
         }
     }
     
-    const positionCursor = (threadScrollContainer, scrollpath, cursor) => {
-        if (threadScrollContainer && scrollpath && cursor) {
+    const positionCursor = (timelineGrid, scrollpath, cursor) => {
+        if (timelineGrid && scrollpath && cursor) {
             // Draw vertical scrollpath on screen
-            const newVerticalHeight = threadScrollContainer.clientHeight;
+            const newVerticalHeight = timelineGrid.clientHeight;
             scrollpath.setAttribute("d", "M 0 0 V " + newVerticalHeight);
             scrollpath.setAttribute("stroke-dasharray", newVerticalHeight);
             scrollpath.setAttribute("stroke-dashoffset", newVerticalHeight);
@@ -224,9 +224,9 @@ export function useLayout() {
             scrollpath.style.strokeDasharray = pathLen;
             // Calculate distance along scrollpath and hide the overflow
             const centerPosY = window.innerHeight / 2;
-            const elemTopY = threadScrollContainer.getBoundingClientRect().top*-1;
+            const elemTopY = timelineGrid.getBoundingClientRect().top*-1;
             const cursorPosY = elemTopY + centerPosY;
-            const elemHeightY = threadScrollContainer.offsetHeight;
+            const elemHeightY = timelineGrid.offsetHeight;
             const scrollpercent = (cursorPosY / elemHeightY);
             const dist = pathLen * scrollpercent;
             scrollpath.style.strokeDashoffset = pathLen - dist;

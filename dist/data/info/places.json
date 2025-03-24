@@ -1,4 +1,19 @@
 {
+    "childhood": {
+        "logoUrl": "images/places/childhood.png",
+        "name": "Childhood"
+    },
+
+    "college": {
+        "logoUrl": "images/places/college.png",
+        "name": "College"
+    },
+
+    "career": {
+        "logoUrl": "images/places/career.png",
+        "name": "Career"
+    },
+
     "uwmadison": {
         "logoUrl": "images/places/logo-uw.png",
         "faIcon": "fa-solid fa-university",

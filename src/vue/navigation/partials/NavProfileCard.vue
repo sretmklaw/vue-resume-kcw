@@ -2,7 +2,6 @@
     <!-- Profile Card -->
     <div class="nav-profile-card" :class="shrink ? 'nav-profile-card-shrink' : ''">
         <!-- Avatar -->
-        <img src="../../../../dist/images/icons/compassrose.png">
         <ImageView :src="props.profileData['profilePictureUrl']"
                    :alt="props.profileData['name']"
                    class="img-pfp"/>

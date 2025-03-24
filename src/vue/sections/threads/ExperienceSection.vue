@@ -1,9 +1,8 @@
 <template>
     <SectionTemplate :section-data="props.sectionData">
-        <!-- Threads Grid -->
         <div class="row g-4 g-lg-5">
-            <div v-for="subcategory in props.sectionData['content']['subcategories']" class="col-12 thread-container">
-                <Thread :items="props.sectionData['content']['items'][subcategory['id']]"
+            <div v-for="subcategory in props.sectionData['content']['subcategories']" class="col-12 timeline-container">
+                <TimelineGrid id="expTimelineGrid" :items="props.sectionData['content']['items'][subcategory['id']]"
                         :link-label="subcategory['buttonLabel']"/>
             </div>
         </div>
@@ -12,7 +11,7 @@
 
 <script setup>
 import SectionTemplate from "../_templates/SectionTemplate.vue"
-import Thread from "./Thread.vue"
+import TimelineGrid from "./TimelineGrid.vue"
 
 /**
  * @property {Object} sectionData
@@ -25,7 +24,7 @@ const props = defineProps({
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
-.thread-container {
+.timeline-container {
 
     --cert-size:150px;
     --image-size:100px;

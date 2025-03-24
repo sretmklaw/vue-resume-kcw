@@ -1,0 +1,27 @@
+{
+    "title": "Hello",
+    "description": "Scroll to begin",
+    "items": [
+        {
+            "id": "childhood",
+            "place": "@link{places.childhood}",
+            "date": "1988/05",
+            "title": "College",
+            "description": "Born and raised in the Upper Midwest, I spent my childhood creating Lego models of ancient monuments and learning about the history of people who lived long ago in faraway places."
+        },
+        {
+            "id": "college",
+            "place": "@link{places.college}",
+            "date": "2006/08",
+            "title": "Childhood",
+            "description": "My passion for building things and learning about different viewpoints combined in my post-secondary education, where I gained proficiency in human and computer languages while focusing on securing software applications."
+        },
+        {
+            "id": "career",
+            "place": "@link{places.career}",
+            "date": "2011/08",
+            "title": "Career",
+            "description": "Since graduating, I have specialized in synthesizing unique approaches to engineering solutions for both government and the private sector. Continue browsing to learn more."
+        }
+    ]
+}

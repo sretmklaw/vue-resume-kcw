@@ -18,10 +18,10 @@
 
     "sections": [
         {
-            "id": "about",
+            "id": "intro",
             "categoryId": "home",
-            "component": "CoverSection",
-            "jsonPath": "data/sections/cover.json",
+            "component": "IntroSection",
+            "jsonPath": "data/sections/intro.json",
             "faIcon": "fa-solid fa-address-card",
             "cover": true
         },
@@ -29,8 +29,8 @@
         {
             "id": "experience",
             "categoryId": "background",
-            "component": "ThreadsSection",
-            "jsonPath": "data/sections/timeline.json",
+            "component": "ExperienceSection",
+            "jsonPath": "data/sections/experience.json",
             "faIcon": "fa-solid fa-award"
         },
 

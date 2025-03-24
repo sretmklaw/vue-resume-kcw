@@ -146,25 +146,27 @@ const _navigateToCategory = (categoryId) => {
 }
 
 const _handleScroll = () => {
-    
-    const coverFadeElements = document.getElementsByClassName('cover-fade-element');
-    layout.handleScroll(coverFadeElements);
-
-    const threadFadeElements = document.getElementsByClassName('thread-fade-element');
-    layout.handleScroll(threadFadeElements);
+    if (document.getElementById("introTimelineGrid")) {
+        const introTimelineItems = document.getElementById("introTimelineGrid").querySelectorAll("li");
+        layout.handleScroll(introTimelineItems);
+    }
+    if (document.getElementById("expTimelineGrid")) {
+        const expTimelineItems = document.getElementById("expTimelineGrid").querySelectorAll("li");
+        layout.handleScroll(expTimelineItems);
+    }
 }
 
 const _positionCursor = () => {
 
-    const coverScrollContainer = document.getElementById("coverScrollContainer");
-    const coverScrollpath = document.getElementById("coverScrollpath");
-    const coverCursor = document.getElementById("coverCursor");
-    layout.positionCursor(coverScrollContainer, coverScrollpath, coverCursor);
+    const introTimelineGrid = document.getElementById("introTimelineGrid");
+    const introScrollpath = document.getElementById("introScrollpath");
+    const introCursor = document.getElementById("introCursor");
+    layout.positionCursor(introTimelineGrid, introScrollpath, introCursor);
 
-    const expScrollContainer = document.getElementById("threadScrollContainer");
+    const expTimelineGrid = document.getElementById("expTimelineGrid");
     const expScrollpath = document.getElementById("threadScrollpath");
     const expCursor = document.getElementById("threadCursor");
-    layout.positionCursor(expScrollContainer, expScrollpath, expCursor);
+    layout.positionCursor(expTimelineGrid, expScrollpath, expCursor);
 }
 
 defineExpose({

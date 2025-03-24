@@ -1,15 +1,7 @@
 <template>
-    <!-- Timeline -->
-    <ul id="threadScrollContainer" class="thread scroll-container">
-
-        <!-- Threads Scrollpath -->
-        <svg id="threadSvg">
-            <path id="threadScrollpath" d="M 0 0 V 0" />
-            <circle id="threadCursor" cx="0" cy="0" />
-        </svg>
-
-        <!-- Item -->
-        <li v-for="(item, index) in orderedItems" class="thread-item fade-element thread-fade-element" :class="{ 'visible' : index === 0 }">
+    <!-- Item -->
+    <div>
+        <li v-for="(item, index) in orderedItems" class="thread-item fade-element" :class="{ 'visible' : index === 0 }">
 
             <!-- Logo Wrapper for Large Icons -->
             <div v-if="item['date']" class="timeline-item-logo-sm" :class="{'fa fa-stack thread-icon':!(item['place'] && item['place']['logoUrl'])}">
@@ -89,7 +81,7 @@
                 </div>
             </div>
         </li>
-    </ul>
+    </div>
 </template>
 
 <script setup>
@@ -338,33 +330,5 @@ ul.thread {
             opacity: 1;
         }
     }
-
-    #threadSvg {
-        margin-left: calc((var(--image-size)/2 - var(--line-width)));
-        position: absolute;
-        top: calc((var(--image-size)/2));
-        bottom: 0;
-        height: 100%;
-        overflow: visible;
-    }
-
-    #threadScrollpath {
-        position: fixed;
-        fill: none;
-        height: 100%;
-        stroke-width: var(--line-width);
-        stroke-linecap: round;
-        top: 0;
-        bottom: 0;
-        stroke: $light-4;
-    }
-
-    #threadCursor {
-        fill: $light-4;
-        stroke: $light-3;
-        stroke-width: calc(var(--line-width)*1.6);
-        r: calc(1rem * var(--scale));
-    }
-
 }
 </style>
