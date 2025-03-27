@@ -3,67 +3,22 @@
     <div>
         <li v-for="item in orderedItems" class="thread-item fade-element">
 
-            <!-- Logo Wrapper for Large Icons -->
-            <div v-if="item['date']" class="timeline-item-logo-sm" :class="{'fa fa-stack thread-icon':!(item['place'] && item['place']['logoUrl'])}">
+            <!-- Logo Wrapper -->
+            <div class="timeline-item-logo" :class="{'timeline-item-logo-bg-primary':!(item['place'] && item['place']['logoUrl'])}">
                 <img v-if="item['place'] && item['place']['logoUrl']"
                             :src="item['place']['logoUrl']"
                             :alt="item['place']['logoImg']"
                             class="timeline-item-img img-fluid rounded-circle"/>
                 <!-- Fallback, use font awesome icon... -->
-                <i v-else  class="timeline-item-fa-icon"
-                            :class="item['place']['faIcon'] ? item['place']['faIcon'] : 'fa-solid fa-clock'"/>
-            </div>
-
-            <!-- Content -->
-            <div v-if="item['date']" class="thread-item-content">
-                <!-- Title -->
-                <h6 class="thread-item-title text-5 fw-bold pt-1 mb-1"> {{ item['title'] }}</h6>
-                <h6 class="timeline-item-subtitle text-light-6 text-3">
-                    <i class="me-2 ms-2" :class="item['place']['faIcon'] ? item['place']['faIcon'] : 'fa-solid fa-building'"/>
-                    <span>{{item['place'] ? item['place']['name'] : ''}}</span>
-                </h6>
-                <!-- Tags -->
-                <Tags :items="_getTagsForItem(item)" class="mt-1 mb-2 mt-lg-2"/>
-
-                <!-- Description -->
-                <p v-html="item['description']" class="thread-item-description text-3 text-normal mb-1 mb-md-2"/>
-
-                <!-- Item -->
-                <a v-if="item['place']['certUrl']" class="gallery-item" :href="item['href']" target="_blank">
-                    <!-- Logo -->
-                    <div class="gallery-thumb-wrapper">
-                        <ImageView :src="item['place']['certUrl']"
-                                :alt="item['place']['name']"
-                                class="gallery-thumb"
-                                data-toggle="modal" 
-                                data-target="GalleryModal"/>
-
-                        <div class="gallery-thumb-overlay">
-                            <div class="gallery-thumb-overlay-content eq-h6">
-                                <div><i class="fas fa-eye fa-2x"></i></div>
-                                <div>{{ item['buttonLabel'] }}<i class="fa-solid fa-arrow-up-right-dots ms-1"/></div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Logo Wrapper for Small Icons -->
-            <div v-if="item['period']" class="timeline-item-logo" :class="{'timeline-item-logo-bg-primary':!(item['place'] && item['place']['logoUrl'])}">
-                <img v-if="item['place'] && item['place']['logoUrl']"
-                            :src="item['place']['logoUrl']"
-                            :alt="item['place']['logoImg']"
-                            class="timeline-item-img img-fluid rounded-circle"/>
-                <!-- Fallback, use font awesome icon... -->
-                <i v-else  class="timeline-item-fa-icon"
+                <i v-else class="timeline-item-fa-icon"
                             :class="item['place']['faIcon'] ? item['place']['faIcon'] : 'fa-solid fa-clock'"/>
             </div>
 
             <!-- Item Content -->
-            <div v-if="item['period']" class="timeline-item-content">
+            <div class="timeline-item-content">
                 <!-- Item Header -->
                 <div class="timeline-item-content-header">
-                    <!-- Title + Institution Flex Column -->
+                    <!-- Title -->
                     <div class="flex-column-title">
                         <h4 class="timeline-item-title fw-bold" v-html="item['title']"/>
                         <h6 class="timeline-item-subtitle text-light-6 text-3">
@@ -78,6 +33,7 @@
                 <div class="timeline-item-content-body mt-3">
                     <p class="text-3 text-normal mb-2 mb-md-3 mb-lg-4" v-html="item['description']"/>
                     <Tags :item-class="'bg-primary'" :items="item['tags']"/>
+                    <Links :items="item['links']"/>
                 </div>
             </div>
         </li>
@@ -88,15 +44,13 @@
 import {computed, ref} from "vue"
 import {useUtils} from "../../../composables/utils.js"
 import Tags from "../../widgets/Tags.vue"
-import ImageView from "../../widgets/ImageView.vue"
+import Links from "../../widgets/Links.vue"
 
 /**
  * @property {Object[]} items
- * @property {String} linkLabel
  */
 const props = defineProps({
-    items: Array,
-    linkLabel: String
+    items: Array
 })
 
 const utils = useUtils()
@@ -107,22 +61,6 @@ const utils = useUtils()
 const orderedItems = computed(() => {
     return utils.reverseArray(props.items)
 })
-
-/**
- * @param {Object} item
- * @return {[{faIcon: string, label: String},{faIcon: (String|string), label: *}]}
- * @private
- */
-const _getTagsForItem = (item) => {
-    const place = item['place']
-
-    return [
-        {
-            faIcon: 'fa fa-calendar-check',
-            label: utils.localizeDate(item['date'])
-        }
-    ]
-}
 
 /**
  * @param {Object} item
@@ -271,58 +209,6 @@ ul.thread {
             .flex-column-texts {
                 padding-right: 0;
             }
-        }
-    }
-
-    .gallery-item {
-        flex-direction: column;
-        position: relative;
-    }
-
-    .gallery-thumb-wrapper {
-        position: relative;
-        cursor: pointer;
-        height: var(--cert-size);
-        width: calc(var(--cert-size)*1.5);
-        overflow: hidden;
-        margin: 1rem 0;
-        border-style: outset;
-    }
-
-    .gallery-thumb {
-        width: 100%;
-        height: 100%;
-    }
-
-    .gallery-thumb-overlay {
-        position: absolute;
-        top: 0;
-        opacity: 0;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        width: 100%;
-        height: 100%;
-
-        background: fade-out(lighten($primary, 5%), 0.1);
-        transition: all ease-in-out 0.25s;
-
-        &-content {
-            color: $white;
-            text-align: center;
-        }
-    }
-
-    .gallery-item:hover {
-        .gallery-title {
-            color: lighten($primary, 10%);
-            transition: color ease-in-out 0.3s;
-        }
-
-        .gallery-thumb-overlay {
-            opacity: 1;
         }
     }
 }

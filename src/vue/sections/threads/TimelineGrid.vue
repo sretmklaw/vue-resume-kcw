@@ -9,7 +9,7 @@
         </svg>
 
         <!-- Item -->
-        <TimelineItem :items="items" :linkLabel="linkLabel" />
+        <TimelineItem :items="items" />
     </ul>
 </template>
 
@@ -18,11 +18,9 @@ import TimelineItem from "./TimelineItem.vue"
 
 /**
  * @property {Object[]} items
- * @property {String} linkLabel
  */
 const props = defineProps({
-    items: Array,
-    linkLabel: String
+    items: Array
 })
 
 </script>

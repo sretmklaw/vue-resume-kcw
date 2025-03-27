@@ -93,7 +93,7 @@ const _onWindowChangeEvent = () => {
         _onNavigationModeChanged(activeSectionId)
     }
     _handleScroll()
-    _positionCursor()
+    _positionCursor(isNavigationModeAllAtOnce)
 }
 
 /**
@@ -156,17 +156,17 @@ const _handleScroll = () => {
     }
 }
 
-const _positionCursor = () => {
+const _positionCursor = (isNavigationModeAllAtOnce) => {
 
     const introTimelineGrid = document.getElementById("introTimelineGrid");
     const introScrollpath = document.getElementById("introScrollpath");
     const introCursor = document.getElementById("introCursor");
-    layout.positionCursor(introTimelineGrid, introScrollpath, introCursor);
+    layout.positionCursor(introTimelineGrid, introScrollpath, introCursor, isNavigationModeAllAtOnce);
 
     const expTimelineGrid = document.getElementById("expTimelineGrid");
     const expScrollpath = document.getElementById("threadScrollpath");
     const expCursor = document.getElementById("threadCursor");
-    layout.positionCursor(expTimelineGrid, expScrollpath, expCursor);
+    layout.positionCursor(expTimelineGrid, expScrollpath, expCursor, isNavigationModeAllAtOnce);
 }
 
 defineExpose({

@@ -1,9 +1,8 @@
 <template>
     <SectionTemplate :section-data="props.sectionData">
         <div class="row g-4 g-lg-5">
-            <div v-for="subcategory in props.sectionData['content']['subcategories']" class="col-12 timeline-container">
-                <TimelineGrid id="expTimelineGrid" :items="props.sectionData['content']['items'][subcategory['id']]"
-                        :link-label="subcategory['buttonLabel']"/>
+            <div class="col-12 timeline-container">
+                <TimelineGrid id="expTimelineGrid" :items="props.sectionData['content']['items']"/>
             </div>
         </div>
     </SectionTemplate>
