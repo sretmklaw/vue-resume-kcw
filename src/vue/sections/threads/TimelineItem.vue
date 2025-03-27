@@ -1,7 +1,7 @@
 <template>
     <!-- Item -->
     <div>
-        <li v-for="(item, index) in orderedItems" class="thread-item fade-element" :class="{ 'visible' : index === 0 }">
+        <li v-for="item in orderedItems" class="thread-item fade-element">
 
             <!-- Logo Wrapper for Large Icons -->
             <div v-if="item['date']" class="timeline-item-logo-sm" :class="{'fa fa-stack thread-icon':!(item['place'] && item['place']['logoUrl'])}">
@@ -179,11 +179,6 @@ ul.thread {
         .thread-item-content {
             margin-left: calc(var(--image-size) + calc(var(--image-size)/5));
         }
-    }
-
-    .thread-item-end {
-        margin-bottom: 0;
-        min-height: calc(1rem * var(--scale));
     }
 
     .thread-icon {

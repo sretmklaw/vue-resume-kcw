@@ -5,15 +5,20 @@
             'loader-full-screen-faded': !didReachStep(Steps.LOADING_LOGO),
             'loader-full-screen-tween-out': didReachStep(Steps.LEAVING)
          }">
-
+        
         <!-- Loader Content -->
-        <div class="loader-full-screen-content" v-show="didReachStep(Steps.SHOWING_LOGO)">
+        <div class="loader-full-screen-content" >
+
+            <h1 class="fade-in" id="uiGreeting" v-show="!didReachStep(Steps.SHOWING_LOGO)">Hello</h1>
+
             <!-- Logo -->
-            <ImageView  :src="'images/icons/loading.gif'"
+            <div v-show="didReachStep(Steps.SHOWING_LOGO)">
+            <ImageView  :src="'images/pictures/loading.png'"
                         :alt="'Logo'"
                         :ignore-on-image-count="true"
                         ref="uiLogo"
                         class="img-fluid img-logo"/>
+            </div>
 
             <!-- Progress Display -->
             <div class="progress-display" :class="{
@@ -88,11 +93,11 @@ const _onIntervalTick = () => {
     let stepFinished = false
     switch (currentStep.value) {
         case Steps.LOADING_LOGO:
-            stepFinished = uiLogo.value && uiLogo.value.isLoaded() && currentStepElapsedTime.value > 0.4
+            stepFinished = uiLogo.value && uiLogo.value.isLoaded() && currentStepElapsedTime.value > 0.6
             break
 
         case Steps.SHOWING_LOGO:
-            stepFinished = currentStepElapsedTime.value > 0.2
+            stepFinished = currentStepElapsedTime.value > 0.4
             break
 
         case Steps.SHOWING_PROGRESS_BAR:
@@ -179,6 +184,14 @@ defineExpose({
 <style lang="scss" scoped>
 @import "/src/scss/_theming.scss";
 
+h1 {
+    color: #fff;
+}
+
+.fade-in {
+    animation: fadeout 1.5s ease;
+}
+
 .loader-full-screen {
     position: fixed;
 
@@ -192,6 +205,10 @@ defineExpose({
     width: 100vw;
     height: 125vh;
     top: -12.5vh;
+
+    background-image: radial-gradient(ellipse at 50% 50%, lighten($dark, 20%) 0%, transparent 100%);
+    background-size: cover;
+    background-position: center;
 }
 
 .loader-full-screen-faded {
@@ -214,9 +231,9 @@ defineExpose({
 
 .img-logo {
     max-height: 240px;
-    aspect-ratio: 4/3;
+    aspect-ratio: 1/1;
     z-index: 99;
-    animation: popIn 0.3s ease-out forwards;
+    animation: fadein 0.3s ease-out forwards;
 }
 
 .progress-display {
@@ -237,13 +254,23 @@ defineExpose({
     margin: 0 auto;
 }
 
-@keyframes popIn {
+@keyframes fadein {
     from {
         opacity:0;
-        transform: scale(0.2) translateY(-100%);
+        transform: translateY(-50%);
     }
     to {
         opacity:1
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+        transform: translateY(-50%);
     }
 }
 </style>

@@ -73,38 +73,46 @@ const sectionTitle = computed(() => {
 @import "/src/scss/_theming.scss";
 
 .section {
+    --max-height:clamp(130px, 22.5vh, 170px);
+
     position: relative;
     display: flex;
     min-height: 100vh;
 
     @include media-breakpoint-down($navigation-sidebar-breakpoint) {
         min-height: calc(100vh - 170px);
+        .section-container {
+            margin-top: calc(33vh - var(--max-height));
+        }
     }
 
-    &-cover {
-        @include media-breakpoint-up($navigation-sidebar-breakpoint) {
-            .section-container {
-                margin: auto 0;
-            }
+    @include media-breakpoint-up($navigation-sidebar-breakpoint) {
+        .section-container {
+            margin-top: 33vh;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .section-container {
+
+        @include generate-dynamic-styles-with-hash((
+            xxxl:   (padding: clamp(5rem, 5vw, 10rem) clamp(5rem, 5vw, 10rem) clamp(6rem, 5vw, 10rem)),
+            xxl:    (padding: 4rem 4rem 6rem),
+            lg:     (padding: 2rem 2rem),
+            md:     (padding: 1.5rem 1.5rem),
+            sm:     (padding: 1.5rem 1.2rem 3rem)
+        ));
+
+        width: min(100%, $max-content-width);
+
+        @include media-breakpoint-down($navigation-sidebar-breakpoint) {
+            margin-bottom: $nav-tabs-height;
         }
     }
 }
 
-.section-container {
-    @include generate-dynamic-styles-with-hash((
-        xxxl:   (padding: clamp(5rem, 5vw, 10rem) clamp(5rem, 5vw, 10rem) clamp(6rem, 5vw, 10rem)),
-        xxl:    (padding: 4rem 4rem 6rem),
-        lg:     (padding: 2rem 2rem),
-        md:     (padding: 1.5rem 1.5rem),
-        sm:     (padding: 1.5rem 1.2rem 3rem)
-    ));
 
-    width: min(100%, $max-content-width);
-
-    @include media-breakpoint-down($navigation-sidebar-breakpoint) {
-        margin-bottom: $nav-tabs-height;
-    }
-}
 
 .section-header {
     @include generate-dynamic-styles-with-hash((

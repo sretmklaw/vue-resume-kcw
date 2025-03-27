@@ -9,6 +9,9 @@
                         <path id="introScrollpath" d="M 0 0 V 0" />
                         <circle id="introCursor" cx="0" cy="0" />
                     </svg>
+
+                    <div class="buffer"></div>
+
                     <!-- Items -->
                     <li v-for="item in props.sectionData['content']['items']" class="thread-item fade-element">
 
@@ -25,6 +28,9 @@
                             <!-- Description -->
                             <p v-html="item['description']" class="thread-item-description text-3 text-muted mb-1 mb-md-2"/>
                         </div>
+
+                        <div class="buffer"></div>
+
                     </li>
                 </ul>
             </div>
@@ -111,10 +117,12 @@ ul.thread {
         r: calc(1rem * var(--scale));
     }
 
+    .buffer {
+        min-height: var(--vertical-spacing);
+    }
+
     .thread-item {
-        padding-top: var(--vertical-spacing);
         min-height: calc(5rem * var(--scale));
-        margin-bottom: calc(2.5rem * var(--scale));
 
         .thread-item-content {
             margin-left: calc(var(--image-size)*1.75);

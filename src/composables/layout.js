@@ -195,25 +195,21 @@ export function useLayout() {
     const handleScroll = (fadeElements) => {
         for (var i = 0; i < fadeElements.length; i++) {
             var fadeElement = fadeElements[i];
-            if (i > 0) {
-                var elementTop, elementBottom = 0;
-                const viewportHeight = window.innerHeight;
-                if (fadeElement.getBoundingClientRect()) {
-                    elementTop = fadeElement.getBoundingClientRect().top;
-                    elementBottom = fadeElement.getBoundingClientRect().bottom;
-                }
-                if (elementTop < viewportHeight/2 && elementBottom > 0) {
-                    fadeElement.classList.add("visible");
-                } else if (elementBottom > viewportHeight/2) {
-                    fadeElement.classList.remove("visible");
-                }
-            } else {
+            var elementTop, elementBottom = 0;
+            const viewportHeight = window.innerHeight;
+            if (fadeElement.getBoundingClientRect()) {
+                elementTop = fadeElement.getBoundingClientRect().top;
+                elementBottom = fadeElement.getBoundingClientRect().bottom;
+            }
+            if (elementTop < viewportHeight/2 && elementBottom > 0) {
                 fadeElement.classList.add("visible");
+            } else if (elementBottom > viewportHeight/2) {
+                fadeElement.classList.remove("visible");
             }
         }
     }
     
-    const positionCursor = (timelineGrid, scrollpath, cursor) => {
+    const positionCursor = (timelineGrid, scrollpath, cursor, isNavigationModeAllAtOnce) => {
         if (timelineGrid && scrollpath && cursor) {
             // Draw vertical scrollpath on screen
             const newVerticalHeight = timelineGrid.clientHeight;
@@ -223,6 +219,7 @@ export function useLayout() {
             const pathLen = scrollpath.getTotalLength();
             scrollpath.style.strokeDasharray = pathLen;
             // Calculate distance along scrollpath and hide the overflow
+            const navHeaderY = (!isNavigationModeAllAtOnce) ? 300 : 0; //TODO add offset for navheader
             const centerPosY = window.innerHeight / 2;
             const elemTopY = timelineGrid.getBoundingClientRect().top*-1;
             const cursorPosY = elemTopY + centerPosY;

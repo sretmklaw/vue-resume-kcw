@@ -1,13 +1,5 @@
 <template>
     <SectionTemplate :section-data="props.sectionData">
-        <!-- Form -->
-        <ContactForm v-if="contactFormEnabled" />
-
-        <!-- SubHeading -->
-        <SubHeading v-if="contactFormEnabled"
-            :title="props.sectionData['content']['subtitle']"
-            :description="props.sectionData['content']['subtitleDescription']"
-            class="mt-4" />
 
         <!-- Contact Items -->
         <ContactOptions
@@ -20,7 +12,6 @@
 import SectionTemplate from "../_templates/SectionTemplate.vue"
 import {useData} from "../../../composables/data.js"
 import SubHeading from "../_templates/SubHeading.vue"
-import ContactForm from "./ContactForm.vue"
 import ContactOptions from "./ContactOptions.vue"
 import {computed} from "vue"
 

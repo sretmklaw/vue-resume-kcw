@@ -1,5 +1,5 @@
 {
-    "title": "<span class='text-primary'>Skill</span> Set",
+    "title": "Skills",
     "description": "Exploring the diverse range of skills I've acquired and developed:",
 
     "subcategories": [
@@ -7,7 +7,6 @@
             "id": "abilities",
             "type": "grid",
             "progress": null,
-            "faIcon": "fa-solid fa-square",
             "title": null
         },
 
@@ -15,7 +14,6 @@
             "id": "tools",
             "type": "grid",
             "progress": "number",
-            "faIcon": "fa-solid fa-screwdriver-wrench",
             "title": "Tools"
         },
 
@@ -23,7 +21,6 @@
             "id": "languages",
             "type": "list",
             "progress": {"0": "beginner", "20": "rookie", "40": "intermediate", "60": "advanced", "80": "fluent", "100": "native"},
-            "faIcon": "fa fa-language",
             "title": "Languages"
         }
     ],
@@ -127,23 +124,26 @@
         "languages": [
             {
                 "imageIconUrl": "images/flags/en.png",
-                "faIcon": null,
                 "value": 100,
-                "title": "English", "description": "Native speaker with excellent communication and writing skills."
+                "title": "English"
             },
 
             {
-                "imageIconUrl": "images/flags/it.png",
-                "faIcon": null,
-                "value": 90,
-                "title": "Italian", "description": "Fluent in both spoken and written Italian."
+                "imageIconUrl": "images/flags/ir.png",
+                "value": 80,
+                "title": "Persian"
+            },
+
+            {
+                "imageIconUrl": "images/flags/in.png",
+                "value": 70,
+                "title": "Hindi"
             },
 
             {
                 "imageIconUrl": "images/flags/fr.png",
-                "faIcon": null,
-                "value": 90,
-                "title": "French", "description": "Fluent in both spoken and written French."
+                "value": 50,
+                "title": "French"
             }
         ]
     }

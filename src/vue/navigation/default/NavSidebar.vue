@@ -180,7 +180,6 @@ li.nav-item {
 
     .nav-sidebar-footer-credits {
         font-family: $custom-subheadings-font-family;
-        color: $light-4;
 
         display: block;
         @media screen and (max-height: 100px) {
