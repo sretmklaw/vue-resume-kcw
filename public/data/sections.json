@@ -43,10 +43,10 @@
         },
         
         {
-            "id": "interests",
+            "id": "creations",
             "categoryId": "more",
             "component": "GallerySection",
-            "jsonPath": "data/sections/interests.json",
+            "jsonPath": "data/sections/creations.json",
             "faIcon": "fa-solid fa-tools"
         },
         

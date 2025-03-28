@@ -15,7 +15,7 @@
                     <div class="row text-center text-lg-start p-2 p-md-4">
                         <!-- Image Column -->
                         <div class="col-12 col-lg-4 pe-0 pe-lg-4">
-                            <ImageView  :src="props.project['logoUrl']"
+                            <ImageView  :src="props.project['previewUrl']"
                                         :alt="props.project['title']"
                                         :spinner-enabled="true"
                                         class="img-fluid my-auto my-lg-0 mb-3"/>

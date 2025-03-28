@@ -9,7 +9,7 @@
     "email": "E-mail",
     "experience": "My Story",
     "fluent": "Fluent",
-    "interests": "Interests",
+    "creations": "Creations",
     "home": "Home",
     "intermediate": "Intermediate",
     "linkedin": "Linkedin",
@@ -28,5 +28,5 @@
     "skills": "Skills",
     "subject": "Subject",
     "tags": "Tags",
-    "whereToFindDescription": "Find more info about ${project} here:"
+    "whereToFindDescription": "Find links and more information here:"
 }

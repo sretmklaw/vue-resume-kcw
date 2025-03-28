@@ -8,7 +8,7 @@
             "place": "@link{places.uwmadison}",
             "period": ["2007/08", "2010/04"],
             "title": "Bachelor of Arts in Languages & Cultures of Asia",
-            "description": "In seeking to combine a deep understanding of different viewpoints with practical research and critical thinking skills, I opted to pursue a postsecondary degree in South Asian area studies with a linguistics focus. This opened up opportunities for intensive language study with an international program component, ultimately leading to a year-long study abroad in Varanasi, India.",
+            "description": "In seeking to combine a deep understanding of different viewpoints with practical research and critical thinking skills, I opted to pursue a degree in South Asian area studies with a linguistics focus. This opened up opportunities for an undergraduate fellowship and intensive language study with an international program component, ultimately leading to an academic year abroad in Varanasi, India.",
             "tags": ["Critical Thinking", "Communication", "Logic", "Ethics", "Research", "Languages"],
             "links": [
                 {
@@ -18,46 +18,50 @@
                     "links": [
                         {"faIcon": "fa-solid fa-globe", "href": "https://lubar.wisc.edu/index.html", "id": "View Website"}
                     ],
-                    "buttonLabel": "View Website",
-                    "title": "Undergraduate Fellow",
-                    "description": "The Lubar Institute was founded to create better understanding of the Abrahamic traditions and their interrelationships by encouraging ongoing discussion of these traditions among scholars, members of those traditions, and the general public. The Institute's projects aim to broaden conversations across academic disciplines and faith traditions, between believers and non-believers, and, in upholding the Wisconsin Idea, to bring together campus and community by inviting engagement with the general public.",
-                    "tags": ["Academic Fellowship", "Community Engagement", "Dialogue"]
+                    "buttonLabel": "View Fellowship",
+                    "title": "Undergraduate Fellowship",
+                    "description": "In the fall of 2008, I was selected for an undergraduate fellowship position with the UW's Lubar Institute for the Study of the Abrahamic Religions.<br><br>The Lubar Institute was founded to create better understanding of the Abrahamic traditions and their interrelationships by encouraging ongoing discussion of these traditions among scholars, members of those traditions, and the general public. The Institute's projects aim to broaden conversations across academic disciplines and faith traditions, between believers and non-believers, and, in upholding the Wisconsin Idea, to bring together campus and community by inviting engagement with the general public.",
+                    "tags": ["Academic Fellowship", "Community Engagement"]
                 },
                 {
                     "id": "phikappa",
                     "place": "@link{places.pkp}",
                     "date": "2009/05",
                     "links": [
-                        {"faIcon": "fa-solid fa-graduation-cap", "href": "images/places/cert-pkp.png", "id": "View Accolade"}
+                        {"faIcon": "fa-solid fa-medal", "href": "images/places/cert-pkp.png", "id": "View Accolade"},
+                        {"faIcon": "fa-solid fa-graduation-cap", "href": "https://www.phikappaphi.org/about", "id": "About Phi Kappa Phi"}
                     ],
                     "buttonLabel": "View Accolade",
-                    "title": "Phi Kappa Phi Honor Society",
-                    "description": "Since its founding in 1897, the Honor Society of Phi Kappa Phi has initiated many notable members, including public servants and leaders, Pulitzer and Nobel Prize winners, NASA astronauts and more. It is a global network composed of the best and brightest from all academic disciplines, a community of scholars and professionals building an enduring legacy for future generations. Membership in Phi Kappa Phi is earned through nomination by a local school chapter. Juniors must have completed at least 72 semester hours/108 quarter hours and rank in the top 7.5% of their class.",
-                    "tags": ["Top 8th Percentile", "Official Designation"]
-                },
-                {
-                    "id": "nsep",
-                    "place": "@link{places.nsep}",
-                    "date": "2009/08",
-                    "links": [
-                        {"faIcon": "fa-solid fa-globe", "href": "https://drive.google.com/file/d/1riIw-J_k_e4mXaFR1m8t9mg2uVwfJ5ZT/view?usp=sharing", "id": "View Fieldwork"}
-                    ],
-                    "buttonLabel": "View Fieldwork",
-                    "title": "Boren Award Recipient - UW College Year in India",
-                    "description": "The National Security Education Program (NSEP) fosters a pipeline of foreign language and cultural expertise critical to the U.S. federal government workforce. NSEP was established by the David L. Boren National Security Education Act of 1991 (U.S. Code 50, 90 et seq.). In exchange for funding support, NSEP award recipients agree to work in qualifying national security positions for a minimum of one year.<br><br>The University of Wisconsin's College Year in India program has a history spanning over 50 years, and emphasizes academic rigor and fieldwork. Students participate in immersive language coursework and in-depth research of an approved topic relating the student's major field of study. Students must also complete a 3-month intensive summer language immersion course prior to the start of the program year.",
-                    "tags": ["Language Immersion", "National Security", "Study Abroad"]
+                    "title": "Honor Society Inductee",
+                    "description": "Based on having completed 72 semester hours with a GPA in the top 7.5% of my class, I was nominated and accepted into the Phi Kappa Phi National Honor Society in the spring of 2009.<br><br>Since its founding in 1897, Phi Kappa Phi has initiated many notable members, including public servants and leaders, Pulitzer and Nobel Prize winners, NASA astronauts and more. It is a global network composed of the best and brightest from all academic disciplines, a community of scholars and professionals building an enduring legacy for future generations. Membership in Phi Kappa Phi is earned through nomination by a local school chapter.",
+                    "tags": ["Academic Honors"]
                 },
                 {
                     "id": "csa",
                     "place": "@link{places.csa}",
                     "date": "2010/04",
                     "links": [
-                        {"faIcon": "fa-solid fa-graduation-cap", "href": "images/places/diploma-uwmadison.png", "id": "View Diploma"}
+                        {"faIcon": "fa-solid fa-graduation-cap", "href": "images/places/diploma-uwmadison.png", "id": "View Diploma"},
+                        {"faIcon": "fa-solid fa-building-columns", "href": "https://sasli.wisc.edu/history-mission/", "id": "About SASLI"}
                     ],
                     "buttonLabel": "View Diploma",
-                    "title": "Center for South Asia",
-                    "description": "ADD ME",
-                    "tags": ["3.8 GPA", "Magna cum laude"]
+                    "title": "UW Center for South Asia",
+                    "description": "During the summers of 2008 and 2009, I participated in two 8-week, 160-hour South Asia Summer Language Institute (SASLI) intensive language programs equivalent to one full year of study each in Hindi and Sanskrit.<br><br>Since the summer of 2003, the UW Language Program Office and the UW Center for South Asia have provided first- through third-year study of nearly a dozen South Asian languages to support pedagogy, implement newly-developed language-learning tools, and increase the number and quality of trained specialists in each language.",
+                    "tags": ["Foreign Language", "Magna Cum Laude"]
+                },
+                {
+                    "id": "nsep",
+                    "place": "@link{places.nsep}",
+                    "date": "2009/08",
+                    "links": [
+                        {"faIcon": "fa-solid fa-book-open", "href": "https://drive.google.com/file/d/1riIw-J_k_e4mXaFR1m8t9mg2uVwfJ5ZT/view?usp=sharing", "id": "View Fieldwork"},
+                        {"faIcon": "fa-solid fa-award", "href": "https://www.borenawards.org/about-us/about-us", "id": "About NSEP Boren Awards"},
+                        {"faIcon": "fa-solid fa-building-columns", "href": "https://southasia.wisc.edu/college-year-in-india-and-nepal-archive-project/", "id": "About UW College Year in India"}
+                    ],
+                    "buttonLabel": "View Fieldwork",
+                    "title": "NSEP Boren Award Recipient",
+                    "description": "Upon being selected as one of several dozen awardees of the 2009-2010 National Security Education Program (NSEP), I participated in the University of Wisconsin 9-month study abroad in Varanasi, India.<br><br>The NSEP fosters a pipeline of foreign language and cultural expertise critical to the U.S. federal government workforce, and was established by Congress in 1991 to encourage work in qualifying national security positions with a minimum one year service requirement.<br><br>Since its creation in 1973, the University of Wisconsin's College Year in India program has emphasized academic rigor and fieldwork. Students participate in immersive language coursework and in-depth research of an approved topic relating the student's major field of study, and must also complete a 3-month intensive summer language immersion course prior to the start of the program year.",
+                    "tags": ["Foreign Language", "National Security", "Study Abroad"]
                 }
             ]
         },
@@ -66,19 +70,20 @@
             "place": "@link{places.dod}",
             "period": ["2011/08", "2017/03"],
             "title": "Multi-Disciplined Civilian Analyst",
-            "description": "To fulfill my National Security Education Program post-graduation service requirement, I was hired as a civilian analyst at the U.S. Department of Defense. I contributed to critical national security projects using my linguistic and technical expertise after passing a full background investigation to obtain my clearance. As an added bonus, I met and married my wife who happened to be part of the same cohort of new hires.",
-            "tags": ["TS/SCI", "Python", "Pentest", "Linux", "VM", "APT"],
+            "description": "To fulfill my National Security Education Program post-graduation service requirement, I was hired as a civilian analyst at the U.S. Department of Defense. I contributed to critical national security projects using my linguistic and technical expertise after passing a full background investigation to obtain my clearance. I also met and married my wife Maria, who happened to be in the same cohort of new hires at that time.",
+            "tags": ["TS/SCI Clearance", "National Security", "Python", "Penetration Testing", "Linux"],
             "links": [
                 {
                     "id": "itfundamentals",
                     "place": "@link{places.itfundamentals}",
                     "date": "2016/07",
                     "links": [
-                        {"faIcon": "fa-solid fa-globe", "href": "images/places/cert-itfundamentals.png", "id": "View Certification"}
+                        {"faIcon": "fa-solid fa-award", "href": "images/places/cert-itfundamentals.png", "id": "View Certification"},
+                        {"faIcon": "fa-solid fa-globe", "href": "https://www.comptia.org/certifications/it-fundamentals#overview", "id": "About CompTIA IT Fundamentals"}
                     ],
                     "buttonLabel": "View Certification",
-                    "title": "Certified IT Fundamentals",
-                    "description": "CompTIA IT Fundamentals certification confirms foundational IT knowledge and skills. To earn this certification, individuals must demonstrate an understanding computer hardware and software, basic networking concepts, troubleshooting techniques, cybersecurity awareness, and familiarity with IT terminology.",
+                    "title": "Certified CompTIA IT Fundamentals",
+                    "description": "Federal Government IT workers are required to earn and maintain baseline certifications in the relevant field of work for the duration of their tenure.<br><br>CompTIA IT Fundamentals certification confirms foundational IT knowledge and skills. To earn this certification, individuals must demonstrate an understanding computer hardware and software, basic networking concepts, troubleshooting techniques, cybersecurity awareness, and familiarity with IT terminology.",
                     "tags": ["CompTIA", "General IT"]
                 },
                 {
@@ -86,11 +91,12 @@
                     "place": "@link{places.networkplus}",
                     "date": "2016/12",
                     "links": [
-                        {"faIcon": "fa-solid fa-globe", "href": "images/places/cert-networkplus.png", "id": "View Certification"}
+                        {"faIcon": "fa-solid fa-award", "href": "images/places/cert-networkplus.png", "id": "View Certification"},
+                        {"faIcon": "fa-solid fa-globe", "href": "https://www.comptia.org/certifications/network#overview", "id": "About CompTIA Network+"}
                     ],
                     "buttonLabel": "View Certification",
-                    "title": "Certified Network+",
-                    "description": "CompTIA Network+ certification confirms an individual possesses the skills in networking required to troubleshoot, configure and manage both wired and wireless networks found in companies around the world. The certification requires a professional-level understanding of emerging technologies including cloud and virtualization technologies.",
+                    "title": "Certified CompTIA Network+",
+                    "description": "Federal Government IT workers are required to earn and maintain baseline certifications in the relevant field of work for the duration of their tenure.<br><br>CompTIA Network+ certification confirms an individual possesses the skills in networking required to troubleshoot, configure and manage both wired and wireless networks found in companies around the world. The certification requires a professional-level understanding of emerging technologies including cloud and virtualization technologies.",
                     "tags": ["CompTIA", "Networking"]
                 },
                 {
@@ -98,11 +104,12 @@
                     "place": "@link{places.securityplus}",
                     "date": "2017/03",
                     "links": [
-                        {"faIcon": "fa-solid fa-globe", "href": "images/places/cert-securityplus.png", "id": "View Certification"}
+                        {"faIcon": "fa-solid fa-award", "href": "images/places/cert-securityplus.png", "id": "View Certification"},
+                        {"faIcon": "fa-solid fa-globe", "href": "https://www.comptia.org/certifications/security#overview", "id": "About CompTIA Security+"}
                     ],
                     "buttonLabel": "View Certification",
-                    "title": "Certified Security+",
-                    "description": "CompTIA Security+ certification confirms the baseline skills required to perform core security functions, and provides a global benchmark for best practices in IT network and operational security. The certifications requires hands-on practical experience in risk assessment and management, incident response, forensics, enterprise networks, hybrid/cloud operations, and security controls.",
+                    "title": "Certified CompTIA Security+",
+                    "description": "Federal Government IT workers are required to earn and maintain baseline certifications in the relevant field of work for the duration of their tenure.<br><br>CompTIA Security+ certification confirms the baseline skills required to perform core security functions, and provides a global benchmark for best practices in IT network and operational security. The certifications requires hands-on practical experience in risk assessment and management, incident response, forensics, enterprise networks, hybrid/cloud operations, and security controls.",
                     "tags": ["CompTIA", "Security"]
                 }
             ]
@@ -120,12 +127,13 @@
                     "place": "@link{places.umgc}",
                     "date": "2017/04",
                     "links": [
-                        {"faIcon": "fa-solid fa-graduation-cap", "href": "images/places/diploma-umgc.png", "id": "View Diploma"}
+                        {"faIcon": "fa-solid fa-graduation-cap", "href": "images/places/diploma-umgc.png", "id": "View Diploma"},
+                        {"faIcon": "fa-solid fa-globe", "href": "https://www.umgc.edu/online-degrees/bachelors/computer-science", "id": "About UMGC CompSci"}
                     ],
                     "buttonLabel": "View Diploma",
-                    "title": "Diploma",
-                    "description": "ADD ME",
-                    "tags": ["4.0 GPA", "Summa cum laude"]
+                    "title": "Secure Software Developer",
+                    "description": "The Software Development and Security degree at University of Maryland Global Campus (formerly University of Maryland University College) is designed to teach programming languages and best practices in software development that are in demand today in the workplace. This degree supports technical and leadership roles in diverse and challenging application development and security settings, including high-demand positions such as software development and security analyst, software development and security manager, application and software architect, information security officer, intrusion analyst, penetration tester, programmer, software engineer, security and code auditor, or system architect.<br><br>Coursework includes studying leading industry practices and standards to meet user requirements, exploring all phases of a secure software development project as part of a software development team, using appropriate tools to analyze existing applications for weaknesses in order to mitigate security threats, and responding to cyberattacks to minimize risk and protect privacy. This degree requires the successful completion of 120 credits of coursework, including 33 credits for the major, 41 credits in general education requirements; and 46 credits in the minor, electives, and other degree requirements.",
+                    "tags": ["OWASP Top 10", "Software Security", "Summa Cum Laude"]
                 }
             ]
         },
@@ -142,11 +150,12 @@
                     "place": "@link{places.safe}",
                     "date": "2019/10",
                     "links": [
-                        {"faIcon": "fa-solid fa-globe", "href": "images/places/cert-safe.png", "id": "View Certification"}
+                        {"faIcon": "fa-solid fa-award", "href": "images/places/cert-safe.png", "id": "View Certification"},
+                        {"faIcon": "fa-solid fa-globe", "href": "https://scaledagile.com/training/safe-scrum-master/", "id": "About SSM Certification"}
                     ],
                     "buttonLabel": "View Certification",
                     "title": "Certified SAFe 4 Scrum Master",
-                    "description": "After being asked to step into a more hands-on role in planning and executing on prioritized work within the software development lifecycle, I pursued and obtained a SAFe Scrum Master certification from Scaled Agile, Inc. This designation recognizes expertise in Scrum, Lean, and Agile methodologies by demonstrating knowledge, skills, and experience required to manage Agile projects in a large-scale enterprise through an understanding of SAFe practices. This required enrolling in accredited courses offered by Scaled Agile and passing an exam to assess my ability to apply the principles of the SAFe framework.",
+                    "description": "After being asked to step into a more hands-on role in planning and executing on prioritized work within the software development lifecycle, I pursued and obtained a SAFe Scrum Master designation from Scaled Agile, Inc.<br><br>The SAFe Scrum Master certification recognizes expertise in Scrum, Lean, and Agile methodologies by demonstrating knowledge, skills, and experience required to manage Agile projects in a large-scale enterprise through an understanding of SAFe practices. This required enrolling in accredited courses offered by Scaled Agile and passing an exam to assess my ability to apply the principles of the SAFe framework.",
                     "tags": ["Scaled Agile", "Scrum"]
                 },
                 {
@@ -154,11 +163,12 @@
                     "place": "@link{places.guidewire}",
                     "date": "2021/04",
                     "links": [
-                        {"faIcon": "fa-solid fa-globe", "href": "images/places/cert-gw.png", "id": "View Certification"}
+                        {"faIcon": "fa-solid fa-award", "href": "images/places/cert-gw.png", "id": "View Certification"},
+                        {"faIcon": "fa-solid fa-globe", "href": "https://view-su2.highspot.com/viewer/655cfe7c85d3d14f8b4ad0a3#1", "id": "About Guidewire Certification"}
                     ],
                     "buttonLabel": "View Certification",
                     "title": "Certified PolicyCenter 10.0 Specialist",
-                    "description": "To deepen my expertise in the Guidewire suite of insurance software, I pursued and obtained a professional certification in Policy Center configuration. This designation recognizes professionals with a deep understanding of the insurance industry's leading software platform. This required long-term study in order to pass a series of exams evaluating my understanding of the key features of Guidewire software.",
+                    "description": "To deepen my expertise in the Guidewire suite of insurance software, I pursued and obtained a professional designation in Policy Center configuration.<br><br>The Guidewire PolicyCenter 10.0 Specialist certification recognizes professionals with a deep understanding of the insurance industry's leading software platform. This required long-term study in order to pass a series of exams evaluating my understanding of the key features of Guidewire software.",
                     "tags": ["Guidewire", "PolicyCenter"]
                 }
             ]
@@ -175,12 +185,13 @@
                     "id": "oldworldsaints",
                     "place": "@link{places.oldworldsaints}",
                     "date": "2021/04",
-                    "buttonLabel": "View Website",
+                    "buttonLabel": "View Project",
                     "links": [
-                        {"faIcon": "fa-solid fa-globe", "href": "https://www.oldworldsaints.com", "id": "OldWorldSaints.com"}
+                        {"faIcon": "fa-solid fa-globe", "href": "https://www.oldworldsaints.com", "id": "View Website"},
+                        {"faIcon": "fa-solid fa-code", "href": "https://github.com/sretmklaw/cimeliarchium-web-app", "id": "View GitHub Repo"}
                     ],
                     "title": "OldWorldSaints.com",
-                    "description": "During the COVID-19 pandemic, I designed, built, and deployed this Spring Boot Java web application as a concept plan for the former UW Madison Lubar Institute for the Study of the Abrahamic Religions. It displays information about important figures and commemorations in various traditions through the ancient and medieval world.",
+                    "description": "During the COVID-19 pandemic, I designed, built, and deployed this Spring Boot Java web application as a concept plan for the former UW Madison Lubar Institute for the Study of the Abrahamic Religions.<br><br>This site displays information about important figures and commemorations in various traditions through the ancient and medieval world. It includes scrollable and clickable maps built using Leaflet JS, links to scanned primary source materials in PDF format, and multiple search interfaces keying on a range of possible criteria.",
                     "tags": ["Java", "Spring", "Leaflet JS"]
                 }
             ]
