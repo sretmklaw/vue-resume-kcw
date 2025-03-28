@@ -1,9 +1,9 @@
 {
-    "title": "<span class='text-primary'>Contact</span> Me",
-    "description": "Please don't hesitate to get in touch!",
-    "subtitle": "Or...",
-    "subtitleDescription": "If you prefer, you can contact me using the following:",
-
+    "title": "Collaborate",
+    "description": "Interested in working together? Let's get in touch",
+    "subtitle": "Know a Hiring Manager?",
+    "subtitleDescription": "Feel free to download a printable version of my resume to share",
+    "searchStatus": "I am currently open to entertaining competitive offers",
     "items": [
         "@link{profile.contact.email}",
         "@link{profile.contact.linkedin}"

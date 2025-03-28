@@ -34,6 +34,7 @@
                 "title": "Turkish Mosque - Aya Sofya",
                 "subtitle": "Istanbul, Turkiye",
                 "logoUrl": "images/interests/lego-ayasofya.png",
+                "previewUrl": "images/interests/preview-ayasofya.gif",
                 "links": [
                     {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/", "id": "Rebrickable.com"}
                 ],
@@ -46,6 +47,7 @@
                 "title": "Orthodox Church - Kizhi Pogost",
                 "subtitle": "Lake Ladoga, Russia",
                 "logoUrl": "images/interests/lego-kizhipogost.png",
+                "previewUrl": "images/interests/lego-kizhipogost.png",
                 "links": [
                     {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/", "id": "Rebrickable.com"}
                 ],
@@ -56,51 +58,17 @@
 
         "webapp": [
             {
-                "id": "arabiannights",
-                "title": "The Arabian Nights",
-                "subtitle": "Sir Richard Burton",
-                "logoUrl": "images/interests/book-burton.png",
+                "id": "oldworldsaints",
+                "title": "OldWorldSaints.com",
+                "subtitle": "Spring Boot Java WebApp",
+                "logoUrl": "images/places/link-oldworldsaints.png",
+                "previewUrl": "images/places/link-oldworldsaints.png",
                 "links": [
-                    {"faIcon": "fa-solid fa-book", "href": "https://books.google.com/books/about/The_Arabian_Nights.html?id=whnqswEACAAJ", "id": "Google Books"}
+                    {"faIcon": "fa-solid fa-globe", "href": "https://www.oldworldsaints.com", "id": "View Website"},
+                    {"faIcon": "fa-solid fa-code", "href": "https://github.com/sretmklaw/cimeliarchium-web-app", "id": "View GitHub Repo"}
                 ],
-                "description": "The Arabian Nights is your magic carpet ride to exotic lands full of wonders and marvels. First collected nearly a thousand years ago, these folktales are presented as stories that crafty Scheherazade tells her husband, King Shahryar, over a thousand-and-one consecutive nights, to pique his interest for the next evening's entertainment and thereby save her life. Among them are some of the best-known legends of eastern storytelling, including the Sinbad the Sailor, Aladdin and His Magic Lamp, and Ali Baba and the Forty Thieves.",
-                "tags": ["fables", "ancient", "arabia"]
-            },
-
-            {
-                "id": "empireofsteppes",
-                "title": "The Empire of the Steppes",
-                "subtitle": "Rene Grousset",
-                "logoUrl": "images/interests/book-grousset.png",
-                "links": [
-                    {"faIcon": "fa-solid fa-book", "href": "https://books.google.com/books/about/The_Empire_of_the_Steppes.html?id=CHzGvqRbV_IC", "id": "Google Books"}
-                ],
-                "description": "While the early history of the steppe nomads is shrouded in obscurity, this obscurity lifts somewhat after their contact with cultures possessing written histories. But even when information about them becomes relatively more plentiful, linguistic ocmplexities make its interpretation extremely difficult. Thus, while the number of specialized studies devoted to them is impressive, general works embracing the many disciplines involved, or syntheses on a grand scale encompassing the sprawling history of these peoples, are exceedingly scarce. Among these very few, The Empire of the Steppes is outstanding. The aim of this first English-language edition has been to make available a major work useful to the general reader as well as to the specialist, above all an edition which retains the majestic sweep and grandeur, as well as the overriding intellectual grasp, of Grousset's original.",
-                "tags": ["history", "nomads", "mongolia"]
-            },
-
-            {
-                "id": "benares",
-                "title": "Benares: The Sacred Landscape of Varanasi",
-                "subtitle": "Neils Gutschow",
-                "logoUrl": "images/interests/book-gutschow.png",
-                "links": [
-                    {"faIcon": "fa-solid fa-book", "href": "https://books.google.com/books/about/Benares.html?id=sBttQgAACAAJ", "id": "Google Books"}
-                ],
-                "description": "The book gives a comprehensive view of the complex world of India's sacred place par excellence, also known as Benares. Beyond a scholarly presentation of pilgrimages and documentation of their routes the book opens a new view: visually compelling photographs focus on sacred objects.",
-                "tags": ["architecture", "hindu", "india"]
-            },
-
-            {
-                "id": "ilmilione",
-                "title": "The Travels of Marco Polo",
-                "subtitle": "Marco Polo",
-                "logoUrl": "images/interests/book-polo.png",
-                "links": [
-                    {"faIcon": "fa-solid fa-book", "href": "https://books.google.com/books/about/The_Travels_of_Marco_Polo.html?id=nHgUswEACAAJ", "id": "Google Books"}
-                ],
-                "description": "Marco Polo almost single-handedly introduced fourteenth-century Europe to the civilizations of Central Asia and China. Now this stunningly illustrated volume, edited by renowned historian Morris Rossabi, offers the complete text of Polo's travelogue in the respected Yule-Cordier translation, enhanced with more than 200 images - including illuminated manuscripts, paintings, photographs, and maps. Sidebars and dozens of informative footnotes combine to present Polo and his travels in a captivating new light.",
-                "tags": ["travelogue", "medieval", "asia"]
+                "description": "This site displays information about important figures and commemorations in various traditions through the ancient and medieval world. It includes scrollable and clickable maps built using Leaflet JS, links to scanned primary source materials in PDF format, and multiple search interfaces keying on a range of possible criteria.",
+                "tags": ["Java", "Spring", "Leaflet JS"]
             }
         ]
     }
