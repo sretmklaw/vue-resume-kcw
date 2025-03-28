@@ -2,14 +2,12 @@
     <!-- Link List -->
     <div class="links">
         <div v-for="item in props.items" class="link text-1">
-            <a v-if="item['place']['certUrl']" class="gallery-item" :href="item['href']" target="_blank">
+            <a v-if="item['place'] && item['place']['previewUrl']" class="gallery-item" @click="_onItemClicked(item)">
                 <!-- Logo -->
                 <div class="gallery-thumb-wrapper">
-                    <ImageView :src="item['place']['certUrl']"
+                    <ImageView :src="item['place']['previewUrl']"
                             :alt="item['place']['name']"
-                            class="gallery-thumb"
-                            data-toggle="modal" 
-                            data-target="GalleryModal"/>
+                            class="gallery-thumb"/>
 
                     <div class="gallery-thumb-overlay">
                         <div class="gallery-thumb-overlay-content eq-h6">
@@ -38,6 +36,12 @@ const navigation = useNavigation()
 const props = defineProps({
     items: Array
 })
+
+const emit = defineEmits(['open'])
+
+const _onItemClicked = (item) => {
+    emit('open', item)
+}
 </script>
 
 <style lang="scss" scoped>

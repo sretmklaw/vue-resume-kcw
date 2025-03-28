@@ -20,23 +20,30 @@
         "name": "University of Wisconsin"
     },
 
+    "csa": {
+        "logoUrl": "images/places/logo-csa.png",
+        "previewUrl": "images/places/diploma-uwmadison.png",
+        "faIcon": "fa-solid fa-university",
+        "name": "Center for South Asia"
+    },
+
     "lubar": {
         "logoUrl": "images/places/logo-lubar.png",
-        "certUrl": "images/places/link-lubar.png",
+        "previewUrl": "images/places/link-lubar.png",
         "faIcon": "fa-solid fa-handshake-simple",
         "name": "Lubar Institute"
     },
 
     "pkp": {
         "logoUrl": "images/places/logo-pkp.png",
-        "certUrl": "images/places/cert-pkp.png",
+        "previewUrl": "images/places/cert-pkp.png",
         "faIcon": "fa-solid fa-graduation-cap",
         "name": "Phi Kappa Phi"
     },
 
     "nsep": {
         "logoUrl": "images/places/logo-nsep.png",
-        "certUrl": "images/places/link-nsep.png",
+        "previewUrl": "images/places/link-nsep.png",
         "faIcon": "fa-solid fa-shield-halved",
         "name": "National Security Education Program"
     },
@@ -49,27 +56,28 @@
 
     "itfundamentals": {
         "logoUrl": "images/places/logo-itfundamentals.png",
-        "certUrl": "images/places/cert-itfundamentals.png",
+        "previewUrl": "images/places/cert-itfundamentals.png",
         "faIcon": "fa-solid fa-server",
         "name": "CompTIA"
     },
 
     "networkplus": {
         "logoUrl": "images/places/logo-networkplus.png",
-        "certUrl": "images/places/cert-networkplus.png",
+        "previewUrl": "images/places/cert-networkplus.png",
         "faIcon": "fa-solid fa-server",
         "name": "CompTIA"
     },
 
     "securityplus": {
         "logoUrl": "images/places/logo-securityplus.png",
-        "certUrl": "images/places/cert-securityplus.png",
+        "previewUrl": "images/places/cert-securityplus.png",
         "faIcon": "fa-solid fa-server",
         "name": "CompTIA"
     },
 
     "umgc": {
         "logoUrl": "images/places/logo-umgc.png",
+        "previewUrl": "images/places/diploma-umgc.png",
         "faIcon": "fa-solid fa-university",
         "name": "University of Maryland"
     },
@@ -82,21 +90,21 @@
 
     "safe": {
         "logoUrl": "images/places/logo-safe.png",
-        "certUrl": "images/places/cert-safe.png",
+        "previewUrl": "images/places/cert-safe.png",
         "faIcon": "fa-solid fa-certificate",
         "name": "Scaled Agile, Inc."
     },
 
     "guidewire": {
         "logoUrl": "images/places/logo-gw.png",
-        "certUrl": "images/places/cert-gw.png",
+        "previewUrl": "images/places/cert-gw.png",
         "faIcon": "fa-solid fa-certificate",
         "name": "Guidewire"
     },
 
     "oldworldsaints": {
         "logoUrl": "images/places/logo-oldworldsaints.png",
-        "certUrl": "images/places/link-oldworldsaints.png",
+        "previewUrl": "images/places/link-oldworldsaints.png",
         "faIcon": "fa-solid fa-globe",
         "name": "OldWorldSaints.com"
     },
@@ -104,6 +112,6 @@
     "webdev": {
         "logoUrl": "images/places/logo-webdev.png",
         "faIcon": "fa-solid fa-globe",
-        "name": "Freelance Web App Developer"
+        "name": "Freelance"
     }
 }

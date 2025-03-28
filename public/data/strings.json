@@ -28,5 +28,5 @@
     "skills": "Skills",
     "subject": "Subject",
     "tags": "Tags",
-    "whereToFindDescription": "Find ${project} here:"
+    "whereToFindDescription": "Find more info about ${project} here:"
 }
