@@ -82,6 +82,13 @@
         "name": "University of Maryland"
     },
 
+    "resume": {
+        "logoUrl": "images/places/logo-resume.png",
+        "previewUrl": "images/places/resume.png",
+        "faIcon": "fa-solid fa-file",
+        "name": "Resume"
+    },
+
     "sentry": {
         "logoUrl": "images/places/logo-sentry.png",
         "faIcon": "fa-solid fa-building",

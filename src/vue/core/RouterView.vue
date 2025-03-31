@@ -10,7 +10,7 @@ import {useData} from "../../composables/data.js"
 import DefaultSection from "../sections/_templates/SectionTemplate.vue"
 import ContactSection from "../sections/contact/ContactSection.vue"
 import IntroSection from "../sections/threads/IntroSection.vue"
-import GallerySection from "../sections/gallery/GallerySection.vue"
+import CreationsSection from "../sections/creations/CreationsSection.vue"
 import InfoSection from "../sections/info/InfoSection.vue"
 import ExperienceSection from "../sections/threads/ExperienceSection.vue"
 
@@ -19,7 +19,7 @@ const data = useData()
 /**
  * @type {Object}
  */
-const SECTION_VUE_COMPONENTS = {DefaultSection, ContactSection, IntroSection, GallerySection, InfoSection, ExperienceSection}
+const SECTION_VUE_COMPONENTS = {DefaultSection, ContactSection, IntroSection, CreationsSection, InfoSection, ExperienceSection}
 
 /**
  * @param {String} componentName

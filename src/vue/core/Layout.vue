@@ -154,6 +154,18 @@ const _handleScroll = () => {
         const expTimelineItems = document.getElementById("expTimelineGrid").querySelectorAll("li");
         layout.handleScroll(expTimelineItems);
     }
+    if (document.getElementById("skillsGrid")) {
+        const skillItems = document.getElementById("skillsGrid").querySelectorAll("li");
+        layout.handleScroll(skillItems);
+    }
+    if (document.getElementById("creationsGrid")) {
+        const creationItems = document.getElementById("creationsGrid").querySelectorAll("li");
+        layout.handleScroll(creationItems);
+    }
+    if (document.getElementById("contactGrid")) {
+        const contactItems = document.getElementById("contactGrid").querySelectorAll("li");
+        layout.handleScroll(contactItems);
+    }
 }
 
 const _positionCursor = (isNavigationModeAllAtOnce) => {
@@ -172,6 +184,14 @@ const _positionCursor = (isNavigationModeAllAtOnce) => {
 defineExpose({
     init
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener('hide.bs.modal', function (event) {
+        if (document.activeElement) {
+            document.activeElement.blur();
+        }
+    });
+});
 </script>
 
 <style lang="scss" scoped>

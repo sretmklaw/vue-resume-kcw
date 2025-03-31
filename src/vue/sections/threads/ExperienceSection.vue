@@ -47,7 +47,7 @@
                                     <Tags :item-class="'bg-primary'" :items="item['tags']"/>
 
                                     <!-- Link Grid -->
-                                    <Links :items="item['links']" @open="_onProjectOpened"/>
+                                    <PopupIcons :items="item['popupIcons']" @open="_onProjectOpened"/>
                                 </div>
                             </div>
                         </li>
@@ -57,16 +57,16 @@
         </div>
     </SectionTemplate>
 
-    <LinkModal ref="linkmodal" :project="selectedProject" />
+    <ExperienceModal ref="experienceModal" :project="selectedProject" />
 </template>
 
 <script setup>
 import SectionTemplate from "../_templates/SectionTemplate.vue"
-import LinkModal from "./LinkModal.vue"
-import {computed, ref} from "vue"
+import ExperienceModal from "./ExperienceModal.vue"
+import {ref, computed} from "vue"
 import {useUtils} from "../../../composables/utils.js"
 import Tags from "../../widgets/Tags.vue"
-import Links from "../../widgets/Links.vue"
+import PopupIcons from "../../widgets/PopupIcons.vue"
 
 /**
  * @property {Object} sectionData
@@ -77,7 +77,7 @@ const props = defineProps({
 
 const utils = useUtils()
 const selectedProject = ref(null)
-const linkmodal = ref(null)
+const experienceModal = ref(null)
 
 /**
  * @param {Object} item
@@ -101,7 +101,7 @@ const linkmodal = ref(null)
  */
  const _onProjectOpened = (project) => {
     selectedProject.value = project
-    linkmodal.value.display()
+    experienceModal.value.display()
 }
 </script>
 

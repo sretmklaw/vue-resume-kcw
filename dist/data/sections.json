@@ -45,11 +45,10 @@
         {
             "id": "creations",
             "categoryId": "more",
-            "component": "GallerySection",
+            "component": "CreationsSection",
             "jsonPath": "data/sections/creations.json",
             "faIcon": "fa-solid fa-tools"
         },
-        
         
         {
             "id": "contact",

@@ -1,6 +1,6 @@
 {
-    "title": "Experience",
-    "description": "Scroll to see how my story has unfolded through the years",
+    "title": "My Story",
+    "description": "Scroll to learn more about my educational background and work experiences",
 
     "items": [
         {
@@ -10,7 +10,7 @@
             "title": "Bachelor of Arts in Languages & Cultures of Asia",
             "description": "In seeking to combine a deep understanding of different viewpoints with practical research and critical thinking skills, I opted to pursue a degree in South Asian area studies with a linguistics focus. This opened up opportunities for an undergraduate fellowship and intensive language study with an international program component, ultimately leading to an academic year abroad in Varanasi, India.",
             "tags": ["Critical Thinking", "Communication", "Logic", "Ethics", "Research", "Languages"],
-            "links": [
+            "popupIcons": [
                 {
                     "id": "lubar",
                     "place": "@link{places.lubar}",
@@ -72,7 +72,7 @@
             "title": "Multi-Disciplined Civilian Analyst",
             "description": "To fulfill my National Security Education Program post-graduation service requirement, I was hired as a civilian analyst at the U.S. Department of Defense. I contributed to critical national security projects using my linguistic and technical expertise after passing a full background investigation to obtain my clearance. I also met and married my wife Maria, who happened to be in the same cohort of new hires at that time.",
             "tags": ["TS/SCI Clearance", "National Security", "Python", "Penetration Testing", "Linux"],
-            "links": [
+            "popupIcons": [
                 {
                     "id": "itfundamentals",
                     "place": "@link{places.itfundamentals}",
@@ -121,7 +121,7 @@
             "title": "Bachelor of Sciences in Software Development & Security",
             "description": "In order to better support critical national security initiatives, I returned to school on a part-time remote basis to pursue a second degree in secure software development. In the course of my studies, I worked in small groups on both iterative and waterfall projects, while while extensively studying the OWASP Top 10 web application risks to ensure that security considerations were incorporated at all phases of development.",
             "tags": ["Java", "OOP", "SQL", "Oracle", "RDBMS", "HTML/CSS"],
-            "links": [
+            "popupIcons": [
                 {
                     "id": "umgc-diploma",
                     "place": "@link{places.umgc}",
@@ -144,7 +144,7 @@
             "title": "Software Engineer",
             "description": "With shifting policymaking priorities, I saw the opportunity to return to my roots and focus exclusively on software engineering in the private sector. I found that Sentry Insurance had some exciting projects as they moved away from iterative development on a legacy mainframe to cloud-based hosting using an agile software development model. During this period, my wife and I also welcomed our daughter Miri into our family.",
             "tags": ["DevOps", "Java", "Gosu", "AWS", "SQL", "Docker", "Confluence", "JIRA"],
-            "links": [
+            "popupIcons": [
                 {
                     "id": "safe-cert",
                     "place": "@link{places.safe}",
@@ -180,7 +180,7 @@
             "title": "Web Application Developer",
             "description": "In my free time, I continue to work on various side projects combining my interest in software engineering and world history. Check out some of my most recent work showcasing my coding approach and attention to detail.",
             "tags": ["Vue", "Spring", "PostgreSQL", "Github"],
-            "links": [
+            "popupIcons": [
                 {
                     "id": "oldworldsaints",
                     "place": "@link{places.oldworldsaints}",
@@ -188,7 +188,7 @@
                     "buttonLabel": "View Project",
                     "links": [
                         {"faIcon": "fa-solid fa-globe", "href": "https://www.oldworldsaints.com", "id": "View Website"},
-                        {"faIcon": "fa-solid fa-code", "href": "https://github.com/sretmklaw/cimeliarchium-web-app", "id": "View GitHub Repo"}
+                        {"faIcon": "fa-solid fa-code", "href": "https://github.com/sretmklaw/oldworldsaints", "id": "View GitHub Repo"}
                     ],
                     "title": "OldWorldSaints.com",
                     "description": "During the COVID-19 pandemic, I designed, built, and deployed this Spring Boot Java web application as a concept plan for the former UW Madison Lubar Institute for the Study of the Abrahamic Religions.<br><br>This site displays information about important figures and commemorations in various traditions through the ancient and medieval world. It includes scrollable and clickable maps built using Leaflet JS, links to scanned primary source materials in PDF format, and multiple search interfaces keying on a range of possible criteria.",

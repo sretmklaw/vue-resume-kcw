@@ -30,6 +30,8 @@
                          :percentage="item['value']"
                          :description="item['description']"
                          :color="_getProgressBarColor(item)"
+                         :nastaliq="item['nastaliq']"
+                         :devanagari="item['devanagari']"
                          class="mt-1"/>
 
             <!-- Description -->
@@ -50,13 +52,15 @@ import ProgressBar from "../../../widgets/ProgressBar.vue"
  * @property {Boolean} descriptionWithProgressBar
  * @property {String} iconColorStyle
  * @property {descriptionWithProgressBar} smallDescription
+ * @property {minMaxValue} minMaxValue
  */
 const props = defineProps({
     item: Object,
     highlightedHeader: Boolean,
     descriptionWithProgressBar: Boolean,
     iconColorStyle: String,
-    smallDescription: Boolean
+    smallDescription: Boolean,
+    minMaxValue: Object
 })
 
 /**

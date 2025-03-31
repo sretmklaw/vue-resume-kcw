@@ -1,6 +1,6 @@
 {
     "title": "Skills",
-    "description": "Exploring the diverse range of skills I've acquired and developed",
+    "description": "Explore the wide range of skills I've acquired and developed",
 
     "subcategories": [
         {
@@ -8,20 +8,41 @@
             "type": "grid",
             "progress": null,
             "title": null
-        },
-
+        },      
         {
-            "id": "tools",
+            "id": "operatingSystems",
             "type": "grid",
             "progress": "number",
-            "title": "Tools"
+            "title": "Operating Systems",
+            "description": "You can tell a lot about a person by their first OS. 'Clippy' is one of my core memories."
         },
-
         {
-            "id": "languages",
-            "type": "list",
-            "progress": {"0": "beginner", "20": "rookie", "40": "intermediate", "60": "advanced", "80": "fluent", "100": "native"},
-            "title": "Languages"
+            "id": "microsoftSuite",
+            "type": "grid",
+            "progress": "number",
+            "title": "MS Office",
+            "description": "As a child I made WordArt and tinkered in MS Paint. Fortunately, my experience has only grown from there."
+        },
+        {
+            "id": "rdbms",
+            "type": "grid",
+            "progress": "number",
+            "title": "Databases",
+            "description": "I have experience with most of the commonly used Relational Database Management Systems (RDBMS)."
+        },
+        {
+            "id": "compLang",
+            "type": "grid",
+            "progress": "number",
+            "title": "Computer Languages",
+            "description": "Writing code a computer can understand is science. Writing code other programmers can understand is an art."
+        },
+        {
+            "id": "humanLang",
+            "type": "grid",
+            "progress": "number",
+            "title": "Human Languages",
+            "description": "The languages we speak define the limits of our imagination. I have always strived to dream bigger."
         }
     ],
 
@@ -31,119 +52,193 @@
                 "imageIconUrl": null,
                 "faIcon": "fa-solid fa-magnifying-glass",
                 "value": null,
-                "title": "Data Analysis",
-                "description": "Effectively sift through large amounts of noise and refine the results to ensure the most important information is presented to users in a clear and concise manner."
+                "title": "Critical Thinking",
+                "description": "Skillful application of analytical processes to evaluate and synthesize existing concepts into new and better approaches."
             },
 
             {
                 "imageIconUrl": null,
                 "faIcon": "fa-solid fa-trowel-bricks",
                 "value": null,
-                "title": "Design Principles",
-                "description": "Craft intuitive, efficient, and scalable frameworks based on accepted best practices and standards to optimize user experience."
+                "title": "Web Application Design",
+                "description": "Creating intuitive and visually-appealing web applications to drive user engagement with its content."
             },
 
             {
                 "imageIconUrl": null,
-                "faIcon": "fa-solid fa-headset",
+                "faIcon": "fa-solid fa-cube",
                 "value": null,
-                "title": "Customer Service",
-                "description": "Provide effective, timely, and friendly support to users with professionalism and courtesy."
+                "title": "Performance Optimization",
+                "description": "Build efficient and scalable representations of business objects to optimize storage and retrieval over the long term."
             },
 
             {
                 "imageIconUrl": null,
-                "faIcon": "fas fa-vector-square",
+                "faIcon": "fas fa-people-group",
                 "value": null,
-                "title": "Wireframing",
-                "description": "Create detailed wireframes to visualize and plan user interfaces, effectively laying the foundation for intuitive design."
-            },
-
-            {
-                "imageIconUrl": null,
-                "faIcon": "fas fa-check-double",
-                "value": null,
-                "title": "Usability Testing",
-                "description": "Enhance user experiences through comprehensive usability testing, including a range of edge cases."
-            },
-
-            {
-                "imageIconUrl": null,
-                "faIcon": "fas fa-laptop-code",
-                "value": null,
-                "title": "Prototyping",
-                "description": "Translate concepts into interactive prototypes for testing and refinement."
+                "title": "Cross-Functional Teams",
+                "description": "Bring together and remove obstacles to delivery among a group of subject matter experts to accelerate problem-solving."
             }
         ],
 
-        "tools": [
-
+        "operatingSystems": [
             {
-                "imageIconUrl": null,
-                "faIcon": "fa-solid fa-file-word",
-                "value": 95,
-                "title": "MS Word", "description": "Experience: 10+ years"
-            },
-
-            {
-                "imageIconUrl": null,
-                "faIcon": "fa-solid fa-file-excel",
+                "faIcon": "fab fa-windows",
                 "value": 90,
-                "title": "MS Excel", "description": "Experience: 10+ years"
+                "title": "Microsoft Windows",
+                "description": "Experience: 10+ years"
             },
-
             {
-                "imageIconUrl": null,
-                "faIcon": "fa-solid fa-database",
-                "value": 65,
-                "title": "SQL", "description": "Experience: 3 years"
+                "faIcon": "fab fa-apple",
+                "value": 80,
+                "title": "Apple Mac",
+                "description": "Experience: 10+ years"
             },
-
             {
-                "imageIconUrl": null,
-                "faIcon": "fab fa-html5",
+                "faIcon": "fab fa-ubuntu",
+                "value": 70,
+                "title": "Ubuntu Linux",
+                "description": "Experience: 5 years"
+            },
+            {
+                "faIcon": "fab fa-redhat",
                 "value": 60,
-                "title": "HTML 5", "description": "Experience: 1 year"
-            },
-
-            {
-                "imageIconUrl": null,
-                "faIcon": "fab fa-css3-alt",
-                "value": 55,
-                "title": "CSS 3", "description": "Experience: 1 year"
-            },
-
-            {
-                "imageIconUrl": null,
-                "faIcon": "fab fa-figma",
-                "value": 55,
-                "title": "Figma", "description": "Experience: 1 year"
+                "title": "Red Hat Enterprise Linux",
+                "description": "Experience: 3 years"
             }
         ],
 
-        "languages": [
+        "microsoftSuite": [
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-file-word",
+                "value": 95,
+                "title": "Word", "description": "Experience: 10+ years"
+            },
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-file-excel",
+                "value": 90,
+                "title": "Excel", "description": "Experience: 10+ years"
+            },
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-file-powerpoint",
+                "value": 90,
+                "title": "Powerpoint", "description": "Experience: 10+ years"
+            },
+            {
+                "imageIconUrl": null,
+                "faIcon": "fas fa-envelope",
+                "value": 90,
+                "title": "Outlook", "description": "Experience: 10+ years"
+            }
+        ],
+
+        "rdbms": [
+            {
+                "faIcon": "fas fa-database",
+                "value": 90,
+                "title": "Microsoft SQL Server",
+                "description": "Experience: 8 years"
+            },
+            {
+                "faIcon": "fas fa-database",
+                "value": 80,
+                "title": "PostgreSQL",
+                "description": "Experience: 5 years"
+            },
+            {
+                "faIcon": "fas fa-database",
+                "value": 60,
+                "title": "MySQL",
+                "description": "Experience: 3 years"
+            },
+            {
+                "faIcon": "fas fa-database",
+                "value": 40,
+                "title": "Oracle DB",
+                "description": "Experience: 1 year"
+            }
+        ],
+
+        "compLang": [
+            {
+                "faIcon": "fab fa-java",
+                "value": 95,
+                "title": "Java",
+                "description": "Experience: 10+ years"
+            },
+            {
+                "faIcon": "fab fa-html5",
+                "value": 90,
+                "title": "HTML5",
+                "description": "Experience: 10+ years"
+            },
+            {
+                "faIcon": "fab fa-css3-alt",
+                "value": 90,
+                "title": "CSS3",
+                "description": "Experience: 10+ years"
+            },
+            {
+                "faIcon": "fas fa-database",
+                "value": 90,
+                "title": "SQL",
+                "description": "Experience: 10+ years"
+            },
+            {
+                "faIcon": "fab fa-js",
+                "value": 85,
+                "title": "Javascript",
+                "description": "Experience: 10+ years"
+            },
+            {
+                "faIcon": "fas fa-code",
+                "value": 80,
+                "title": "Gosu",
+                "description": "Experience: 8 years"
+            },
+            {
+                "faIcon": "fab fa-python",
+                "value": 60,
+                "title": "Python",
+                "description": "Experience: 3 years"
+            },
+            {
+                "faIcon": "fab fa-vuejs",
+                "value": 50,
+                "title": "VueJS",
+                "description": "Experience: 3 years"
+            }
+        ],
+
+        "humanLang": [
             {
                 "imageIconUrl": "images/flags/en.png",
                 "value": 100,
-                "title": "English"
+                "title": "English",
+                "description": "Native Language"
             },
-
             {
                 "imageIconUrl": "images/flags/ir.png",
-                "value": 80,
-                "title": "Persian"
+                "value": 90,
+                "title": "Persian",
+                "description": "Experience: 10+ years (University & Professional)",
+                "nastaliq":"تمام سالهای بزرگسالی ام آرزوی دیدن گنبدهای فیروزه ای اصفهان و بادگیرهای باستانی گچکاری یزد را داشتم. در واقع نزدیکترین چیزی که داشتم یک تور دو هفته ای در تهرانگلس بود. حداقل جوجه کباب سنتی بود."
             },
-
             {
                 "imageIconUrl": "images/flags/in.png",
-                "value": 70,
-                "title": "Hindi"
+                "value": 60,
+                "title": "Hindi",
+                "description": "Experience: 3 years (University & Study Abroad)",
+                "devanagari": "सुबह-ए-बनारस के दौरान नाव में तैरना बाहरी अलंग का मेरा पसंदीदा अनुभव है। शाम-ए-अवध के दौरान मैं अस्सी घाट पर वाटिका पिज्जा भी खाता था।"
             },
-
             {
                 "imageIconUrl": "images/flags/fr.png",
                 "value": 50,
-                "title": "French"
+                "title": "French",
+                "description": "Experience: 7 years (Middle & High School)<br><br><i>Lors d'une excursion autour de l'Île d'Orléans au Québec pendant notre lune de miel, j'ai bêtement demandé ce que signifiait le mot «érable». Malheureusement, la fabrication du sirop n'était pas enseignée au lycée.</i>"
             }
         ]
     }

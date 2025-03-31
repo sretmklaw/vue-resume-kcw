@@ -61,11 +61,11 @@
                 "id": "oldworldsaints",
                 "title": "OldWorldSaints.com",
                 "subtitle": "Spring Boot Java WebApp",
-                "logoUrl": "images/places/link-oldworldsaints.png",
-                "previewUrl": "images/places/link-oldworldsaints.png",
+                "logoUrl": "images/places/square-oldworldsaints.png",
+                "previewUrl": "images/places/square-oldworldsaints.png",
                 "links": [
                     {"faIcon": "fa-solid fa-globe", "href": "https://www.oldworldsaints.com", "id": "View Website"},
-                    {"faIcon": "fa-solid fa-code", "href": "https://github.com/sretmklaw/cimeliarchium-web-app", "id": "View GitHub Repo"}
+                    {"faIcon": "fa-solid fa-code", "href": "https://github.com/sretmklaw/oldworldsaints", "id": "View GitHub Repo"}
                 ],
                 "description": "This site displays information about important figures and commemorations in various traditions through the ancient and medieval world. It includes scrollable and clickable maps built using Leaflet JS, links to scanned primary source materials in PDF format, and multiple search interfaces keying on a range of possible criteria.",
                 "tags": ["Java", "Spring", "Leaflet JS"]

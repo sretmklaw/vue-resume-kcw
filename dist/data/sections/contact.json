@@ -1,11 +1,33 @@
 {
-    "title": "Collaborate",
+    "title": "Collaboration",
     "description": "Interested in working together? Let's get in touch",
-    "subtitle": "Know a Hiring Manager?",
-    "subtitleDescription": "Feel free to download a printable version of my resume to share",
-    "searchStatus": "I am currently open to entertaining competitive offers",
+    "subtitle": "Looking to Hire?",
+    "subtitleDescription": "Click below to check my current job search status and to download a printable copy of my resume",
     "items": [
         "@link{profile.contact.email}",
         "@link{profile.contact.linkedin}"
+    ],
+    "popupIcons": [
+        {
+            "id": "resume",
+            "place": "@link{places.resume}",
+            "buttonLabel": "View Resume",
+            "statusUrl": "images/icons/resume-status.gif",
+            "salaryRange": {
+                "title": "Mid-Range Salary: $100-150k",
+                "faIcon": "fa-solid fa-money-bill-trend-up",
+                "value": 50,
+                "formattedPercentage": "50%",
+                "description": "Typical Software Engineer Range: $77k-$195k<br>Source: <a target='_blank' rel='noopener noreferrer' href='https://www.indeed.com/career/software-engineer/salaries'>Indeed.com</a>"
+            },
+            "links": [
+                {"faIcon": "fa-solid fa-file", "href": "https://drive.google.com/file/d/1we60hcxErUTw0NuvcpovBGwcunVnqI20/view?usp=sharing", "id": "View Resume"}
+            ],
+            "title": "Career Status",
+            "subtitle": "Willing to entertain offers",
+            "subtitleDescription": "Full remote only - not willing to relocate",
+            "description": "Thank you for your interest. I am exclusively interested in competitive growth opportunities with compensation meeting or exceeding the pay range specified above.",
+            "whereToFindDescription": "Click below for a downloadable PDF version of my resume"
+        }
     ]
 }

@@ -1,17 +1,18 @@
 <template>
     <SectionTemplate :section-data="props.sectionData">
-        <div class="info-row row gx-4 gx-xl-5">
-            <div v-for="subcategory in props.sectionData['content']['subcategories']" class="col-12 subcategory-col">
+        <ul id="skillsGrid" class="info-row row gx-4 gx-xl-5">
+            <li v-for="subcategory in props.sectionData['content']['subcategories']" class="col-12 subcategory-col fade-element">
                 <!-- Subcategory Title -->
                 <SubHeading v-if="subcategory['title']"
                             :title="subcategory['title']"
+                            :description="subcategory['description']"
                             :fa-icon="subcategory['faIcon']"/>
 
                 <!-- Group Component -->
                 <component :is="_getComponentFor(subcategory)"
                            :items="_fetchAndParseItemsFor(subcategory)"/>
-            </div>
-        </div>
+            </li>
+        </ul>
     </SectionTemplate>
 </template>
 
@@ -104,6 +105,14 @@ const _fetchAndParseItemsFor = (subcategory) => {
 }
 
 .info-row {
-    overflow-x:hidden;
+    overflow-x: hidden;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+li {
+    list-style: none;
 }
 </style>
