@@ -18,12 +18,12 @@
         "lego": [
             {
                 "id": "khajuraho",
-                "title": "Hindu Temple - Kandariya Mahadev",
+                "title": "Hindustani Temple - Kandariya Mahadev",
                 "subtitle": "Khajuraho, India",
                 "logoUrl": "images/interests/lego-khajuraho.png",
                 "previewUrl": "images/interests/preview-khajuraho.gif",
                 "links": [
-                    {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/", "id": "Rebrickable.com"}
+                    {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/mocs/MOC-220698/Kendric%20Walters/kandariya-mahadeva/#details", "id": "Rebrickable.com"}
                 ],
                 "description": "Kandariya Mahadeva, meaning 'Great God of the Cave', is a Hindu temple at Khajuraho in Madhya Pradesh, India. Famous for its ornate statutary, it is considered one of the best intact examples of royal temples from the medieval period. The temple was listed as a UNESCO World Heritage site in 1986. 4237 total pieces.",
                 "tags": ["temple", "india", "hindu"]
@@ -36,7 +36,7 @@
                 "logoUrl": "images/interests/lego-ayasofya.png",
                 "previewUrl": "images/interests/preview-ayasofya.gif",
                 "links": [
-                    {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/", "id": "Rebrickable.com"}
+                    {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/mocs/MOC-219881/Kendric%20Walters/hagia-sophia/#details", "id": "Rebrickable.com"}
                 ],
                 "description": "Aya Sofya, originally known by the Greek name 'Hagia Sophia' or 'Holy Wisdom', was built as a cathedral under the Eastern Roman Emperor Justinian I in the 6th Century A.D. At the time of its completion, it was the world's largest interior space topped by the world's largest dome. After Istanbul's conquest by the Turkish Sultan Mehmed II in 1453, it was converted into a mosque. It was listed as a UNESCO World Heritage site in 1985. 2260 total pieces.",
                 "tags": ["mosque", "turkiye", "istanbul"]
@@ -53,6 +53,45 @@
                 ],
                 "description": "Kizhi Pogost is a historical wooden church located on Lake Onega in northern Russia dating from the 17th century. With twenty-two domes, the Transfiguration Church is the largest wooden structure in the world build without structural nails. It was listed as a UNESCO World Heritage site in 1990. 3166 total pieces.",
                 "tags": ["church", "russia", "orthodox"]
+            },
+
+            {
+                "id": "tajmahal",
+                "title": "Mughal Tomb - Taj Mahal",
+                "subtitle": "Agra, India",
+                "logoUrl": "images/interests/lego-tajmahal.png",
+                "previewUrl": "images/interests/preview-tajmahal.gif",
+                "links": [
+                    {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/", "id": "Rebrickable.com"}
+                ],
+                "description": "Taj Mahal is a white marble mausoleum commissioned in 1631 A.D. by the fifth Mughal emperor Shah Jahan to commemorate his deceased wife, Mumtaz Mahal. Widely considered the crowning jewel of Indo-Islamic architecture, the complex of white marble and red sandstone buildings is located outside Agra on the Yamuna River, and includes a mosque and guest house set within a walled Persian-style garden. It designated as a UNESCO World Heritage Site in 1983. 2997 total pieces.",
+                "tags": ["tomb", "india", "islamic"]
+            },
+
+            {
+                "id": "meenakshi",
+                "title": "Dravidian Temple - Meenakshi Gopuram",
+                "subtitle": "Madurai, India",
+                "logoUrl": "images/interests/lego-meenakshi.png",
+                "previewUrl": "images/interests/lego-meenakshi.png",
+                "links": [
+                    {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/", "id": "Rebrickable.com"}
+                ],
+                "description": "Meenakshi Temple is an ancient Hindu religious complex named after a goddess who forms the spiritual nucleus of the pilgrimage city of Madurai in Tamil Nadu, India. It is widely recognized for its fourteen intricately-decorated gateway towers, or Gopurams, which reach as high as 52 meters and crown a series of nested courtyards leading to the main idol of the deity. The current restored structure dates from the 16th Century A.D., and continues to serve as a popular symbol of Tamil identity. 5444 total pieces.",
+                "tags": ["temple", "india", "hindu"]
+            },
+
+            {
+                "id": "shahizinda",
+                "title": "Persian Tomb - Shah-i Zinda",
+                "subtitle": "Samarkand, Uzbekistan",
+                "logoUrl": "images/interests/lego-shahizinda.png",
+                "previewUrl": "images/interests/lego-shahizinda.png",
+                "links": [
+                    {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/", "id": "Rebrickable.com"}
+                ],
+                "description": "Shah-i Zinda is an extensive complex of medieval tombs located in Samarkand, Uzbekistan. The tombs are named for a legend concerning the cousin of the Islamic Prophet Muhammad from the Arab conquest of Central Asia. The necropolis which later grew up around his tomb reached its zenith in the 15th Century A.D., and its edifices are considered representative of the Timurid architectural style which greatly influenced later Persian and Indian monumental design. 3527 pieces.",
+                "tags": ["tomb", "uzbekistan", "islamic"]
             }
         ],
 
