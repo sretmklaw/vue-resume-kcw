@@ -13,7 +13,7 @@
 
             <!-- Logo -->
             <div v-show="didReachStep(Steps.SHOWING_LOGO)">
-            <ImageView  :src="'images/pictures/loading.png'"
+            <ImageView  :src="selectedImage"
                         :alt="'Logo'"
                         :ignore-on-image-count="true"
                         ref="uiLogo"
@@ -57,6 +57,13 @@ const Steps = {
     LEAVING: 'steps.leaving',
 }
 
+const loadingImages = [
+    'images/pictures/loadingImage1.png',
+    'images/pictures/loadingImage2.png',
+    'images/pictures/loadingImage3.png',
+    'images/pictures/loadingImage4.png'
+]
+
 const STEPS_ORDER = Object.values(Steps)
 const INTERVAL_TIMEOUT = 1/60
 
@@ -68,10 +75,12 @@ const percentage = ref(0)
 
 /** UI Refs **/
 const uiLogo = ref(null)
+var selectedImage = ref(null)
 
 const run = () => {
     stop()
     currentStep.value = Steps.LOADING_LOGO
+    selectedImage = setImage()
     intervalId.value = setInterval(() => { _onIntervalTick() }, INTERVAL_TIMEOUT * 1000)
 }
 
@@ -171,6 +180,11 @@ const _notify = async () => {
 const _finish = () => {
     emit('hidden')
     stop()
+}
+
+const setImage = () => {
+    const idx = Math.floor(Math.random() * loadingImages.length)
+    return loadingImages[idx]
 }
 
 defineExpose({

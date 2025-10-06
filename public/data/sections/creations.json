@@ -8,8 +8,8 @@
             "title": "Lego Designs"
         },
         {
-            "id": "webapp",
-            "title": "Web Applications"
+            "id": "aoe2",
+            "title": "AOE2 World Maps"
         }
     ],
 
@@ -82,32 +82,70 @@
             },
 
             {
-                "id": "shahizinda",
-                "title": "Persian Tomb - Shah-i Zinda",
+                "id": "guriamir",
+                "title": "Persian Tomb - Gur-i Amir",
                 "subtitle": "Samarkand, Uzbekistan",
-                "logoUrl": "images/interests/lego-shahizinda.png",
-                "previewUrl": "images/interests/lego-shahizinda.png",
+                "logoUrl": "images/interests/lego-guriamir.png",
+                "previewUrl": "images/interests/lego-guriamir.png",
                 "links": [
                     {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/", "id": "Rebrickable.com"}
                 ],
-                "description": "Shah-i Zinda is an extensive complex of medieval tombs located in Samarkand, Uzbekistan. The tombs are named for a legend concerning the cousin of the Islamic Prophet Muhammad from the Arab conquest of Central Asia. The necropolis which later grew up around his tomb reached its zenith in the 15th Century A.D., and its edifices are considered representative of the Timurid architectural style which greatly influenced later Persian and Indian monumental design. 3527 pieces.",
+                "description": "Gur-i Amir is a medieval Islamic tomb located in Samarkand, Uzbekistan. The tomb was originally built to house the remains of Tamerlane's grandson Muhammad Sultan, but was appropriated as the conqueror's own mausoleum following his death in 1405 A.D. The monument is crowned by a striking turquoise dome, and its structure serves as the prototype of the Timurid architectural style which greatly influenced later Persian and Indian monumental design. 4772 pieces.",
                 "tags": ["tomb", "uzbekistan", "islamic"]
             }
         ],
 
-        "webapp": [
+        "aoe2": [
             {
-                "id": "oldworldsaints",
-                "title": "OldWorldSaints.com",
-                "subtitle": "Spring Boot Java WebApp",
-                "logoUrl": "images/places/square-oldworldsaints.png",
-                "previewUrl": "images/places/square-oldworldsaints.png",
+                "id": "silkroads",
+                "title": "Silk Roads - Crossroads of Civilization",
+                "subtitle": "Medieval Central Asia",
+                "logoUrl": "images/interests/aoe2-silkroads.gif",
+                "previewUrl": "images/interests/preview-silkroads.png",
                 "links": [
-                    {"faIcon": "fa-solid fa-globe", "href": "https://www.oldworldsaints.com", "id": "View Website"},
-                    {"faIcon": "fa-solid fa-code", "href": "https://github.com/sretmklaw/oldworldsaints", "id": "View GitHub Repo"}
+                    {"faIcon": "fa-solid fa-globe", "href": "https://www.ageofempires.com/mods/", "id": "AoE2 Mods Page"}
                 ],
-                "description": "This site displays information about important figures and commemorations in various traditions through the ancient and medieval world. It includes scrollable and clickable maps built using Leaflet JS, links to scanned primary source materials in PDF format, and multiple search interfaces keying on a range of possible criteria.",
-                "tags": ["Java", "Spring", "Leaflet JS"]
+                "description": "A playable recreation of Central Asia from the 8th-17th Centuries A.D. including major cities and landmarks such as Samarkand, Delhi, Nishapur, and Lanzhou. Simulate the perennial rise and fall of medieval nomadic empires, including the Gokturks, Uighurs, Seljuks, Qarakhitans, and Qarakhanids. Players can relive the adventures of Tughril Beg, Mahmud of Ghazni, Ghiyathuddin Tughluq, Genghis Khan, Tamerlane,  and even the Tang Dynasty's \"Pacification of the West\" under Su Dingfang.",
+                "tags": ["turks", "tatars", "persians", "hindustanis", "mongols", "chinese"]
+            },
+
+            {
+                "id": "mediterranean",
+                "title": "Mediterranean - The Ancient World",
+                "subtitle": "Near East in Classical Antiquity",
+                "logoUrl": "images/interests/aoe2-mediterranean.gif",
+                "previewUrl": "images/interests/preview-mediterranean.png",
+                "links": [
+                    {"faIcon": "fa-solid fa-globe", "href": "https://www.ageofempires.com/mods/", "id": "AoE2 Mods Page"}
+                ],
+                "description": "A playable recreation of the Fertile Crescent, Asia Minor, and Eastern Mediterranean from the 20th-1st Centuries B.C. Simulate the rise and fall of the Egyptian New Kingdom, Greek and Phoenician city-states, and successive Babylonian and Assyrian empires. Govern the world's first complex societies from Memphis and Thebes, Athens and Sparta, Babylon, Nineveh, and Carthage.",
+                "tags": ["egyptians", "greeks", "babylonians", "assyrians", "hittites", "carthaginians"]
+            },
+
+            {
+                "id": "chinesedynasties",
+                "title": "Chinese Dynasties - The Mandate of Heaven",
+                "subtitle": "Late Classical China",
+                "logoUrl": "images/interests/aoe2-chinesedynasties.png",
+                "previewUrl": "images/interests/preview-chinesedynasties.png",
+                "links": [
+                    {"faIcon": "fa-solid fa-globe", "href": "https://www.ageofempires.com/mods/", "id": "AoE2 Mods Page"}
+                ],
+                "description": "A playable recreation of the \"Middle Kingdom\" from the 3rd-13th Centuries A.D. centered on the traditional capitals of Chang'an, Chengdu, Luoyang, and Hangzhou. Simulate the consolidation of power following the Three Kingdoms period, or the barbarian invasions of the Tang, Sui, and Sung empires. While fending off barbarian invasions from the northern steppes, contend with the powerful Kingdom of Dali in the south and incessant raids by Japanese pirates along the coasts.",
+                "tags": ["chinese", "jurchens", "khitans", "shu", "wei", "wu"]
+            },
+
+            {
+                "id": "southernseas",
+                "title": "Southern Seas - The Spice Trade",
+                "subtitle": "South Asia in the Age of Discovery",
+                "logoUrl": "images/interests/aoe2-southernseas.png",
+                "previewUrl": "images/interests/preview-southernseas.png",
+                "links": [
+                    {"faIcon": "fa-solid fa-globe", "href": "https://www.ageofempires.com/mods/", "id": "AoE2 Mods Page"}
+                ],
+                "description": "A playable recreation of coastal India, Arabia, and Southeast Asia from the 9th-16th Centuries A.D. Simulate the conquests of Rajendra Chola, the voyages of Zheng He's treasure fleet, and the discoveries of the Portuguese explorers. Secure control of resource-rich coastal areas by fortifying key ports including Hormuz, Khambat/Surat, Goa, Cochin, Nagapattinam, Chittagong, Pegu, Kedah, Saigon, and Guangzhou.",
+                "tags": ["portuguese", "gujaras", "dravidians", "bengalis", "burmese", "chinese"]
             }
         ]
     }

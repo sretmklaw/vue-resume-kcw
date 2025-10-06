@@ -13,12 +13,6 @@
                     <ImageView :src="item.data['logoUrl']"
                                :alt="item.data['name']"
                                class="gallery-thumb"/>
-
-                    <div class="gallery-thumb-overlay">
-                        <div class="gallery-thumb-overlay-content eq-h6">
-                            <i class="fas fa-eye fa-2x"></i>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Project Info -->
@@ -160,10 +154,6 @@ watch(() => props.selectedCategoryId, () => {
         .gallery-title {
             color: lighten($primary, 10%);
             transition: color ease-in-out 0.3s;
-        }
-
-        .gallery-thumb-overlay {
-            opacity: 1;
         }
     }
 }
