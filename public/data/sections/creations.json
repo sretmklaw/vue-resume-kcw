@@ -25,7 +25,7 @@
                 "links": [
                     {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/mocs/MOC-220698/Kendric%20Walters/kandariya-mahadeva/#details", "id": "Rebrickable.com"}
                 ],
-                "description": "Kandariya Mahadeva, meaning 'Great God of the Cave', is a Hindu temple at Khajuraho in Madhya Pradesh, India. Famous for its ornate statutary, it is considered one of the best intact examples of royal temples from the medieval period. The temple was listed as a UNESCO World Heritage site in 1986. 4237 total pieces.",
+                "description": "Kandariya Mahadeva, meaning 'Great God of the Cave', is a Hindu temple at Khajuraho in Madhya Pradesh, India. Famous for its ornate statutary, it is considered one of the best intact examples of royal temples from the medieval period. The temple was listed as a UNESCO World Heritage site in 1986. 4237 pieces.",
                 "tags": ["temple", "india", "hindu"]
             },
 
@@ -38,7 +38,7 @@
                 "links": [
                     {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/mocs/MOC-219881/Kendric%20Walters/hagia-sophia/#details", "id": "Rebrickable.com"}
                 ],
-                "description": "Aya Sofya, originally known by the Greek name 'Hagia Sophia' or 'Holy Wisdom', was built as a cathedral under the Eastern Roman Emperor Justinian I in the 6th Century A.D. At the time of its completion, it was the world's largest interior space topped by the world's largest dome. After Istanbul's conquest by the Turkish Sultan Mehmed II in 1453, it was converted into a mosque. It was listed as a UNESCO World Heritage site in 1985. 2260 total pieces.",
+                "description": "Aya Sofya, originally known by the Greek name 'Hagia Sophia' or 'Holy Wisdom', was built as a cathedral under the Eastern Roman Emperor Justinian I in the 6th Century A.D. At the time of its completion, it was the world's largest interior space topped by the world's largest dome. After Istanbul's conquest by the Turkish Sultan Mehmed II in 1453, it was converted into a mosque. It was listed as a UNESCO World Heritage site in 1985. 2260 pieces.",
                 "tags": ["mosque", "turkiye", "istanbul"]
             },
 
@@ -51,7 +51,7 @@
                 "links": [
                     {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/", "id": "Rebrickable.com"}
                 ],
-                "description": "Kizhi Pogost is a historical wooden church located on Lake Onega in northern Russia dating from the 17th century. With twenty-two domes, the Transfiguration Church is the largest wooden structure in the world build without structural nails. It was listed as a UNESCO World Heritage site in 1990. 3166 total pieces.",
+                "description": "Kizhi Pogost is a historical wooden church located on Lake Onega in northern Russia dating from the 17th century. With twenty-two domes, the Transfiguration Church is the largest wooden structure in the world build without structural nails. It was listed as a UNESCO World Heritage site in 1990. 3166 pieces.",
                 "tags": ["church", "russia", "orthodox"]
             },
 
@@ -64,7 +64,7 @@
                 "links": [
                     {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/", "id": "Rebrickable.com"}
                 ],
-                "description": "Taj Mahal is a white marble mausoleum commissioned in 1631 A.D. by the fifth Mughal emperor Shah Jahan to commemorate his deceased wife, Mumtaz Mahal. Widely considered the crowning jewel of Indo-Islamic architecture, the complex of white marble and red sandstone buildings is located outside Agra on the Yamuna River, and includes a mosque and guest house set within a walled Persian-style garden. It designated as a UNESCO World Heritage Site in 1983. 2997 total pieces.",
+                "description": "Taj Mahal is a white marble mausoleum commissioned in 1631 A.D. by the fifth Mughal emperor Shah Jahan to commemorate his deceased wife, Mumtaz Mahal. Widely considered the crowning jewel of Indo-Islamic architecture, the complex of white marble and red sandstone buildings is located outside Agra on the Yamuna River, and includes a mosque and guest house set within a walled Persian-style garden. It designated as a UNESCO World Heritage Site in 1983. 2997 pieces.",
                 "tags": ["tomb", "india", "islamic"]
             },
 
@@ -77,7 +77,7 @@
                 "links": [
                     {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/", "id": "Rebrickable.com"}
                 ],
-                "description": "Meenakshi Temple is an ancient Hindu religious complex named after a goddess who forms the spiritual nucleus of the pilgrimage city of Madurai in Tamil Nadu, India. It is widely recognized for its fourteen intricately-decorated gateway towers, or Gopurams, which reach as high as 52 meters and crown a series of nested courtyards leading to the main idol of the deity. The current restored structure dates from the 16th Century A.D., and continues to serve as a popular symbol of Tamil identity. 5444 total pieces.",
+                "description": "Meenakshi Temple is an ancient Hindu religious complex named after a goddess who forms the spiritual nucleus of the pilgrimage city of Madurai in Tamil Nadu, India. It is widely recognized for its fourteen intricately-decorated gateway towers, or Gopurams, which reach as high as 52 meters and crown a series of nested courtyards leading to the main idol of the deity. The current restored structure dates from the 16th Century A.D., and continues to serve as a popular symbol of Tamil identity. 5444 pieces.",
                 "tags": ["temple", "india", "hindu"]
             },
 
@@ -86,12 +86,25 @@
                 "title": "Persian Tomb - Gur-i Amir",
                 "subtitle": "Samarkand, Uzbekistan",
                 "logoUrl": "images/interests/lego-guriamir.png",
-                "previewUrl": "images/interests/lego-guriamir.png",
+                "previewUrl": "images/interests/preview-guriamir.gif",
                 "links": [
-                    {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/", "id": "Rebrickable.com"}
+                    {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/mocs/MOC-249157/Kendric%20Walters/gur-i-amir-persian-tomb", "id": "Rebrickable.com"}
                 ],
                 "description": "Gur-i Amir is a medieval Islamic tomb located in Samarkand, Uzbekistan. The tomb was originally built to house the remains of Tamerlane's grandson Muhammad Sultan, but was appropriated as the conqueror's own mausoleum following his death in 1405 A.D. The monument is crowned by a striking turquoise dome, and its structure serves as the prototype of the Timurid architectural style which greatly influenced later Persian and Indian monumental design. 4772 pieces.",
                 "tags": ["tomb", "uzbekistan", "islamic"]
+            },
+
+            {
+                "id": "domeoftherock",
+                "title": "Arabic Mosque - Dome of the Rock",
+                "subtitle": "Jerusalem",
+                "logoUrl": "images/interests/lego-domeoftherock.png",
+                "previewUrl": "images/interests/preview-domeoftherock.gif",
+                "links": [
+                    {"faIcon": "fa-solid fa-cubes", "href": "https://rebrickable.com/mocs/MOC-246056/Kendric%20Walters/dome-of-the-rock/#details", "id": "Rebrickable.com"}
+                ],
+                "description": "The Dome of the Rock is an octagonal shrine built at the end of 7th Century A.D. in the Old City of Jerusalem. It guards a limestone outcropping which adherents of Judaism, Christianity, and Islam historically venerated as the burial place of the first man Adam, the altar of the Prophet Abraham, and the foundation of King Solomon’s Temple. The building is artistically significant as the oldest surviving Islamic monument, while also exhibiting the synthesis of Byzantine Christian and Jewish faience and mosaic styles. 1726 pieces.",
+                "tags": ["tomb", "jerusalem", "islamic"]
             }
         ],
 
@@ -100,8 +113,8 @@
                 "id": "silkroads",
                 "title": "Silk Roads - Crossroads of Civilization",
                 "subtitle": "Medieval Central Asia",
-                "logoUrl": "images/interests/aoe2-silkroads.gif",
-                "previewUrl": "images/interests/preview-silkroads.png",
+                "logoUrl": "images/interests/aoe2-silkroads.png",
+                "previewUrl": "images/interests/preview-silkroads.gif",
                 "links": [
                     {"faIcon": "fa-solid fa-globe", "href": "https://www.ageofempires.com/mods/", "id": "AoE2 Mods Page"}
                 ],
@@ -110,11 +123,24 @@
             },
 
             {
+                "id": "southernseas",
+                "title": "Southern Seas - The Spice Trade",
+                "subtitle": "South Asia in the Age of Discovery",
+                "logoUrl": "images/interests/aoe2-southernseas.png",
+                "previewUrl": "images/interests/preview-southernseas.gif",
+                "links": [
+                    {"faIcon": "fa-solid fa-globe", "href": "https://www.ageofempires.com/mods/", "id": "AoE2 Mods Page"}
+                ],
+                "description": "A playable recreation of coastal India, Arabia, and Southeast Asia from the 9th-16th Centuries A.D. Simulate the conquests of Rajendra Chola, the voyages of Zheng He's treasure fleet, and the discoveries of the Portuguese explorers. Secure control of resource-rich coastal areas by fortifying key ports including Hormuz, Khambat/Surat, Goa, Cochin, Nagapattinam, Chittagong, Pegu, Kedah, Saigon, and Guangzhou.",
+                "tags": ["portuguese", "gujaras", "dravidians", "bengalis", "burmese", "chinese"]
+            },
+
+            {
                 "id": "mediterranean",
                 "title": "Mediterranean - The Ancient World",
                 "subtitle": "Near East in Classical Antiquity",
-                "logoUrl": "images/interests/aoe2-mediterranean.gif",
-                "previewUrl": "images/interests/preview-mediterranean.png",
+                "logoUrl": "images/interests/aoe2-mediterranean.png",
+                "previewUrl": "images/interests/preview-mediterranean.gif",
                 "links": [
                     {"faIcon": "fa-solid fa-globe", "href": "https://www.ageofempires.com/mods/", "id": "AoE2 Mods Page"}
                 ],
@@ -127,7 +153,7 @@
                 "title": "Chinese Dynasties - The Mandate of Heaven",
                 "subtitle": "Late Classical China",
                 "logoUrl": "images/interests/aoe2-chinesedynasties.png",
-                "previewUrl": "images/interests/preview-chinesedynasties.png",
+                "previewUrl": "images/interests/preview-chinesedynasties.gif",
                 "links": [
                     {"faIcon": "fa-solid fa-globe", "href": "https://www.ageofempires.com/mods/", "id": "AoE2 Mods Page"}
                 ],
@@ -136,16 +162,16 @@
             },
 
             {
-                "id": "southernseas",
-                "title": "Southern Seas - The Spice Trade",
-                "subtitle": "South Asia in the Age of Discovery",
-                "logoUrl": "images/interests/aoe2-southernseas.png",
-                "previewUrl": "images/interests/preview-southernseas.png",
+                "id": "varanasi",
+                "title": "Varanasi - The Panchakroshi Yatra",
+                "subtitle": "A Pilgrimage to the Hindu Holy City",
+                "logoUrl": "images/interests/aoe2-varanasi.png",
+                "previewUrl": "images/interests/preview-varanasi.gif",
                 "links": [
-                    {"faIcon": "fa-solid fa-globe", "href": "https://www.ageofempires.com/mods/", "id": "AoE2 Mods Page"}
+                    {"faIcon": "fa-solid fa-globe", "href": "https://www.ageofempires.com/mods/details/469646", "id": "AoE2 Mods Page"}
                 ],
-                "description": "A playable recreation of coastal India, Arabia, and Southeast Asia from the 9th-16th Centuries A.D. Simulate the conquests of Rajendra Chola, the voyages of Zheng He's treasure fleet, and the discoveries of the Portuguese explorers. Secure control of resource-rich coastal areas by fortifying key ports including Hormuz, Khambat/Surat, Goa, Cochin, Nagapattinam, Chittagong, Pegu, Kedah, Saigon, and Guangzhou.",
-                "tags": ["portuguese", "gujaras", "dravidians", "bengalis", "burmese", "chinese"]
+                "description": "This scenario simulates an ancient pilgrimage route, called the \"Panchakroshi Yatra\", which circumambulates the Hindu holy city of Varanasi, and recreates the efforts of Queen Ahilya Bai Holkar to restore its most notable sites as sovereign of the Maratha Empire (1725-1795 AD).",
+                "tags": ["hindustanis", "gujaras", "bengalis", "tatars"]
             }
         ]
     }
